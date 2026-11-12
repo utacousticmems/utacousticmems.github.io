@@ -1,0 +1,106 @@
+# Research areas: home-page cards and /research/ sections, in this order.
+# papers: titles must match _data/publications.yml exactly (case-sensitive).
+
+- id: extreme-environments
+  short: Sensors for extreme heat
+  title: Sensors and electronics for extreme temperatures
+  image: high-temp-pmut.jpg
+  alt: A lithium niobate transducer die on a heated stage with probe needles
+  teaser: Piezoelectric transducers and transistors that keep working at 800 to 1000 °C.
+  body: >-
+    Hypersonic flight, ground-test facilities, engines and deep wells all need sensors that keep
+    working where silicon electronics fail. We build piezoelectric transducers from single-crystal
+    lithium niobate and aluminum nitride, characterize them on hot stages up to 1000 °C, and develop
+    fast measurement methods for the electronics that must sit next to them, including GaN
+    high-electron-mobility transistors tested in open air at 800 °C. This continues the group's
+    longer line of work on pressure and shear-stress sensors for Mach 6 hypersonic flows.
+  papers:
+    - High-temperature characterization of bimorph X-cut lithium niobate piezoelectric micromachined ultrasonic transducers up to 1000 °C
+    - 800 °C open-air electrical characterization of III-N HEMTs using rapid dual-frequency extraction
+    - Piezoelectric pressure sensors for hypersonic flow measurements
+
+- id: piezo-transducers
+  short: Piezoelectric MEMS transducers
+  title: Lithium niobate and aluminum nitride piezoelectric transducers
+  image: wedge-resonator.jpg
+  alt: Scanning electron micrograph of a triangular AlN wedge resonator with two electrode sets
+  teaser: Bimorph PMUTs and resonators pushed to large amplitude, measured with high-velocity LDV.
+  body: >-
+    Piezoelectric micromachined ultrasonic transducers (PMUTs) and resonators are at the heart of
+    ultrasound imaging, ranging and acoustic communication. With Prof. Ruochen Lu's group we design
+    bimorph lithium niobate PMUTs on transferred periodically poled films. We also drive an AlN bimorph
+    wedge resonator to about 50 m/s, ten times faster than conventional MEMS, and study large-signal
+    whip-mode resonators in LTOI. Measuring motion that fast needed its own technique, so we
+    developed high-velocity laser Doppler vibrometry methods to do it.
+  papers:
+    - High-velocity laser Doppler vibrometry measurements on an aluminum nitride bimorph wedge resonator
+    - Bimorph lithium niobate piezoelectric micromachined ultrasonic transducers
+    - Thickness-field excited bimorph lithium niobate piezoelectric transducer
+
+- id: photonic-inertial
+  short: Photonic inertial sensors
+  title: Photonic integrated circuit (PIC) accelerometers and inertial sensors
+  image: photonic-accelerometer.jpg
+  alt: A photonic accelerometer chip on a circuit board with an optical fiber aligned to it
+  teaser: Accelerometers read out by light on a chip, with on-chip fringe counting.
+  body: >-
+    Optical readout gives inertial sensors low noise and immunity to electrical interference. We
+    integrate mechanical proof masses directly with silicon nitride photonic waveguides, reading
+    motion with on-chip Mach–Zehnder interferometers. Our monolithic photonic accelerometer with
+    on-chip fringe counting reaches 2.0 µg/√Hz with 39 dB more dynamic range, and was featured on the
+    August 2026 cover of Microsystems &amp; Nanoengineering. The same platform is now being used
+    for optomechanical microphones.
+  papers:
+    - An integrated monolithic photonic accelerometer with on-chip fringe-counting
+    - A novel cantilever-based silicon photonic accelerometer using Mach–Zehnder interferometer targeting 10-ng/√Hz noise floor
+    - A novel opto-mechanical accelerometer in low-loss silicon nitride photonics platform with high dynamic range achieved via heterodyne detection
+
+- id: frequency-combs
+  short: Mechanical frequency combs
+  title: Mechanical frequency combs for inertial sensing
+  image: comb-accelerometer.jpg
+  alt: A packaged MEMS die with a suspended proof mass used for mechanical frequency comb experiments
+  teaser: Parametric three-wave mixing turns one resonator into a comb of sensing tones.
+  body: >-
+    Optical frequency combs transformed precision timing and spectroscopy. We are building their
+    mechanical counterpart: a MEMS resonator driven by three-wave-mixing parametric excitation
+    produces a comb of evenly spaced tones that can be read out for inertial sensing. This work, with
+    collaborators at UT Austin and the City University of New York, points to a scalable new
+    sensing modality.
+  papers:
+    - "Mechanical frequency combs via three-wave-mixing parametric excitation: a scalable inertial-sensing modality"
+
+- id: microphones
+  short: MEMS microphones
+  title: MEMS microphones, including fly-inspired directional designs
+  image: fly-mic.jpg
+  alt: A square MEMS microphone die with a circular diaphragm and four curved slots
+  teaser: One diaphragm that rocks and bends like the coupled eardrums of a fly.
+  body: >-
+    The parasitoid fly <em>Ormia ochracea</em> locates sound with eardrums only about half a millimeter
+    apart, by coupling them mechanically. Our microphones borrow that trick: a single diaphragm whose
+    rocking and bending modes act as three microphones, one omnidirectional and two with orthogonal
+    in-plane directivity. We also study lithium niobate microphones with high SNR potential, optimize
+    piezoelectric electrode layouts automatically, and use commercial-style MEMS microphone dies as
+    ultrasonic transmitters. This line of work was featured on NPR in 2014.
+  papers:
+    - Fly-inspired directional MEMS microphone with omnidirectionality and two in-plane orthogonal directivities
+    - Lithium niobate microphone with high SNR potential
+    - An air-coupled electrostatic ultrasound transducer using a MEMS microphone architecture
+
+- id: underwater
+  short: Underwater acoustics &amp; ultrasound
+  title: Underwater acoustic sensors and ultrasound
+  image: hydrophone.jpg
+  alt: A cylindrical magnetostrictive hydrophone on an optical table
+  teaser: Magnetostrictive hydrophones quieter than a calm sea, and immersion ultrasound transducers.
+  body: >-
+    Listening to the ocean at low frequencies needs sensors with extremely low self-noise. We built
+    the first hydrophone based on a giant magnetostrictive material, with an estimated noise floor
+    below Sea State 0 (featured on the April 2026 JASA cover), along with magnetostrictive
+    accelerometers and jerk sensors. In our scanning ultrasound tanks we characterize immersion PMUTs
+    and develop ultrasound probes, including a transducer probe for direct ultrasonic neuromodulation.
+  papers:
+    - Design and characterization of a magnetostrictive hydrophone for low-frequency, low-noise underwater acoustic sensing
+    - Characterization of an immersion lithium niobate piezoelectric micromachined ultrasound transducer using laser Doppler vibrometry and hydrophone measurements
+    - Transducer probe for direct ultrasonic neuromodulation and measurement

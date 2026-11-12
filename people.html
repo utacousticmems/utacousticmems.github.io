@@ -1,0 +1,53 @@
+---
+title: People
+permalink: /people/
+lede: Graduate students, postdocs and undergraduates in Electrical and Computer Engineering, with a long line of alumni in industry and national labs.
+---
+{%- assign pi = site.data.people.pi -%}
+<section class="pi">
+  <div class="avatar avatar-lg">{% if pi.photo != "" %}<img src="{{ '/assets/people/' | append: pi.photo | relative_url }}" alt="{{ pi.name }}">{% else %}NH{% endif %}</div>
+  <div>
+    <p class="kicker">Principal investigator</p>
+    <h2>{{ pi.name }}</h2>
+    <p class="pi-title">{{ pi.title }}<br><span class="muted">{{ pi.dept }}</span></p>
+    <p>{{ pi.bio }}</p>
+    <p class="pi-contact"><a href="mailto:{{ pi.email }}">{{ pi.email }}</a> · {{ pi.office }} · {{ pi.phone }}</p>
+    <ul class="honors">{% for h in pi.honors %}<li>{{ h }}</li>{% endfor %}</ul>
+  </div>
+</section>
+
+{%- assign groups = "postdocs|Postdoctoral researchers,phd|PhD students,undergrads|Undergraduate researchers" | split: "," -%}
+{%- for g in groups -%}
+  {%- assign parts = g | split: "|" -%}
+  {%- assign key = parts[0] -%}
+  {%- assign list = site.data.people[key] -%}
+  {%- if list and list.size > 0 -%}
+  <section class="people-group">
+    <h2>{{ parts[1] }}</h2>
+    <div class="people-grid">
+      {%- for p in list -%}
+      <div class="person">
+        <div class="avatar">{% if p.photo and p.photo != "" %}<img src="{{ '/assets/people/' | append: p.photo | relative_url }}" alt="{{ p.name }}" loading="lazy">{% else %}{%- assign w = p.name | split: " " -%}{{ w.first | slice: 0 }}{{ w.last | slice: 0 }}{% endif %}</div>
+        <div>
+          <h3>{% if p.link %}<a href="{{ p.link }}">{{ p.name }}</a>{% else %}{{ p.name }}{% endif %}</h3>
+          <p>{{ p.focus }}</p>
+        </div>
+      </div>
+      {%- endfor -%}
+    </div>
+  </section>
+  {%- endif -%}
+{%- endfor -%}
+
+<section class="people-group">
+  <h2>Alumni</h2>
+  <table class="alumni">
+    <thead><tr><th>Name</th><th>Role in the group</th><th>Year</th><th>Now</th></tr></thead>
+    <tbody>
+      {%- for a in site.data.people.alumni -%}
+      <tr><td>{{ a.name }}</td><td>{{ a.degree }}</td><td>{{ a.year }}</td><td>{{ a.now }}</td></tr>
+      {%- endfor -%}
+    </tbody>
+  </table>
+  <p class="muted">Alumni: tell us where you are now and we will add it. Email <a href="mailto:{{ site.pi_email }}">{{ site.pi_email }}</a>.</p>
+</section>

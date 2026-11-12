@@ -1,0 +1,136 @@
+---
+layout: default
+title: Hall Group · MEMS and photonic sensors at UT Austin
+body_class: home
+---
+<section class="hero">
+  <div class="wrap center">
+    <p class="eyebrow reveal">Hall Research Group · The University of Texas at Austin</p>
+    <h1 class="hero-title reveal">Sensors that hear, <br>feel and <span class="accent">survive.</span></h1>
+    <p class="hero-sub reveal">Microphones, accelerometers, ultrasonic transducers and hydrophones, built at the micro scale and taken from design and cleanroom fabrication all the way to system-level testing.</p>
+    <div class="hero-actions reveal">
+      <a class="btn" href="{{ '/join/' | relative_url }}">PhD openings, Fall 2027</a>
+      <a class="link-arrow" href="{{ '/research/' | relative_url }}">Explore our research</a>
+    </div>
+  </div>
+  <div class="wrap-wide">
+    <figure class="hero-film reveal">
+      <video controls preload="none" playsinline poster="{{ '/assets/video/film-poster.jpg' | relative_url }}">
+        <source src="{{ '/assets/video/hall-group-film.mp4' | relative_url }}" type="video/mp4">
+      </video>
+      <figcaption>The Hall Group in 82 seconds · Sound on</figcaption>
+    </figure>
+    <p class="hero-funders reveal">Current projects funded by <strong>NASA</strong> · <strong>NIH</strong> · <strong>DARPA</strong></p>
+  </div>
+</section>
+
+<section class="stats">
+  <div class="wrap">
+    <h2 class="section-title on-dark reveal">Pushing the limits.</h2>
+    <p class="section-sub on-dark reveal">Four results from 2026, each a question we set out to answer.</p>
+    <div class="stat-grid">
+      <a class="stat reveal" href="https://doi.org/10.1063/5.0347229">
+        <span class="stat-q">How hot can a sensor run?</span>
+        <span class="stat-big">1000 °C</span>
+        <span class="stat-a">A lithium niobate ultrasonic transducer, measured from room temperature to 1000 °C.</span>
+        <span class="stat-src">APL Electronic Devices, 2026</span>
+      </a>
+      <a class="stat reveal" href="https://doi.org/10.1038/s44172-026-00595-7">
+        <span class="stat-q">How fast can a micromachine move?</span>
+        <span class="stat-big">50 m/s</span>
+        <span class="stat-a">A piezoelectric MEMS resonator driven ten times faster than conventional devices.</span>
+        <span class="stat-src">Communications Engineering, 2026</span>
+      </a>
+      <a class="stat reveal" href="https://doi.org/10.1038/s41378-026-01410-1">
+        <span class="stat-q">How faint a vibration can light feel?</span>
+        <span class="stat-big">2.0 µg/√Hz</span>
+        <span class="stat-a">The first photonic-chip accelerometer with on-chip fringe counting, with 39 dB more dynamic range.</span>
+        <span class="stat-src">Microsystems &amp; Nanoengineering, 2026 · Cover article</span>
+      </a>
+      <a class="stat reveal" href="https://doi.org/10.1121/10.0043465">
+        <span class="stat-q">How quiet is the ocean?</span>
+        <span class="stat-big">&lt; Sea State 0</span>
+        <span class="stat-a">The first hydrophone built on a giant magnetostrictive material, with an estimated noise floor below Sea State 0.</span>
+        <span class="stat-src">J. Acoust. Soc. Am., 2026 · Cover article</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="panel panel-stone">
+  <div class="wrap">
+    <h2 class="section-title reveal">What we work on.</h2>
+    <p class="section-sub reveal">Six research directions, one approach: model it, make it in the cleanroom, package it, and measure it.</p>
+    <div class="bento">
+      {%- for r in site.data.research -%}
+      <a class="tile tile-{{ forloop.index }} reveal" href="{{ '/research/' | relative_url }}#{{ r.id }}">
+        <div class="tile-text">
+          <h3>{{ r.short }}</h3>
+          <p>{{ r.teaser }}</p>
+          <span class="link-arrow">Learn more</span>
+        </div>
+        <div class="tile-img"><img src="{{ '/assets/img/' | append: r.image | relative_url }}" alt="{{ r.alt }}" loading="lazy"></div>
+      </a>
+      {%- endfor -%}
+    </div>
+  </div>
+</section>
+
+<section class="panel">
+  <div class="wrap center">
+    <p class="eyebrow reveal">2026</p>
+    <h2 class="section-title reveal">Two journal covers.</h2>
+    <p class="section-sub reveal"><em>Microsystems &amp; Nanoengineering</em> (Nature Portfolio, August) and <em>The Journal of the Acoustical Society of America</em> (April).</p>
+    <div class="covers reveal">
+      <a href="https://doi.org/10.1038/s41378-026-01410-1"><img src="{{ '/assets/img/cover-micronano-2026.jpg' | relative_url }}" alt="Microsystems & Nanoengineering cover, August 2026, showing the Hall Group photonic accelerometer" loading="lazy"></a>
+      <a href="https://doi.org/10.1121/10.0043465"><img src="{{ '/assets/img/cover-jasa-2026.jpg' | relative_url }}" alt="Journal of the Acoustical Society of America cover, April 2026, showing the magnetostrictive hydrophone" loading="lazy"></a>
+    </div>
+    <a class="link-arrow reveal" href="{{ '/publications/' | relative_url }}">See all publications</a>
+  </div>
+</section>
+
+<section class="panel panel-stone">
+  <div class="wrap">
+    <h2 class="section-title reveal">Where our PhDs go.</h2>
+    <p class="section-sub reveal">We work more closely with industry than most academic labs. Prof. Hall founded Silicon Audio, an Austin company that builds precision seismic and acoustic sensors, so the path from a lab result to a product is short and visible.</p>
+    <div class="place-grid">
+      {%- for p in site.data.people.placement -%}
+      <div class="place-tile reveal">
+        <span class="place-count">{{ p.count }}</span>
+        <span class="place-where">{{ p.where }}</span>
+        {% if p.note != "" %}<span class="place-note">{{ p.note }}</span>{% endif %}
+      </div>
+      {%- endfor -%}
+    </div>
+  </div>
+</section>
+
+<section class="panel">
+  <div class="wrap">
+    <div class="row-head reveal">
+      <h2 class="section-title left">Latest news.</h2>
+      <a class="link-arrow" href="{{ '/news/' | relative_url }}">All news</a>
+    </div>
+    <div class="news-cards">
+      {%- for n in site.data.news limit: 3 -%}
+      {%- capture href -%}{% if n.link contains '://' %}{{ n.link }}{% elsif n.link %}{{ n.link | relative_url }}{% endif %}{%- endcapture -%}
+      <a class="news-card reveal" href="{{ href }}">
+        <span class="news-meta">{{ n.tag }} · {% if n.when %}{{ n.when }}{% else %}{{ n.date | date: "%b %Y" }}{% endif %}</span>
+        <h3>{{ n.title }}</h3>
+        <p>{{ n.text }}</p>
+      </a>
+      {%- endfor -%}
+    </div>
+  </div>
+</section>
+
+<section class="cta">
+  <div class="wrap center">
+    <h2 class="cta-title reveal">Your name here, <br>and N. A. Hall.</h2>
+    <p class="cta-sub reveal">We are recruiting PhD students for Fall 2027. Apply to UT ECE by December 1, 2026 and name Prof. Hall in your statement of purpose.</p>
+    <div class="hero-actions reveal">
+      <a class="btn btn-white" href="{{ '/join/' | relative_url }}">How to apply</a>
+      <a class="link-arrow on-orange" href="mailto:{{ site.pi_email }}">Email Prof. Hall</a>
+    </div>
+  </div>
+</section>

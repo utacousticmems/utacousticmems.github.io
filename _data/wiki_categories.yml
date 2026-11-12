@@ -1,0 +1,9 @@
+# Order of sections in the wiki sidebar and on /wiki/.
+- name: Getting started
+  blurb: For new members and anyone editing this site.
+- name: Cleanroom processes
+  blurb: Recipes and tool notes from the MRC cleanroom, written by the people who ran them.
+- name: Design
+  blurb: Mask layout and design-to-fab handoff.
+- name: Measurement
+  blurb: Test setups in the EER lab.

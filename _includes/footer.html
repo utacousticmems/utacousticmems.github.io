@@ -1,0 +1,35 @@
+<footer class="site-footer">
+  <div class="wrap footer-grid">
+    <div class="footer-brand">
+      <img src="{{ '/assets/img/ut-logo-white.png' | relative_url }}" alt="The University of Texas at Austin" width="180" height="51">
+      <p><strong>Hall Group</strong><br>
+      Chandra Family Department of Electrical and Computer Engineering<br>
+      Cockrell School of Engineering<br>
+      The University of Texas at Austin</p>
+    </div>
+    <div>
+      <h4>Explore</h4>
+      <a href="{{ '/research/' | relative_url }}">Research</a>
+      <a href="{{ '/people/' | relative_url }}">People</a>
+      <a href="{{ '/publications/' | relative_url }}">Publications</a>
+      <a href="{{ '/news/' | relative_url }}">News</a>
+    </div>
+    <div>
+      <h4>Students</h4>
+      <a href="{{ '/join/' | relative_url }}">Prospective students</a>
+      <a href="{{ '/wiki/new-member-guide/' | relative_url }}">New member guide</a>
+      <a href="{{ '/wiki/' | relative_url }}">Group wiki</a>
+    </div>
+    <div>
+      <h4>Contact</h4>
+      <span>Prof. Neal A. Hall</span>
+      <a href="mailto:{{ site.pi_email }}">{{ site.pi_email }}</a>
+      <span>EER 4.802 · 512-471-2349</span>
+      <a href="{{ '/visit/' | relative_url }}">Directions &amp; facilities</a>
+    </div>
+  </div>
+  <div class="wrap footer-base">
+    <span>© {{ site.time | date: "%Y" }} The University of Texas at Austin · Hall Group</span>
+    <span>Updated {{ site.time | date: "%B %Y" }}{% if site.repo_url != "" %} · <a href="{{ site.repo_url }}">Edit on GitHub</a>{% endif %}</span>
+  </div>
+</footer>

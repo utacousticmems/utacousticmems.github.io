@@ -1,0 +1,50 @@
+# ---------------------------------------------------------------
+# Hall Group website (UT Austin, Acoustic & Photonic MEMS)
+# Most day-to-day edits happen in _data/*.yml and _wiki/*.md.
+# See README.md for the editing guide.
+# ---------------------------------------------------------------
+title: Hall Group
+tagline: MEMS and photonic sensors at UT Austin
+description: >-
+  The Hall Group at The University of Texas at Austin builds MEMS and photonic
+  sensors (microphones, accelerometers, ultrasonic transducers and hydrophones)
+  from design and fabrication through packaging and system-level testing.
+author: Neal A. Hall
+
+# If the repo is named <org>.github.io, leave baseurl empty.
+# If it is a project repo (e.g. github.com/<org>/hall-group), set baseurl: /hall-group
+url: ""
+baseurl: ""
+
+pi_email: nahall@utexas.edu
+scholar_url: "https://scholar.google.com/scholar?q=%22Neal+A.+Hall%22+MEMS"
+old_site: "https://sites.google.com/site/utacousticmems/home"
+# Set this after creating the GitHub repo, e.g. https://github.com/utacousticmems/utacousticmems.github.io
+repo_url: "https://github.com/utacousticmems/utacousticmems.github.io"
+
+collections:
+  wiki:
+    output: true
+    permalink: /wiki/:name/
+
+defaults:
+  - scope: { path: "", type: wiki }
+    values: { layout: wiki }
+  - scope: { path: "" }
+    values: { layout: page }
+
+plugins:
+  - jekyll-seo-tag
+
+markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
+
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+  - .github
+  - _templates

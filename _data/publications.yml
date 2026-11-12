@@ -1,0 +1,278 @@
+# Publications. Add new entries at the top of the right year.
+# type: journal | conference | abstract | preprint | patent
+# doi: just the DOI (10.xxxx/...), or use url: for anything else.
+# cover: "Cover article, Month Year" shows the cover badge; award: "..." shows an award badge.
+# highlight: true puts the paper in "Selected recent papers" on the Research page.
+
+# ---------------- 2026 ----------------
+- year: 2026
+  type: preprint
+  authors: Z. Liu, X. Gao, Y.-C. Wang, X. Niu, E. Vatankhah, M. Kang, S. Madan, Y. Meng, R. Lu, A. Alù, D. Burghoff, N. A. Hall
+  title: "Mechanical frequency combs via three-wave-mixing parametric excitation: a scalable inertial-sensing modality"
+  venue: Research Square (preprint)
+  doi: 10.21203/rs.3.rs-10820398/v1
+- year: 2026
+  type: preprint
+  authors: X. Niu, Y. Meng, Z. Liu, E. Vatankhah, N. A. Hall
+  title: Modeling and design of a diaphragm-integrated photonic waveguide microphone
+  venue: arXiv
+  url: https://arxiv.org/abs/2610.17745
+- year: 2026
+  type: preprint
+  authors: X. Niu, Y. Meng, Z. Liu, E. Vatankhah, N. A. Hall
+  title: Performance analysis and design of an optomechanical microphone using an integrated photonic waveguide interferometer
+  venue: arXiv
+  url: https://arxiv.org/abs/2609.24073
+- year: 2026
+  type: preprint
+  authors: T.-H. Hsu, Z. Liu, H. Gupta, Z. Yao, W. Wang, V. Chulukhadze, J. Kramer, N. A. Hall, R. Lu
+  title: "High-velocity whip-mode microresonator in LTOI unimorph: measurement methodology and large-signal characterization"
+  venue: arXiv
+  url: https://arxiv.org/abs/2609.19468
+- year: 2026
+  type: preprint
+  authors: X. Niu, Z. Liu, E. Vatankhah, Y. Meng, N. A. Hall
+  title: "MEMS microphones as ultrasonic transducers: nonlinear electrostatic actuation and a parametric array prototype"
+  venue: arXiv
+  url: https://arxiv.org/abs/2608.02203
+- year: 2026
+  type: journal
+  authors: Z. Liu, V. Chulukhadze, Y.-C. Wang, Z. Yao, L. Matto, T.-H. Hsu, N. Ravi, X. Niu, M. E. Liao, M. S. Goorsky, R. Lu, N. A. Hall
+  title: High-temperature characterization of bimorph X-cut lithium niobate piezoelectric micromachined ultrasonic transducers up to 1000 °C
+  venue: APL Electronic Devices
+  details: 2, 046102
+  doi: 10.1063/5.0347229
+  highlight: true
+- year: 2026
+  type: journal
+  authors: Z. Liu, Y.-C. Wang, M. Thurston, S. Chowdhury, R. Lu, N. A. Hall
+  title: 800 °C open-air electrical characterization of III-N HEMTs using rapid dual-frequency extraction
+  venue: APL Electronic Devices
+  details: 2, 036112
+  doi: 10.1063/5.0333760
+- year: 2026
+  type: journal
+  authors: Y. Meng, Q. Hu, E. Vatankhah, Z. Liu, W. Wang, N. A. Hall
+  title: An integrated monolithic photonic accelerometer with on-chip fringe-counting
+  venue: Microsystems & Nanoengineering
+  details: 12, 273
+  doi: 10.1038/s41378-026-01410-1
+  cover: Cover article, August 2026
+  highlight: true
+- year: 2026
+  type: journal
+  authors: E. Vatankhah, Y. Meng, Z. Liu, X. Niu, N. A. Hall
+  title: Design and characterization of a magnetostrictive hydrophone for low-frequency, low-noise underwater acoustic sensing
+  venue: The Journal of the Acoustical Society of America
+  details: 159(4), 3259
+  doi: 10.1121/10.0043465
+  cover: Cover article, April 2026
+  highlight: true
+- year: 2026
+  type: journal
+  authors: Z. Liu, X. Niu, E. Vatankhah, Y. Meng, S. Kim, R. Lu, A. Alù, N. A. Hall
+  title: High-velocity laser Doppler vibrometry measurements on an aluminum nitride bimorph wedge resonator
+  venue: Communications Engineering
+  details: 5, 48
+  doi: 10.1038/s44172-026-00595-7
+  highlight: true
+- year: 2026
+  type: journal
+  authors: V. Chulukhadze, Z. Liu, L. Matto, Z. Yao, M. Liao, T.-H. Hsu, M. S. Goorsky, N. A. Hall, R. Lu
+  title: Thickness-field excited bimorph lithium niobate piezoelectric transducer
+  venue: Journal of Microelectromechanical Systems
+  details: 35(5), 762
+- year: 2026
+  type: journal
+  authors: V. Chulukhadze, Z. Liu, Z. Yao, L. Matto, T.-H. Hsu, N. Ravi, X. Niu, M. E. Liao, M. S. Goorsky, N. A. Hall, R. Lu
+  title: Bimorph lithium niobate piezoelectric micromachined ultrasonic transducers
+  venue: IEEE Transactions on Ultrasonics
+  details: 73(5), 574
+  doi: 10.1109/TUSON.2026.3680394
+- year: 2026
+  type: abstract
+  authors: W. Leskowitz, E. Vatankhah, Y. Meng, Z. Liu, Y.-C. Wang, Z. Yan, N. A. Hall
+  title: Automated discovery of electrode layouts for piezoelectric microphone optimization
+  venue: The Journal of the Acoustical Society of America
+  details: 159, A176
+  doi: 10.1121/10.0045462
+- year: 2026
+  type: abstract
+  authors: W. Wang, Z. Liu, Y.-C. Wang, N. A. Hall
+  title: Observation of rotational Doppler effect on a MEMS diaphragm in a deep subwavelength regime
+  venue: The Journal of the Acoustical Society of America
+  details: 159, A170
+  doi: 10.1121/10.0045442
+- year: 2026
+  type: patent
+  authors: N. A. Hall, Z. Liu, E. Vatankhah, Y. Meng, X. Niu
+  title: Transducer probe for direct ultrasonic neuromodulation and measurement
+  venue: U.S. Patent Application Publication US 2026/0061226 A1
+  url: https://patents.google.com/patent/US20260061226A1
+
+# ---------------- 2025 ----------------
+- year: 2025
+  type: journal
+  authors: X. Niu, Z. Liu, Y. Meng, E. Vatankhah, D. Kim, M. Kuntzman, W. Leskowitz, N. A. Hall
+  title: Fly-inspired directional MEMS microphone with omnidirectionality and two in-plane orthogonal directivities
+  venue: IEEE Sensors Journal
+  details: 25(24), 44535–44546
+  doi: 10.1109/JSEN.2025.3621550
+  highlight: true
+- year: 2025
+  type: journal
+  authors: X. Niu, V. Chulukhadze, Z. Liu, E. Vatankhah, Y. Wang, Y. Meng, L. Matto, M. S. Goorsky, R. Lu, N. A. Hall
+  title: Lithium niobate microphone with high SNR potential
+  venue: IEEE Sensors Journal
+  details: 25(10), 18115
+- year: 2025
+  type: journal
+  authors: X. Niu, C. A. Stalder, Z. Liu, Y. Meng, E. Vatankhah, N. A. Hall
+  title: Characterization and modeling of an AlN piezoelectric fly-inspired in-plane directional MEMS microphone packaged with an integrated circuit amplifier
+  venue: IEEE Sensors Journal
+  details: 25(13), 25459
+- year: 2025
+  type: journal
+  authors: Y. Meng, E. Vatankhah, X. Niu, Z. Liu, N. A. Hall
+  title: A novel cantilever-based silicon photonic accelerometer using Mach–Zehnder interferometer targeting 10-ng/√Hz noise floor
+  venue: IEEE Sensors Journal
+  details: 25(7), 10942–10948
+- year: 2025
+  type: journal
+  authors: Y. Meng, X. Niu, E. Vatankhah, Z. Liu, N. A. Hall
+  title: A novel opto-mechanical accelerometer in low-loss silicon nitride photonics platform with high dynamic range achieved via heterodyne detection
+  venue: IEEE Sensors Journal
+  details: 25(15), 28290
+- year: 2025
+  type: conference
+  authors: Z. Yao, V. Chulukhadze, Z. Liu, X. Niu, T.-H. Hsu, B. Kim, N. A. Hall, R. Lu
+  title: Bimorph lithium niobate piezoelectric micromachined ultrasonic transducer
+  venue: IEEE International Ultrasonics Symposium (IUS)
+  doi: 10.1109/IUS62464.2025.11201555
+- year: 2025
+  type: conference
+  authors: V. Chulukhadze, Z. Yao, N. Ahmed, Z. Liu, X. Niu, T.-H. Hsu, N. A. Hall, R. Lu
+  title: Planar single-layer lithium niobate piezoelectric transducer with no passive layer
+  venue: Transducers 2025 (23rd Int. Conf. on Solid-State Sensors, Actuators and Microsystems)
+  doi: 10.1109/TRANSDUCERS61432.2025.11109260
+- year: 2025
+  type: conference
+  authors: Z. Liu, X. Niu, E. Vatankhah, Y. Meng, R. Lu, N. A. Hall
+  title: Characterization of an immersion lithium niobate piezoelectric micromachined ultrasound transducer using laser Doppler vibrometry and hydrophone measurements
+  venue: Proceedings of Meetings on Acoustics
+  details: 56, 030002
+- year: 2025
+  type: conference
+  authors: E. Vatankhah, Y. Meng, X. Niu, Z. Liu, N. A. Hall
+  title: Dynamic characterization of a magnetostrictive-based accelerometer using Terfenol-D
+  venue: Proceedings of Meetings on Acoustics
+  details: 56, 065002
+- year: 2025
+  type: abstract
+  authors: Y. Meng, E. Vatankhah, Z. Liu, X. Niu, N. A. Hall
+  title: Novel optomechanical microphones using integrated photonics waveguide
+  venue: The Journal of the Acoustical Society of America
+  details: 158(4 Suppl.), A66
+- year: 2025
+  type: abstract
+  authors: E. Vatankhah, Y. Meng, X. Niu, Z. Liu, N. A. Hall
+  title: "Magnetostrictive-based jerk sensor: experimental characterization and analytical estimation of sensitivity"
+  venue: The Journal of the Acoustical Society of America
+  details: 157(4 Suppl.), A73
+- year: 2025
+  type: abstract
+  authors: X. Niu, D. Kim, Z. Liu, Y. Meng, E. Vatankhah, N. A. Hall
+  title: A fly-inspired multi directional MEMS microphone
+  venue: The Journal of the Acoustical Society of America
+  details: 157(4 Suppl.), A193
+- year: 2025
+  type: abstract
+  authors: Y. Meng, X. Niu, E. Vatankhah, Z. Liu, N. A. Hall
+  title: A cantilever beam-based optomechanical inertial sensor in silicon nitride photonics platform
+  venue: The Journal of the Acoustical Society of America
+  details: 157(4 Suppl.), A148
+- year: 2025
+  type: abstract
+  authors: X. Niu, V. Chulukhadze, Z. Liu, E. Vatankhah, Y. Wang, Y. Meng, L. Matto, M. S. Goorsky, R. Lu, N. A. Hall
+  title: Lithium niobate microphone with high SNR potential
+  venue: The Journal of the Acoustical Society of America
+  details: 157, A147
+  doi: 10.1121/10.0037705
+
+# ---------------- 2023 ----------------
+- year: 2023
+  type: conference
+  authors: Z. Liu, X. Niu, Y. Meng, E. Vatankhah, D. Kim, N. A. Hall
+  title: Measurement of airborne ultrasound using laser Doppler vibrometry
+  venue: Society for Experimental Mechanics Annual Conference (Computer Vision & Laser Vibrometry, Vol. 6)
+  details: 121–126
+  award: IMAC XLI Best Paper Award, 2nd place
+- year: 2023
+  type: conference
+  authors: E. Vatankhah, C. Hodges, X. Niu, Z. Liu, Y. Meng, A. S. Belyakov, N. A. Hall
+  title: Magnetoelastic vibration sensors
+  venue: Society for Experimental Mechanics Annual Conference
+  details: 25–29
+- year: 2023
+  type: conference
+  authors: Y. Meng, X. Niu, R. P. Williams, E. Vatankhah, Z. Liu, N. A. Hall
+  title: State-space modeling of nonlinear electrostatic transducers and experimental characterization using LDV
+  venue: Society for Experimental Mechanics Annual Conference
+  details: 259–264
+- year: 2023
+  type: abstract
+  authors: E. Vatankhah, Y. Meng, Z. Liu, X. Niu, N. A. Hall
+  title: Characterization of high intensity progressive ultrasound beams in air at 300 kHz
+  venue: The Journal of the Acoustical Society of America
+  details: 153(5), 2878
+
+# ---------------- 2022 ----------------
+- year: 2022
+  type: journal
+  authors: X. Niu, Z. Liu, Y. Meng, C. M. Hodges, R. P. Williams, N. A. Hall
+  title: An air-coupled electrostatic ultrasound transducer using a MEMS microphone architecture
+  venue: Journal of Microelectromechanical Systems
+  details: 31(5), 813–819
+- year: 2022
+  type: abstract
+  authors: X. Niu, Y. Meng, Z. Liu, E. Vatankhah, N. A. Hall
+  title: MEMS microphones as ultrasonic transducers
+  venue: The Journal of the Acoustical Society of America
+  details: 152(4 Suppl.), A50–A51
+- year: 2022
+  type: abstract
+  authors: Y. Meng, E. Vatankhah, Z. Liu, X. Niu, R. P. Williams, N. A. Hall
+  title: Experimental characterization of high intensity progressive ultrasound beams in air
+  venue: The Journal of the Acoustical Society of America
+  details: 152(4 Suppl.), A51
+
+# ---------------- 2011–2020 (from the previous site) ----------------
+- { year: 2020, type: journal, authors: "Y. Seo, D. Kim, N. A. Hall", title: "On-diaphragm thermistor for high-temperature dynamic pressure sensors", venue: "IEEE Sensors Journal" }
+- { year: 2019, type: journal, authors: "Y. Seo, D. Kim, N. A. Hall", title: "Piezoelectric pressure sensors for hypersonic flow measurements", venue: "Journal of Microelectromechanical Systems", details: "28(2), 271–278" }
+- { year: 2019, type: journal, authors: "D. Kim, N. A. Hall", title: "A shear-stress sensor for hypersonic flow measurements", venue: "Journal of Microelectromechanical Systems" }
+- { year: 2019, type: journal, authors: "R. P. Williams, N. A. Hall", title: "A Thévenin-inspired approach to multiple scattering in acoustics", venue: "Journal of Vibration and Acoustics", details: "141(1)" }
+- { year: 2019, type: conference, authors: "Y. Seo, D. Kim, N. A. Hall", title: "High-temperature piezoelectric pressure sensors for hypersonic flow measurements", venue: "Transducers / Eurosensors XXXIII, Berlin", doi: "10.1109/TRANSDUCERS.2019.8808755", award: "Outstanding Paper Award, poster category" }
+- { year: 2019, type: conference, authors: "R. P. Williams, B. Avenson, N. A. Hall", title: "Grating-based acceleration sensors with optical interferometric readout and closed-loop control", venue: "Transducers / Eurosensors XXXIII, Berlin", doi: "10.1109/TRANSDUCERS.2019.8808749" }
+- { year: 2018, type: journal, authors: "R. P. Williams, D. Kim, K. L. Gleason, N. A. Hall", title: "Towards acoustic particle velocity sensors in air using entrained balloons: measurements and modeling", venue: "The Journal of the Acoustical Society of America" }
+- { year: 2017, type: journal, authors: "R. Williams, S. K. Hord, N. A. Hall", title: "Optically-read displacement detection using phase-modulated diffraction gratings with reduced zeroth-order reflections", venue: "Applied Physics Letters" }
+- { year: 2017, type: journal, authors: "Y. Seo, D. Corona, N. A. Hall", title: "On the theoretical maximum achievable signal-to-noise ratio (SNR) of piezoelectric microphones", venue: "Sensors and Actuators A: Physical", doi: "10.1016/j.sna.2017.04.001" }
+- { year: 2017, type: journal, authors: "R. P. Williams, D. Kim, D. P. Gawalt, N. A. Hall", title: "Surface micromachined differential piezoelectric shear-stress sensors", venue: "Journal of Micromechanics and Microengineering", details: "27(1), 015011" }
+- { year: 2016, type: journal, authors: "R. Williams, N. A. Hall", title: "Thévenin acoustics", venue: "The Journal of the Acoustical Society of America" }
+- { year: 2015, type: journal, authors: "M. L. Kuntzman, D. Kim, N. A. Hall", title: "Microfabrication and experimental evaluation of a rotational capacitive micromachined ultrasonic transducer", venue: "Journal of Microelectromechanical Systems" }
+- { year: 2015, type: journal, authors: "M. L. Kuntzman, N. N. Hewa-Kasakarage, A. Rocha, D. Kim, N. A. Hall", title: "Micromachined in-plane pressure-gradient piezoelectric microphones", venue: "IEEE Sensors Journal" }
+- { year: 2014, type: journal, authors: "D. Kim, M. L. Kuntzman, N. A. Hall", title: "A transmission line model of back-cavity dynamics for in-plane pressure-gradient microphones", venue: "The Journal of the Acoustical Society of America" }
+- { year: 2014, type: journal, authors: "D. Kim, N. N. Hewa-Kasakarage, N. A. Hall", title: "A theoretical and experimental comparison of 3-3 and 3-1 mode piezoelectric microelectromechanical systems (MEMS)", venue: "Sensors and Actuators A: Physical" }
+- { year: 2014, type: journal, authors: "D. Kim, M. L. Kuntzman, N. A. Hall", title: "A rotational capacitive micromachined ultrasonic transducer (RCMUT) with an internally sealed pivot", venue: "IEEE Transactions on Ultrasonics, Ferroelectrics, and Frequency Control" }
+- { year: 2014, type: journal, authors: "M. L. Kuntzman, N. A. Hall", title: "Sound source localization inspired by the ears of the Ormia ochracea", venue: "Applied Physics Letters" }
+- { year: 2014, type: journal, authors: "M. L. Kuntzman, N. A. Hall", title: "A broadband, capacitive, surface-micromachined, omnidirectional microphone with more than 200 kHz bandwidth", venue: "The Journal of the Acoustical Society of America" }
+- { year: 2014, type: journal, authors: "D. Kim, N. A. Hall", title: "Towards a sub 15-dBA optical micromachined microphone", venue: "The Journal of the Acoustical Society of America" }
+- { year: 2014, type: journal, authors: "D. Kim, C. T. Garcia, B. Avenson, N. A. Hall", title: "Design and experimental evaluation of a low-noise backplate for a grating-based optical interferometric sensor", venue: "Journal of Microelectromechanical Systems" }
+- { year: 2014, type: journal, authors: "M. L. Kuntzman, N. A. Hall", title: "Rotational capacitive micromachined ultrasonic transducers (cMUTs)", venue: "Journal of Microelectromechanical Systems" }
+- { year: 2013, type: journal, authors: "N. N. Hewa-Kasakarage, D. Kim, M. L. Kuntzman, N. A. Hall", title: "Micromachined piezoelectric accelerometers via epitaxial silicon cantilevers and bulk silicon proof masses", venue: "Journal of Microelectromechanical Systems" }
+- { year: 2013, type: journal, authors: "M. L. Kuntzman, D. Kim, N. N. Hewa-Kasakarage, K. D. Kirk, N. A. Hall", title: "Network modeling of multiple-port, multiple-vibration-mode transducers and resonators", venue: "Sensors and Actuators A: Physical" }
+- { year: 2013, type: journal, authors: "D. Kim, N. N. Hewa-Kasakarage, M. L. Kuntzman, K. D. Kirk, S. H. Yoon, N. A. Hall", title: "Piezoelectric micromachined microphones with out-of-plane directivity", venue: "Applied Physics Letters" }
+- { year: 2013, type: journal, authors: "D. Kim, N. N. Hewa-Kasakarage, S. H. Yoon, K. D. Kirk, M. Kuntzman, N. A. Hall", title: "Electrical admittance spectroscopy for piezoelectric MEMS", venue: "Journal of Microelectromechanical Systems" }
+- { year: 2013, type: journal, authors: "M. L. Kuntzman, J. G. Lee, N. N. Hewa-Kasakarage, D. Kim, N. A. Hall", title: "Micromachined piezoelectric microphones with in-plane directivity", venue: "Applied Physics Letters" }
+- { year: 2012, type: journal, authors: "J. W. Suk, K. Kirk, Y. Hao, N. A. Hall, R. S. Ruoff", title: "Thermoacoustic sound generation from monolayer graphene for transparent and flexible sound sources", venue: "Advanced Materials" }
+- { year: 2012, type: journal, authors: "D. Kim, N. N. Hewa-Kasakarage, S. Yoon, N. A. Hall", title: "On the minimum coupling required for maximum theoretical power capture from vibration energy harvesters", venue: "Applied Physics Letters" }
+- { year: 2011, type: journal, authors: "M. L. Kuntzman, C. T. Garcia, A. G. Onaran, B. Avenson, K. D. Kirk, N. A. Hall", title: "Performance and modeling of a fully packaged micromachined optical microphone", venue: "Journal of Microelectromechanical Systems" }

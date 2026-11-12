@@ -1,0 +1,89 @@
+# People shown on /people/.
+# To add a photo: put a square JPG in assets/people/ and set photo: <filename>.
+# Move someone to alumni when they graduate and fill in "now" (where they went).
+
+pi:
+  name: Neal A. Hall
+  title: Associate Professor, Temple Foundation Endowed Faculty Fellowship No. 5
+  dept: Chandra Family Department of Electrical and Computer Engineering · Microelectronics Research Center
+  email: nahall@utexas.edu
+  office: EER 4.802
+  phone: 512-471-2349
+  photo: ""
+  bio: >-
+    Neal Hall received his B.S. in mechanical engineering from UT Austin (1999) and his M.S. (2002)
+    and Ph.D. (2004) in mechanical engineering from the Georgia Institute of Technology. From 2004 to
+    2006 he was an Intelligence Community Postdoctoral Fellow at Sandia National Laboratories. He joined
+    the UT Austin ECE faculty in January 2009, and founded Silicon Audio, Inc., an Austin company that
+    designs, manufactures and sells precision seismic and acoustic sensors. His research spans silicon
+    micromachining and MEMS, acoustics and dynamics, optics and photonics, and advanced transducer
+    development, with support from NIH, NSF, DOE, NASA and DARPA.
+  honors:
+    - DARPA Young Faculty Award (2012)
+    - ONR Young Investigator Award (2014)
+    - UT System Regents' Outstanding Teaching Award (2014)
+    - Gordon T. Lepley IV Endowed Memorial Teaching Award (2016)
+
+postdocs:
+  - name: Wei Wang
+    focus: Photonic and acoustic MEMS
+    photo: ""
+
+phd:
+  - name: Zihuan Liu
+    focus: Piezoelectric transducers (LiNbO₃, AlN) for extreme temperatures; mechanical frequency combs
+    since: 2021
+    photo: ""
+    link: "https://scholar.google.com/citations?user=Tz_bpBUAAAAJ"
+  - name: Ehsan Vatankhah
+    focus: Magnetostrictive sensors, hydrophones and underwater acoustics
+    photo: ""
+  - name: Yuqi Meng
+    focus: Photonic integrated accelerometers and optomechanical sensors
+    photo: ""
+  - name: Will Leskowitz
+    focus: Piezoelectric MEMS microphones, electrode layout optimization
+    photo: ""
+  - name: Yen-Chen (Jasper) Wang
+    focus: High-temperature transducers and MEMS characterization
+    photo: ""
+  - name: Qiyun Hu
+    focus: Photonic inertial sensors
+    photo: ""
+  - name: Zhichen (Charlie) Yan
+    focus: Piezoelectric MEMS microphones
+    photo: ""
+
+undergrads:
+  - name: Shivansh Madan
+    focus: Photonics and inertial sensors
+    photo: ""
+
+# Alumni. "now" = current position if known. Leave blank rather than guess.
+alumni:
+  - { name: "Xiaoyu Niu", degree: "Ph.D.", year: "", now: "" }
+  - { name: "Yoonho Seo", degree: "Ph.D.", year: "", now: "" }
+  - { name: "Randall P. Williams", degree: "Ph.D.", year: "", now: "" }
+  - { name: "Donghwan Kim", degree: "Ph.D.", year: "", now: "Silicon Audio, Inc." }
+  - { name: "Michael L. Kuntzman", degree: "Ph.D.", year: "", now: "Knowles Corporation" }
+  - { name: "Carly A. Stalder", degree: "M.S.", year: "", now: "" }
+  - { name: "Samuel K. Hord", degree: "M.S.", year: "", now: "" }
+  - { name: "Jingqiang Zha", degree: "M.S.", year: "", now: "" }
+  - { name: "Colton D. Snell", degree: "M.S.", year: "", now: "Sandia National Laboratories" }
+  - { name: "Karen D. Kirk", degree: "M.S.", year: "", now: "TriQuint Semiconductor" }
+  - { name: "Nishshanka N. Hewa-Kasakarage", degree: "M.S.", year: "", now: "" }
+  - { name: "Daniel W. Corona", degree: "B.S.", year: "", now: "" }
+  - { name: "David P. Gawalt", degree: "B.S.", year: "", now: "" }
+  - { name: "Blake Levy", degree: "B.S.E.E.", year: "", now: "" }
+  - { name: "Sang H. Yoon", degree: "Postdoc", year: "", now: "" }
+  - { name: "Moinuddin Ahmed", degree: "Postdoc", year: "", now: "" }
+  - { name: "Emma Stearman", degree: "Undergraduate researcher", year: "2015–2016", now: "" }
+  - { name: "Xintong Huang", degree: "Undergraduate researcher", year: "2016", now: "" }
+  - { name: "Marilyn Mathew", degree: "NNIN REU intern", year: "2015", now: "" }
+  - { name: "Grace Noel", degree: "NNCI REU intern", year: "2016", now: "" }
+
+# Shown on the home page and Join page. Source: Fall 2027 recruiting flyer.
+placement:
+  - { count: 6, where: "Apple", note: "Audio, MEMS and inertial measurement teams" }
+  - { count: 1, where: "Texas Instruments", note: "" }
+  - { count: 2, where: "Startups", note: "founded by graduates" }

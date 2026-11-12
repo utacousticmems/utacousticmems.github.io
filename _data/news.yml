@@ -1,0 +1,59 @@
+# Newest first. date: YYYY-MM-DD is used for sorting and display.
+# If the exact month is unknown, add when: "2026" (text shown instead of the date).
+# Optional: link, image (file in assets/img/).
+
+- date: 2026-11-01
+  title: Recruiting PhD students for Fall 2027
+  text: Apply to the UT ECE PhD program by December 1, 2026 and name Prof. Hall in your statement of purpose.
+  link: /join/
+  tag: Recruiting
+
+- date: 2026-10-06
+  title: A lithium niobate ultrasonic transducer measured up to 1000 °C
+  text: Liu et al. characterize bimorph X-cut LiNbO₃ PMUTs from room temperature to 1000 °C in APL Electronic Devices.
+  link: https://doi.org/10.1063/5.0347229
+  image: high-temp-pmut.jpg
+  tag: Paper
+
+- date: 2026-08-13
+  title: 800 °C open-air characterization of III-N HEMTs
+  text: Rapid dual-frequency extraction lets the team measure GaN transistors in open air at 800 °C (APL Electronic Devices).
+  link: https://doi.org/10.1063/5.0333760
+  tag: Paper
+
+- date: 2026-08-01
+  title: Cover of Microsystems & Nanoengineering
+  text: Meng et al. report the first photonic-chip accelerometer with on-chip fringe counting, featured on the August 2026 cover.
+  link: https://doi.org/10.1038/s41378-026-01410-1
+  image: cover-micronano-2026.jpg
+  tag: Cover
+
+- date: 2026-08-01
+  when: "Fall 2026"
+  title: Two talks at the fall 2026 ASA meeting
+  text: Automated electrode-layout discovery for piezoelectric microphones (Leskowitz et al.) and the rotational Doppler effect on a MEMS diaphragm (Wang et al.).
+  link: /publications/
+  tag: Talks
+
+- date: 2026-04-01
+  title: Cover of The Journal of the Acoustical Society of America
+  text: Vatankhah et al. present the first hydrophone built on a giant magnetostrictive material, featured on the April 2026 JASA cover.
+  link: https://doi.org/10.1121/10.0043465
+  image: cover-jasa-2026.jpg
+  tag: Cover
+
+- date: 2026-03-01
+  when: "2026"
+  title: A MEMS resonator driven ten times faster than conventional devices
+  text: Liu et al. use high-velocity laser Doppler vibrometry to measure an AlN bimorph wedge resonator at about 50 m/s (Communications Engineering).
+  link: https://doi.org/10.1038/s44172-026-00595-7
+  image: wedge-resonator.jpg
+  tag: Paper
+
+- date: 2023-02-01
+  when: "2023"
+  title: Best Paper Award at IMAC XLI
+  text: >-
+    “Measurement of airborne ultrasound using laser Doppler vibrometry” (Liu et al.) wins second place
+    for the Computer Vision and Laser Vibrometry technical division.
+  tag: Award

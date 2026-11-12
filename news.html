@@ -1,0 +1,17 @@
+---
+title: News
+permalink: /news/
+lede: Papers, covers, awards and announcements.
+---
+<ol class="news-full">
+  {%- for n in site.data.news -%}
+  <li>
+    <div class="news-when"><span class="news-date">{% if n.when %}{{ n.when }}{% else %}{{ n.date | date: "%B %Y" }}{% endif %}</span><span class="news-tag">{{ n.tag }}</span></div>
+    <div class="news-main">
+      <h3>{% if n.link %}<a href="{% if n.link contains '://' %}{{ n.link }}{% else %}{{ n.link | relative_url }}{% endif %}">{{ n.title }}</a>{% else %}{{ n.title }}{% endif %}</h3>
+      <p>{{ n.text }}</p>
+    </div>
+    {% if n.image %}<img class="news-thumb" src="{{ '/assets/img/' | append: n.image | relative_url }}" alt="" loading="lazy">{% endif %}
+  </li>
+  {%- endfor -%}
+</ol>

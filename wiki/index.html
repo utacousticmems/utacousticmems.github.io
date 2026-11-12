@@ -1,0 +1,31 @@
+---
+title: Group wiki
+permalink: /wiki/
+lede: A public record of the prototyping techniques Hall Group students have worked out, so the next person starts where the last one finished. Design, fabricate, package, test.
+---
+<div class="wiki-index">
+  {%- for cat in site.data.wiki_categories -%}
+  {%- assign pages = site.wiki | where: "category", cat.name | sort: "order" -%}
+  <section class="wiki-cat">
+    <h2>{{ cat.name }}</h2>
+    <p class="muted">{{ cat.blurb }}</p>
+    {%- if pages.size > 0 -%}
+    <ul class="wiki-list">
+      {%- for p in pages -%}
+      <li>
+        <a href="{{ p.url | relative_url }}">{{ p.title }}</a>
+        {% if p.summary %}<span>{{ p.summary }}</span>{% endif %}
+        <span class="wiki-li-meta">{% if p.authors %}{{ p.authors | join: ", " }}{% endif %}{% if p.updated %} · {{ p.updated }}{% endif %}</span>
+      </li>
+      {%- endfor -%}
+    </ul>
+    {%- else -%}
+    <p class="empty">No pages yet. LDV setup, hydrophone calibration and PIC fiber alignment are good first ones. Copy <code>_templates/wiki-page.md</code> to start.</p>
+    {%- endif -%}
+  </section>
+  {%- endfor -%}
+</div>
+<aside class="callout">
+  <h3>Public vs. internal</h3>
+  <p>This wiki is public. Recipes, tool notes and design rules belong here. Purchasing details, account numbers, vendor contacts, door codes and anything under an NDA or export control belong in the group's <strong>internal</strong> wiki, which is shared only with members.</p>
+</aside>

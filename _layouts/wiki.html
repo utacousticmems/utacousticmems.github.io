@@ -1,0 +1,36 @@
+---
+layout: default
+---
+{%- assign cats = site.data.wiki_categories -%}
+<section class="page-head wiki-head">
+  <div class="wrap">
+    <p class="kicker"><a href="{{ '/wiki/' | relative_url }}">Group wiki</a>{% if page.category %} / {{ page.category }}{% endif %}</p>
+    <h1>{{ page.title }}</h1>
+    {% if page.summary %}<p class="lede">{{ page.summary }}</p>{% endif %}
+    <p class="wiki-meta">
+      {% if page.authors %}By {{ page.authors | join: ", " }}{% endif %}
+      {% if page.updated %} · Last checked {{ page.updated }}{% endif %}
+      {% if page.status %} · <span class="badge badge-{{ page.status | slugify }}">{{ page.status }}</span>{% endif %}
+    </p>
+  </div>
+</section>
+<div class="wrap wiki-grid">
+  <aside class="wiki-side">
+    {%- for cat in cats -%}
+      {%- assign pages = site.wiki | where: "category", cat.name | sort: "order" -%}
+      {%- if pages.size > 0 -%}
+      <h4>{{ cat.name }}</h4>
+      <ul>
+        {%- for p in pages -%}
+        <li><a href="{{ p.url | relative_url }}"{% if p.url == page.url %} aria-current="page"{% endif %}>{{ p.title }}</a></li>
+        {%- endfor -%}
+      </ul>
+      {%- endif -%}
+    {%- endfor -%}
+  </aside>
+  <article class="prose wiki-article">
+    {{ content }}
+    <hr>
+    <p class="wiki-foot">Something wrong or out of date? Fix it: {% if site.repo_url != "" %}<a href="{{ site.repo_url }}/edit/main/{{ page.path }}">edit this page on GitHub</a>{% else %}edit <code>{{ page.path }}</code> on GitHub{% endif %}. See <a href="{{ '/wiki/editing-this-site/' | relative_url }}">Editing this site</a>.</p>
+  </article>
+</div>

@@ -1,0 +1,54 @@
+---
+title: Research
+permalink: /research/
+lede: We design, fabricate, package and test MEMS and photonic sensors. Most projects run the full cycle in-house, from a model on paper to a device in the cleanroom to a measurement on the bench.
+---
+<nav class="chips" aria-label="Research areas">
+  {%- for r in site.data.research -%}<a class="chip" href="#{{ r.id }}">{{ r.short }}</a>{%- endfor -%}
+</nav>
+
+{%- for r in site.data.research -%}
+<section class="area" id="{{ r.id }}">
+  <div class="area-img"><img src="{{ '/assets/img/' | append: r.image | relative_url }}" alt="{{ r.alt }}" loading="lazy"></div>
+  <div class="area-text">
+    <h2>{{ r.title }}</h2>
+    <p>{{ r.body }}</p>
+    <h4>Key papers</h4>
+    <ul class="mini-pubs">
+      {%- for t in r.papers -%}
+        {%- assign hit = site.data.publications | where: "title", t | first -%}
+        {%- if hit -%}
+        <li>
+          {%- if hit.doi -%}<a href="https://doi.org/{{ hit.doi }}">{{ hit.title }}</a>{%- elsif hit.url -%}<a href="{{ hit.url }}">{{ hit.title }}</a>{%- else -%}{{ hit.title }}{%- endif -%}
+          <span class="muted"> · {{ hit.venue }}, {{ hit.year }}{% if hit.cover %} · <span class="badge badge-cover">Cover</span>{% endif %}</span>
+        </li>
+        {%- endif -%}
+      {%- endfor -%}
+    </ul>
+  </div>
+</section>
+{%- endfor -%}
+
+<section class="area-lab">
+  <h2>The lab you would work in</h2>
+  <div class="lab-grid">
+    <figure><img src="{{ '/assets/img/ldv-setup.jpg' | relative_url }}" alt="Laser Doppler vibrometer measuring packaged devices" loading="lazy"><figcaption>Four laser Doppler vibrometers (LDVs)</figcaption></figure>
+    <figure><img src="{{ '/assets/img/waveguides.jpg' | relative_url }}" alt="Light guided through silicon nitride waveguides on a chip" loading="lazy"><figcaption>PIC characterization: fiber-coupled tunable lasers, photodetectors and a 6-axis precision fiber aligner</figcaption></figure>
+    <figure><img src="{{ '/assets/img/immersion-pmut.jpg' | relative_url }}" alt="A hydrophone positioned over an immersion transducer array" loading="lazy"><figcaption>3-axis scanning ultrasound tanks</figcaption></figure>
+    <figure><img src="{{ '/assets/img/comb-setup-render.jpg' | relative_url }}" alt="Rendering of a laser vibrometer measuring a device on a shaker" loading="lazy"><figcaption>A suite of electromechanical shakers for IMU testing</figcaption></figure>
+  </div>
+  <p class="muted">Devices are fabricated in the <a href="https://www.mrc.utexas.edu/">Microelectronics Research Center</a> cleanroom (over 12,000 sq ft of Class 100 and 1000 space, part of the NSF NNCI) and tested in our Acoustical MEMS Test Laboratory in EER. More on <a href="{{ '/visit/' | relative_url }}#facilities">facilities</a>.</p>
+</section>
+
+<section class="heritage">
+  <h2>Earlier work</h2>
+  <p class="muted">Projects that shaped the group and several of its alumni.</p>
+  <div class="heritage-grid">
+    <div><h3>Fly-inspired hearing</h3><p>Microphones modeled on the ears of <em>Ormia ochracea</em>. <a href="https://www.npr.org/sections/health-shots/2014/07/22/333755517/how-a-tiny-flys-ears-could-help-you-hear-better">NPR, 2014</a></p></div>
+    <div><h3>Optically read seismometers</h3><p>Grating-based optical sensors commercialized by Silicon Audio, tested on glaciers in Alaska and Greenland and competing for a mission to Europa. <a href="https://www.adn.com/alaska-news/science/2017/09/17/from-gulkana-to-europa-glacier-used-as-testing-ground-for-equipment-intended-for-outer-space/">Anchorage Daily News, 2017</a></p></div>
+    <div><h3>Infrasound</h3><p>Microphones for 0.01 to 20 Hz, the range of earthquakes, volcanoes and explosions, including nuclear test monitoring for treaty verification.</p></div>
+    <div><h3>Hypersonic flow sensing</h3><p>Piezoelectric pressure and shear-stress sensors tested in a Mach 6 facility.</p></div>
+    <div><h3>Elastic-wave telemetry</h3><p>Sending data through vibrations in steel well casing from deep underground storage sites, where radio does not reach.</p></div>
+    <div><h3>Capacitive ultrasound</h3><p>Rotational CMUTs and broadband capacitive microphones with more than 200 kHz bandwidth.</p></div>
+  </div>
+</section>
