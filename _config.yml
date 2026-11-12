@@ -40,7 +40,7 @@ plugins:
 # Search engines. After verifying the site in Google Search Console with the
 # "HTML tag" method, paste only the content="..." value here.
 webmaster_verifications:
-  google: ""
+  google: "uotiK7sV5HXx2OyBG46rdsNrNR3h4_WEALtrKHlQHII"
 
 social:
   name: Hall Group, UT Austin
