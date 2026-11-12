@@ -6,14 +6,14 @@
 title: Hall Group
 tagline: MEMS and photonic sensors at UT Austin
 description: >-
-  The Hall Group at The University of Texas at Austin builds MEMS and photonic
-  sensors (microphones, accelerometers, ultrasonic transducers and hydrophones)
-  from design and fabrication through packaging and system-level testing.
+  The Hall Group (Hall Lab, formerly UT Acoustic MEMS), led by Prof. Neal A. Hall
+  at The University of Texas at Austin, builds acoustic and photonic MEMS sensors:
+  microphones, accelerometers, ultrasonic transducers and hydrophones.
 author: Neal A. Hall
 
 # If the repo is named <org>.github.io, leave baseurl empty.
 # If it is a project repo (e.g. github.com/<org>/hall-group), set baseurl: /hall-group
-url: ""
+url: "https://utacousticmems.github.io"
 baseurl: ""
 
 pi_email: nahall@utexas.edu
@@ -35,6 +35,15 @@ defaults:
 
 plugins:
   - jekyll-seo-tag
+  - jekyll-sitemap
+
+# Search engines. After verifying the site in Google Search Console with the
+# "HTML tag" method, paste only the content="..." value here.
+webmaster_verifications:
+  google: ""
+
+social:
+  name: Hall Group, UT Austin
 
 markdown: kramdown
 kramdown:

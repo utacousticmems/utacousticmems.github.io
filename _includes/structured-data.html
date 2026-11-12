@@ -1,0 +1,26 @@
+{%- if page.url == "/" -%}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ResearchOrganization",
+  "name": "Hall Group",
+  "alternateName": ["Hall Lab", "Neal Hall Lab", "UT Acoustic MEMS", "Hall Research Group"],
+  "url": "{{ site.url }}/",
+  "description": "{{ site.description | strip | escape }}",
+  "parentOrganization": {
+    "@type": "CollegeOrUniversity",
+    "name": "The University of Texas at Austin",
+    "url": "https://www.utexas.edu/"
+  },
+  "founder": {
+    "@type": "Person",
+    "name": "Neal A. Hall",
+    "jobTitle": "Associate Professor of Electrical and Computer Engineering",
+    "affiliation": "The University of Texas at Austin",
+    "url": "{{ site.url }}/people/",
+    "sameAs": ["https://ece.utexas.edu/node/94"]
+  },
+  "sameAs": ["{{ site.old_site }}"]
+}
+</script>
+{%- endif -%}
