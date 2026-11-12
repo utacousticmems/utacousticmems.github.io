@@ -9,7 +9,7 @@ pi:
   email: nahall@utexas.edu
   office: EER 4.802
   phone: 512-471-2349
-  photo: ""
+  photo: "neal-hall.jpg"
   bio: >-
     Neal Hall received his B.S. in mechanical engineering from UT Austin (1999) and his M.S. (2002)
     and Ph.D. (2004) in mechanical engineering from the Georgia Institute of Technology. From 2004 to
@@ -27,32 +27,32 @@ pi:
 postdocs:
   - name: Wei Wang
     focus: Photonic and acoustic MEMS
-    photo: ""
+    photo: "wei-wang.jpg"
 
 phd:
   - name: Zihuan Liu
     focus: Piezoelectric transducers (LiNbO₃, AlN) for extreme temperatures; mechanical frequency combs
     since: 2021
-    photo: ""
+    photo: "zihuan-liu.jpg"
     link: "https://scholar.google.com/citations?user=Tz_bpBUAAAAJ"
   - name: Ehsan Vatankhah
     focus: Magnetostrictive sensors, hydrophones and underwater acoustics
-    photo: ""
+    photo: "ehsan-vatankhah.jpg"
   - name: Yuqi Meng
     focus: Photonic integrated accelerometers and optomechanical sensors
-    photo: ""
+    photo: "yuqi-meng.jpg"
   - name: Will Leskowitz
     focus: Piezoelectric MEMS microphones, electrode layout optimization
-    photo: ""
+    photo: "will-leskowitz.jpg"
   - name: Yen-Chen (Jasper) Wang
     focus: High-temperature transducers and MEMS characterization
-    photo: ""
+    photo: "yen-chen-wang.jpg"
   - name: Qiyun Hu
     focus: Photonic inertial sensors
-    photo: ""
+    photo: "qiyun-hu.jpg"
   - name: Zhichen (Charlie) Yan
     focus: Piezoelectric MEMS microphones
-    photo: ""
+    photo: "zhichen-yan.jpg"
 
 # Current undergraduate researchers (same fields as phd). Empty list hides the section.
 undergrads: []
