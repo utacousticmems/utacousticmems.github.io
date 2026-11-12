@@ -1,0 +1,12 @@
+{%- assign p = include.p -%}
+{%- if p.doi -%}{%- if p.doi contains "://" -%}{%- assign href = p.doi -%}{%- else -%}{%- assign href = "https://doi.org/" | append: p.doi -%}{%- endif -%}
+{%- elsif p.url -%}{%- assign href = p.url -%}
+{%- else -%}{%- assign q = p.title | url_encode -%}{%- assign href = "https://scholar.google.com/scholar?q=" | append: q -%}{%- endif -%}
+<li class="pub" data-type="{{ p.type }}">
+  <span class="pub-type t-{{ p.type }}">{{ p.type }}</span>
+  <div>
+    <div class="pub-title"><a href="{{ href }}" target="_blank" rel="noopener">{{ p.title }}</a></div>
+    <div class="pub-authors">{{ p.authors | replace: "N. A. Hall", "<b>N. A. Hall</b>" }}</div>
+    <div class="pub-venue"><em>{{ p.venue }}</em>{% if p.details %} {{ p.details }}{% endif %} ({{ p.year }}){% if p.cover %} <span class="badge badge-cover">{{ p.cover }}</span>{% endif %}{% if p.award %} <span class="badge badge-award">{{ p.award }}</span>{% endif %}</div>
+  </div>
+</li>

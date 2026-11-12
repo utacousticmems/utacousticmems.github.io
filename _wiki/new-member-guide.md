@@ -3,11 +3,11 @@ title: New member guide
 category: Getting started
 order: 1
 summary: What to learn before and during your first semester, with books and tools.
-authors: [Hall Group]
+authors: [UT Acoustic MEMS Group]
 updated: Nov 2026
 ---
 
-Your main job in the Hall Group is to create things: devices that combine MEMS dies, printed circuit boards and connectors, and the models and measurements that explain them. These are the skills you will use most. You do not need all of them on day one.
+Your main job in the group is to create things: devices that combine MEMS dies, printed circuit boards and connectors, and the models and measurements that explain them. These are the skills you will use most. You do not need all of them on day one.
 
 ## 1. 3-D CAD
 Get comfortable with SolidWorks, Autodesk Inventor or Alibre. Almost every device needs a fixture, a package or an enclosure.

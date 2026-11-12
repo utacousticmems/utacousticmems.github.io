@@ -45,6 +45,12 @@
     years.forEach(function (sec) {
       sec.hidden = !sec.querySelector('.pub:not([hidden])');
     });
+    var early = document.getElementById('pub-early');
+    if (early) {
+      var earlyHits = early.querySelector('.pub:not([hidden])');
+      early.hidden = !earlyHits;
+      if (q && earlyHits) early.open = true;
+    }
     empty.hidden = shown !== 0;
   }
   chips.forEach(function (c) {

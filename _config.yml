@@ -1,14 +1,14 @@
 # ---------------------------------------------------------------
-# Hall Group website (UT Austin, Acoustic & Photonic MEMS)
+# UT Acoustic MEMS Group (Hall Lab) website, UT Austin
 # Most day-to-day edits happen in _data/*.yml and _wiki/*.md.
 # See README.md for the editing guide.
 # ---------------------------------------------------------------
-title: Hall Group
+title: UT Acoustic MEMS Group
 tagline: MEMS and photonic sensors at UT Austin
 description: >-
-  The Hall Group (Hall Lab, formerly UT Acoustic MEMS), led by Prof. Neal A. Hall
-  at The University of Texas at Austin, builds acoustic and photonic MEMS sensors:
-  microphones, accelerometers, ultrasonic transducers and hydrophones.
+  The UT Acoustic MEMS Group (Hall Lab), led by Prof. Neal A. Hall at The University
+  of Texas at Austin, builds acoustic and photonic MEMS sensors: microphones,
+  accelerometers, ultrasonic transducers and hydrophones.
 author: Neal A. Hall
 
 # If the repo is named <org>.github.io, leave baseurl empty.
@@ -17,7 +17,7 @@ url: "https://utacousticmems.github.io"
 baseurl: ""
 
 pi_email: nahall@utexas.edu
-scholar_url: "https://scholar.google.com/scholar?q=%22Neal+A.+Hall%22+MEMS"
+scholar_url: "https://scholar.google.com/citations?user=MiPFR8YAAAAJ"
 old_site: "https://sites.google.com/site/utacousticmems/home"
 # Set this after creating the GitHub repo, e.g. https://github.com/utacousticmems/utacousticmems.github.io
 repo_url: "https://github.com/utacousticmems/utacousticmems.github.io"
@@ -43,7 +43,7 @@ webmaster_verifications:
   google: "uotiK7sV5HXx2OyBG46rdsNrNR3h4_WEALtrKHlQHII"
 
 social:
-  name: Hall Group, UT Austin
+  name: UT Acoustic MEMS Group (Hall Lab), UT Austin
 
 markdown: kramdown
 kramdown:

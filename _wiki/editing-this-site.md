@@ -3,7 +3,7 @@ title: Editing this site
 category: Getting started
 order: 2
 summary: How to add a paper, a person, a news item or a wiki page. No coding needed.
-authors: [Hall Group]
+authors: [UT Acoustic MEMS Group]
 updated: Nov 2026
 ---
 

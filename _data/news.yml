@@ -2,12 +2,6 @@
 # If the exact month is unknown, add when: "2026" (text shown instead of the date).
 # Optional: link, image (file in assets/img/).
 
-- date: 2026-11-01
-  title: Recruiting PhD students for Fall 2027
-  text: Apply to the UT ECE PhD program by December 1, 2026 and name Prof. Hall in your statement of purpose.
-  link: /join/
-  tag: Recruiting
-
 - date: 2026-10-06
   title: A lithium niobate ultrasonic transducer measured up to 1000 °C
   text: Liu et al. characterize bimorph X-cut LiNbO₃ PMUTs from room temperature to 1000 °C in APL Electronic Devices.

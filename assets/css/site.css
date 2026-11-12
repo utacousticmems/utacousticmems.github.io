@@ -425,3 +425,25 @@ code { font-family: var(--mono); font-size: .85em; background: var(--stone-bg); 
   .footer-grid { grid-template-columns: 1fr; gap: 28px; }
   .alumni th:nth-child(3), .alumni td:nth-child(3) { display: none; }
 }
+
+/* Filtering: the hidden attribute must win over display rules like .pub { display: grid } */
+[hidden] { display: none !important; }
+
+/* Prof. Hall's earlier (pre-UT) work */
+.pub-early { margin-top: 72px; border-top: 1px solid var(--line); }
+.pub-early > summary { cursor: pointer; list-style: none; padding: 28px 0 8px; font-size: 21px; font-weight: 700; letter-spacing: -0.02em; color: var(--charcoal); }
+.pub-early > summary::-webkit-details-marker { display: none; }
+.pub-early > summary::before { content: "+"; display: inline-block; width: 28px; color: var(--orange); font-weight: 800; }
+.pub-early[open] > summary::before { content: "–"; }
+.pub-early > summary span { font-size: 14px; font-weight: 600; color: var(--ink-3); margin-left: 6px; }
+.pub-early .pub-year h2 { font-size: 26px; margin-top: 36px; }
+
+/* Brand: group name with "Hall Lab" underneath */
+.brand-name { display: flex; flex-direction: column; line-height: 1.05; }
+.brand-name small { font-size: 12px; font-weight: 600; letter-spacing: 0; color: var(--ink-3); margin-top: 2px; }
+.on-dark .brand-name small { color: rgba(255,255,255,.7); }
+@media (max-width: 520px) {
+  .brand-ut { width: 84px; height: auto; }
+  .brand-name { font-size: 14px; white-space: nowrap; }
+  .brand-name small { font-size: 11px; }
+}

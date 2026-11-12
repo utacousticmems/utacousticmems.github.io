@@ -3,16 +3,21 @@ title: Publications
 permalink: /publications/
 lede: Journal articles, conference papers, meeting abstracts, preprints and patents.
 ---
-{%- assign pubs = site.data.publications -%}
+{%- assign all = site.data.publications -%}
+{%- assign pubs = all | where_exp: "p", "p.era != 'pre-ut'" -%}
+{%- assign early = all | where: "era", "pre-ut" -%}
 {%- assign years = pubs | map: "year" | uniq | sort | reverse -%}
+{%- assign early_years = early | map: "year" | uniq | sort | reverse -%}
+{%- assign types = "journal|Journal,conference|Conference,abstract|Abstract,preprint|Preprint,patent|Patent,other|Other" | split: "," -%}
 <div class="pub-tools">
   <input type="search" id="pub-search" placeholder="Search titles, authors, venues" aria-label="Search publications">
   <div class="chips" role="group" aria-label="Filter by type">
     <button class="chip is-on" data-type="all">All <span>{{ pubs.size }}</span></button>
-    {%- assign types = "journal|Journal,conference|Conference,abstract|Abstract,preprint|Preprint,patent|Patent" | split: "," -%}
     {%- for t in types -%}{%- assign tp = t | split: "|" -%}{%- assign n = pubs | where: "type", tp[0] -%}
+    {%- if n.size > 0 %}
     <button class="chip" data-type="{{ tp[0] }}">{{ tp[1] }} <span>{{ n.size }}</span></button>
-    {%- endfor -%}
+    {%- endif -%}
+    {%- endfor %}
   </div>
 </div>
 
@@ -21,18 +26,23 @@ lede: Journal articles, conference papers, meeting abstracts, preprints and pate
   <h2>{{ y }}</h2>
   <ol class="pubs">
     {%- assign items = pubs | where: "year", y -%}
-    {%- for p in items -%}
-    <li class="pub" data-type="{{ p.type }}">
-      <span class="pub-type t-{{ p.type }}">{{ p.type }}</span>
-      <div>
-        <div class="pub-title">{% if p.doi %}<a href="https://doi.org/{{ p.doi }}">{{ p.title }}</a>{% elsif p.url %}<a href="{{ p.url }}">{{ p.title }}</a>{% else %}{{ p.title }}{% endif %}</div>
-        <div class="pub-authors">{{ p.authors | replace: "N. A. Hall", "<b>N. A. Hall</b>" }}</div>
-        <div class="pub-venue"><em>{{ p.venue }}</em>{% if p.details %} {{ p.details }}{% endif %} ({{ p.year }}){% if p.cover %} <span class="badge badge-cover">{{ p.cover }}</span>{% endif %}{% if p.award %} <span class="badge badge-award">{{ p.award }}</span>{% endif %}</div>
-      </div>
-    </li>
-    {%- endfor -%}
+    {%- for p in items -%}{% include pub-item.html p=p %}{%- endfor -%}
   </ol>
 </section>
 {%- endfor -%}
+
+<details class="pub-early" id="pub-early">
+  <summary>Prof. Hall’s earlier work at Georgia Tech and Sandia National Laboratories, {{ early_years.last }}–{{ early_years.first }} <span>{{ early.size }}</span></summary>
+  {%- for y in early_years -%}
+  <section class="pub-year" data-year="{{ y }}">
+    <h2>{{ y }}</h2>
+    <ol class="pubs">
+      {%- assign items = early | where: "year", y -%}
+      {%- for p in items -%}{% include pub-item.html p=p %}{%- endfor -%}
+    </ol>
+  </section>
+  {%- endfor -%}
+</details>
+
 <p class="muted" id="pub-empty" hidden>No matches.</p>
-<p class="muted note">Papers from 2020 to 2022 are still being added. For a complete, current list see <a href="{{ site.scholar_url }}">Google Scholar</a>.</p>
+<p class="muted note">Compiled from <a href="{{ site.scholar_url }}">Prof. Hall’s Google Scholar profile</a>, November 2026. Titles without a DOI link to a Google Scholar search.</p>

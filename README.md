@@ -1,6 +1,6 @@
-# Hall Group website
+# UT Acoustic MEMS Group (Hall Lab) website
 
-Public website and group wiki for the Hall Group (MEMS and photonic sensors, UT Austin ECE).
+Public website and group wiki for the UT Acoustic MEMS Group, also known as the Hall Lab (Prof. Neal A. Hall, UT Austin ECE).
 Built with [Jekyll](https://jekyllrb.com/) and hosted free on GitHub Pages.
 
 ## Put it online (one-time, about 10 minutes)
@@ -10,7 +10,7 @@ Built with [Jekyll](https://jekyllrb.com/) and hosted free on GitHub Pages.
    - If you use another name (e.g. `hall-group`), the address becomes `https://<org>.github.io/hall-group/`, and you must set `baseurl: /hall-group` in `_config.yml`.
 3. **Upload these files.** Easiest: on the new repo page click *uploading an existing file* and drag in everything in this folder (including the hidden-looking `_data`, `_layouts`, `_wiki` folders). Or with git:
    ```bash
-   git init && git add . && git commit -m "Hall Group website"
+   git init && git add . && git commit -m "Group website"
    git branch -M main
    git remote add origin https://github.com/utacousticmems/utacousticmems.github.io.git
    git push -u origin main

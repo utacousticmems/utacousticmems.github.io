@@ -1,20 +1,19 @@
 {%- assign here = page.url -%}
 <header class="site-header{% if page.dark_header %} on-dark{% endif %}">
   <div class="wrap header-row">
-    <a class="brand" href="{{ '/' | relative_url }}" aria-label="Hall Group home">
+    <a class="brand" href="{{ '/' | relative_url }}" aria-label="UT Acoustic MEMS Group home">
       <img class="brand-ut brand-ut-color" src="{{ '/assets/img/ut-logo.png' | relative_url }}" alt="The University of Texas at Austin" width="112" height="32">
       <img class="brand-ut brand-ut-white" src="{{ '/assets/img/ut-logo-white.png' | relative_url }}" alt="" width="112" height="32" aria-hidden="true">
       <span class="brand-rule" aria-hidden="true"></span>
-      <span class="brand-name">Hall Group</span>
+      <span class="brand-name">UT Acoustic MEMS Group<small>Hall Lab</small></span>
     </a>
     <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Menu"><span></span><span></span></button>
     <nav id="site-nav" class="site-nav">
-      {%- assign nav = "Research|/research/,People|/people/,Publications|/publications/,News|/news/,Visit|/visit/,Wiki|/wiki/" | split: "," -%}
+      {%- assign nav = "Research|/research/,People|/people/,Publications|/publications/,News|/news/,Visit|/visit/,Wiki|/wiki/,Join|/join/" | split: "," -%}
       {%- for item in nav -%}
         {%- assign parts = item | split: "|" -%}
         <a href="{{ parts[1] | relative_url }}"{% if here contains parts[1] %} aria-current="page"{% endif %}>{{ parts[0] }}</a>
       {%- endfor -%}
-      <a class="nav-cta" href="{{ '/join/' | relative_url }}"{% if here contains '/join/' %} aria-current="page"{% endif %}>Join us</a>
     </nav>
   </div>
 </header>
