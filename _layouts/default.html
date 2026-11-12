@@ -10,7 +10,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&display=swap">
-  <link rel="stylesheet" href="{{ '/assets/css/site.css' | relative_url }}">
+  <link rel="stylesheet" href="{{ '/assets/css/site.css' | relative_url }}?v={{ site.time | date: '%s' }}">
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23bf5700'/%3E%3Ctext x='16' y='22.5' font-family='Arial' font-weight='700' font-size='17' fill='white' text-anchor='middle'%3EH%3C/text%3E%3C/svg%3E">
 </head>
 <body class="{{ page.body_class }}">
@@ -19,8 +19,8 @@
   <main id="main">
     {{ content }}
   </main>
-  <p class="site-credit">Website designed and built by Zihuan Liu, 2026</p>
+  <div class="site-credit"><p class="wrap">Website designed and built by Zihuan Liu, 2026</p></div>
   {% include footer.html %}
-  <script src="{{ '/assets/js/site.js' | relative_url }}" defer></script>
+  <script src="{{ '/assets/js/site.js' | relative_url }}?v={{ site.time | date: '%s' }}" defer></script>
 </body>
 </html>
