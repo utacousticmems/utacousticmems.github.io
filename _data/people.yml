@@ -54,10 +54,8 @@ phd:
     focus: Piezoelectric MEMS microphones
     photo: ""
 
-undergrads:
-  - name: Shivansh Madan
-    focus: Photonics and inertial sensors
-    photo: ""
+# Current undergraduate researchers (same fields as phd). Empty list hides the section.
+undergrads: []
 
 # Alumni. "now" = current position if known. Leave blank rather than guess.
 alumni:
@@ -79,6 +77,7 @@ alumni:
   - { name: "Moinuddin Ahmed", degree: "Postdoc", year: "", now: "" }
   - { name: "Emma Stearman", degree: "Undergraduate researcher", year: "2015–2016", now: "" }
   - { name: "Xintong Huang", degree: "Undergraduate researcher", year: "2016", now: "" }
+  - { name: "Shivansh Madan", degree: "B.S.", year: "", now: "" }
   - { name: "Marilyn Mathew", degree: "NNIN REU intern", year: "2015", now: "" }
   - { name: "Grace Noel", degree: "NNCI REU intern", year: "2016", now: "" }
 
