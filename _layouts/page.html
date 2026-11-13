@@ -8,6 +8,6 @@ layout: default
     {% if page.lede %}<p class="lede reveal">{{ page.lede }}</p>{% endif %}
   </div>
 </section>
-<div class="wrap page-body">
+<div class="{% if page.wide %}wrap-wide{% else %}wrap{% endif %} page-body">
   {{ content }}
 </div>

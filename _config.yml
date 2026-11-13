@@ -57,3 +57,6 @@ exclude:
   - vendor
   - .github
   - _templates
+  # Upload notes shown on GitHub inside the gallery folders; not part of the website
+  - assets/gallery/README.md
+  - assets/gallery/*/README.md

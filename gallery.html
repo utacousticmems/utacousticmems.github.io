@@ -1,0 +1,85 @@
+---
+title: Gallery
+permalink: /gallery/
+lede: Life in the group, in the lab and away from it.
+description: Photos from the UT Acoustic MEMS Group (Hall Lab) at UT Austin. The lab, group outings, conferences and graduations.
+wide: true
+---
+{%- comment -%}
+  Photos are picked up automatically from assets/gallery/<album-folder>/.
+  Album titles, order and captions: _data/gallery.yml. How-to: wiki page "Editing this site".
+{%- endcomment -%}
+{%- assign root = "/assets/gallery/" -%}
+{%- assign exts = ".jpg,.JPG,.jpeg,.JPEG,.png,.PNG,.webp,.WEBP,.gif,.GIF,.avif,.AVIF" | split: "," -%}
+{%- assign photos = site.static_files | where_exp: "f", "f.path contains root" | where_exp: "f", "exts contains f.extname" | sort: "path" | reverse -%}
+{%- assign groups = photos | group_by_exp: "f", "f.path | remove_first: root | split: '/' | first" | sort: "name" -%}
+
+{%- comment %} Folders named in _data/gallery.yml, as "|a|b|c|", to tell them from extra folders {% endcomment -%}
+{%- assign known = "|" -%}
+{%- for a in site.data.gallery -%}{%- assign known = known | append: a.folder | append: "|" -%}{%- endfor -%}
+
+{%- comment %} Count albums that have photos, to decide whether filter chips are worth showing {% endcomment -%}
+{%- assign album_count = 0 -%}
+{%- assign loose_count = 0 -%}
+{%- for g in groups -%}
+  {%- if g.name contains "." -%}{%- assign loose_count = loose_count | plus: g.size -%}{%- else -%}{%- assign album_count = album_count | plus: 1 -%}{%- endif -%}
+{%- endfor -%}
+{%- if loose_count > 0 -%}{%- assign album_count = album_count | plus: 1 -%}{%- endif -%}
+
+{%- if photos.size == 0 %}
+<div class="gallery-empty">
+  <h2>Photos are on the way.</h2>
+  <p class="muted">We are putting together pictures from the lab, group outings and conferences. Check back soon.</p>
+</div>
+{%- else -%}
+
+{%- if album_count > 1 %}
+<nav class="chips gallery-chips" aria-label="Albums">
+  <a class="chip is-on" href="#main" data-album="all">All <span>{{ photos.size }}</span></a>
+  {%- for a in site.data.gallery -%}
+    {%- assign g = groups | where: "name", a.folder | first -%}
+    {%- if g %}
+  <a class="chip" href="#{{ a.folder }}" data-album="{{ a.folder }}">{{ a.title }} <span>{{ g.size }}</span></a>
+    {%- endif -%}
+  {%- endfor -%}
+  {%- for g in groups -%}
+    {%- assign key = g.name | prepend: "|" | append: "|" -%}
+    {%- unless known contains key or g.name contains "." %}
+  <a class="chip" href="#{{ g.name | slugify }}" data-album="{{ g.name | slugify }}">{{ g.name | replace: "-", " " | replace: "_", " " | capitalize }} <span>{{ g.size }}</span></a>
+    {%- endunless -%}
+  {%- endfor -%}
+  {%- if loose_count > 0 %}
+  <a class="chip" href="#more-photos" data-album="more-photos">More photos <span>{{ loose_count }}</span></a>
+  {%- endif %}
+</nav>
+{%- endif %}
+
+<div class="albums">
+  {%- comment %} 1. Albums listed in _data/gallery.yml, in that order {% endcomment -%}
+  {%- for a in site.data.gallery -%}
+    {%- assign g = groups | where: "name", a.folder | first -%}
+    {%- if g -%}
+      {%- include gallery-album.html id=a.folder title=a.title text=a.text items=g.items captions=a.captions -%}
+    {%- endif -%}
+  {%- endfor -%}
+
+  {%- comment %} 2. Any other folder under assets/gallery/, titled after the folder {% endcomment -%}
+  {%- for g in groups -%}
+    {%- assign key = g.name | prepend: "|" | append: "|" -%}
+    {%- unless known contains key or g.name contains "." -%}
+      {%- assign auto_id = g.name | slugify -%}
+      {%- assign auto_title = g.name | replace: "-", " " | replace: "_", " " | capitalize -%}
+      {%- include gallery-album.html id=auto_id title=auto_title items=g.items -%}
+    {%- endunless -%}
+  {%- endfor -%}
+
+  {%- comment %} 3. Photos dropped straight into assets/gallery/ without an album folder {% endcomment -%}
+  {%- if loose_count > 0 -%}
+    {%- assign loose_items = "" | split: "" -%}
+    {%- for g in groups -%}{%- if g.name contains "." -%}{%- assign loose_items = loose_items | concat: g.items -%}{%- endif -%}{%- endfor -%}
+    {%- include gallery-album.html id="more-photos" title="More photos" items=loose_items -%}
+  {%- endif %}
+</div>
+{%- endif %}
+
+<p class="muted note gallery-note">Group members: <a href="{{ '/wiki/editing-this-site/' | relative_url }}#add-photos-to-the-gallery">how to add photos</a>.</p>

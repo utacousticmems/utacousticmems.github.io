@@ -17,6 +17,7 @@ Everything on this site lives in a GitHub repository. You can edit any of it in 
 | A person, or move someone to alumni | `_data/people.yml` |
 | A news item | `_data/news.yml` |
 | A research area | `_data/research.yml` |
+| Gallery photos | upload to `assets/gallery/<album>/`; titles and captions in `_data/gallery.yml` |
 | A wiki page | `_wiki/<page-name>.md` |
 | Home, Join, Visit pages | `index.html`, `join.html`, `visit.html` |
 | Images | `assets/img/` (people photos in `assets/people/`, wiki images in `assets/wiki/`) |
@@ -52,6 +53,32 @@ Add an entry at the **top** of `_data/news.yml`:
   text: One or two sentences.
   link: https://doi.org/...   # optional
   tag: Paper                  # Paper, Cover, Award, Talks, Recruiting…
+```
+
+## Add photos to the gallery
+The [Gallery]({{ '/gallery/' | relative_url }}) page builds itself from the photos in `assets/gallery/`. One folder is one album, so there is no file to edit.
+
+1. On GitHub, open the album folder, for example `assets/gallery/team-building`.
+2. Click **Add file → Upload files**, drag your photos in (up to 100 at a time), then **Commit changes**.
+
+They show up on the site in about a minute. An album stays hidden until it has its first photo.
+
+Before you upload:
+
+- **JPG or PNG only.** iPhone `.HEIC` files do not show in most browsers; export them as JPEG first.
+- **Shrink big photos** to about 2400 pixels on the long side, usually under 1 MB. On a Mac: open in Preview, **Tools → Adjust Size**, then **File → Export** as JPEG. The whole site has to stay under GitHub's 1 GB limit.
+- **Name files so they sort by date,** such as `2026-10-lake-travis-1.jpg` (lowercase, hyphens, no spaces). The newest name comes first, and the first photo of an album is shown large.
+- **Ask first.** The site is public, so upload a photo only if everyone in it is fine with being shown, and check the background for screens or whiteboards with unpublished work.
+
+**New album:** on the `assets/gallery` page, click **Add file → Upload files** and drag in a whole folder of photos. The folder name becomes the album name. To give it a nicer title, a description, or a place in the order, add it to `_data/gallery.yml`.
+
+**Captions** are optional. In `_data/gallery.yml`, under the album:
+
+```yaml
+- folder: team-building
+  title: Team building
+  captions:
+    2026-10-lake-travis-1.jpg: Kayaking on Lake Travis, October 2026
 ```
 
 ## Write a wiki page

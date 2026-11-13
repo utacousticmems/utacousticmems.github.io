@@ -1,0 +1,21 @@
+{%- comment -%}
+  One album on the Gallery page.
+  Parameters: id, title, text (optional), items (static files), captions (optional map: file name -> caption)
+{%- endcomment -%}
+{%- assign n = include.items | size -%}
+<section class="album" id="{{ include.id }}" data-album="{{ include.id }}">
+  <div class="album-head">
+    <h2>{{ include.title }}</h2>
+    <p class="muted">{% if include.text %}{{ include.text }} · {% endif %}{{ n }} photo{% if n != 1 %}s{% endif %}</p>
+  </div>
+  <div class="photo-grid{% if n >= 3 %} has-lead{% endif %}">
+    {%- for f in include.items -%}
+    {%- assign cap = include.captions[f.name] -%}
+    {%- assign src = f.path | relative_url | uri_escape %}
+    <a class="photo" href="{{ src }}"{% if cap %} data-caption="{{ cap | escape }}"{% endif %}>
+      <img src="{{ src }}" alt="{% if cap %}{{ cap | escape }}{% else %}{{ include.title | escape }}, photo {{ forloop.index }}{% endif %}" loading="lazy" decoding="async">
+      {%- if cap %}<span class="photo-cap">{{ cap | escape }}</span>{% endif -%}
+    </a>
+    {%- endfor %}
+  </div>
+</section>

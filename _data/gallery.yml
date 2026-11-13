@@ -1,0 +1,30 @@
+# Photo gallery albums, shown in this order on /gallery/.
+#
+# To add photos you do not need to edit this file: upload them to
+# assets/gallery/<folder>/ and they appear on the page automatically.
+# An album with no photos yet stays hidden. A new folder that is not
+# listed here still shows up, after these, titled after its folder name.
+#
+# folder:   folder name inside assets/gallery/ (lowercase, hyphens, no spaces)
+# title:    album name shown on the page
+# text:     optional one-line description
+# captions: optional, one line per photo: file name, colon, caption
+#           (wrap the caption in double quotes if it contains a colon)
+
+- folder: team-building
+  title: Team building
+  text: Group outings, dinners and celebrations.
+  # captions:
+  #   2026-10-lake-travis.jpg: Kayaking on Lake Travis, October 2026
+
+- folder: lab
+  title: In the lab
+  text: Benches, setups and cleanroom days.
+
+- folder: conferences
+  title: Conferences and travel
+  text: Talks, posters and the trips around them.
+
+- folder: graduations
+  title: Defenses and graduations
+  text: Dissertation defenses, hooding and send-offs.

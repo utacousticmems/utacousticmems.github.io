@@ -30,6 +30,7 @@ Open a file on GitHub, click the pencil icon, edit, *Commit changes*. The site r
 | People, alumni, "where our PhDs go" | `_data/people.yml` |
 | News | `_data/news.yml` (newest at top) |
 | Research areas | `_data/research.yml` |
+| Gallery photos | upload to `assets/gallery/<album>/` (they appear automatically); album titles and captions in `_data/gallery.yml` |
 | Wiki pages | `_wiki/*.md` (start from `_templates/wiki-page.md`) |
 | Wiki sections | `_data/wiki_categories.yml` |
 | Home / Join / Visit text | `index.html`, `join.html`, `visit.html` |
@@ -56,6 +57,7 @@ _wiki/                   one Markdown file per wiki page
 _layouts/, _includes/    page templates (rarely need changes)
 assets/css/site.css      all styling (colors and fonts at the top; SF Pro on Apple devices, Inter elsewhere)
 assets/img/              research photos and journal covers
+assets/gallery/          gallery photos, one folder per album (see the README in that folder)
 assets/video/            recruiting film (1080p, compressed to 34 MB) and poster frame
 ```
 
