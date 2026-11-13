@@ -56,7 +56,7 @@ _wiki/                   one Markdown file per wiki page
 _layouts/, _includes/    page templates (rarely need changes)
 assets/css/site.css      all styling (colors and fonts at the top; SF Pro on Apple devices, Inter elsewhere)
 assets/img/              research photos and journal covers
-assets/video/            recruiting film (compressed, 12 MB) and poster frame
+assets/video/            recruiting film (1080p, compressed to 34 MB) and poster frame
 ```
 
 ## To do
