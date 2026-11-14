@@ -58,7 +58,7 @@ _layouts/, _includes/    page templates (rarely need changes)
 assets/css/site.css      all styling (colors and fonts at the top; SF Pro on Apple devices, Inter elsewhere)
 assets/img/              research photos and journal covers
 assets/gallery/          gallery photos, one folder per album (see the README in that folder)
-assets/video/            recruiting film (1080p, compressed to 34 MB) and poster frame
+assets/video/            recruiting film (1080p, compressed to 32 MB) and poster frame
 ```
 
 ## To do
