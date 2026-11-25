@@ -54,7 +54,7 @@ undergrads: []
 alumni:
   - { name: "Zihuan Liu", degree: "Ph.D.", year: "", now: "Apple", link: "https://scholar.google.com/citations?user=Tz_bpBUAAAAJ" }
   - { name: "Yuqi Meng", degree: "Ph.D.", year: "", now: "Apple" }
-  - { name: "Shivansh Madan", degree: "B.S.", year: "", now: "" }
+  - { name: "Shivansh Madan", degree: "B.S.", year: "", now: "Ph.D. student, Georgia Tech" }
   - { name: "Ehsan Vatankhah", degree: "Ph.D.", year: "", now: "" }
   - { name: "Xiaoyu Niu", degree: "Ph.D.", year: "", now: "Apple" }
   - { name: "Yoonho Seo", degree: "Ph.D.", year: "", now: "Apple" }
