@@ -39,6 +39,12 @@ phd:
   - name: Qiyun Hu
     focus: Photonic inertial sensors
     photo: "qiyun-hu.jpg"
+  - name: William Seastrand
+    focus: ""
+    photo: "william-seastrand.jpg"
+  - name: Tejini Murthy
+    focus: ""
+    photo: "tejini-murthy.jpg"
 
 # Current undergraduate researchers (same fields as phd). Empty list hides the section.
 undergrads: []
@@ -46,16 +52,17 @@ undergrads: []
 # Alumni, most recent at the top. "now" = current position if known. Leave blank rather than guess.
 # Optional link: (e.g. Google Scholar) turns the name into a link.
 alumni:
-  - { name: "Zihuan Liu", degree: "Ph.D.", year: "", now: "", link: "https://scholar.google.com/citations?user=Tz_bpBUAAAAJ" }
-  - { name: "Yuqi Meng", degree: "Ph.D.", year: "", now: "" }
+  - { name: "Zihuan Liu", degree: "Ph.D.", year: "", now: "Apple", link: "https://scholar.google.com/citations?user=Tz_bpBUAAAAJ" }
+  - { name: "Yuqi Meng", degree: "Ph.D.", year: "", now: "Apple" }
+  - { name: "Shivansh Madan", degree: "B.S.", year: "", now: "Ph.D. student, Georgia Tech" }
   - { name: "Ehsan Vatankhah", degree: "Ph.D.", year: "", now: "" }
   - { name: "Xiaoyu Niu", degree: "Ph.D.", year: "", now: "Apple" }
   - { name: "Yoonho Seo", degree: "Ph.D.", year: "", now: "Apple" }
-  - { name: "Randall P. Williams", degree: "Ph.D.", year: "", now: "" }
+  - { name: "Randall P. Williams", degree: "Ph.D.", year: "", now: "ARL" }
   - { name: "Donghwan Kim", degree: "Ph.D.", year: "", now: "Silicon Audio, Inc." }
   - { name: "Michael L. Kuntzman", degree: "Ph.D.", year: "", now: "Texas Instruments" }
   - { name: "Carly A. Stalder", degree: "M.S.", year: "", now: "Soundskrit" }
-  - { name: "Samuel K. Hord", degree: "M.S.", year: "2017", now: "" }
+  - { name: "Samuel K. Hord", degree: "M.S.", year: "2017", now: "MD Acoustics, LLC" }
   - { name: "Jingqiang Zha", degree: "M.S.", year: "", now: "" }
   - { name: "Colton D. Snell", degree: "M.S.", year: "", now: "Sandia National Laboratories" }
   - { name: "Karen D. Kirk", degree: "M.S.", year: "", now: "TriQuint Semiconductor" }
@@ -67,7 +74,6 @@ alumni:
   - { name: "Moinuddin Ahmed", degree: "Postdoc", year: "", now: "Argonne National Laboratory" }
   - { name: "Emma Stearman", degree: "Undergraduate researcher", year: "2015–2016", now: "" }
   - { name: "Xintong Huang", degree: "Undergraduate researcher", year: "2016", now: "" }
-  - { name: "Shivansh Madan", degree: "B.S.", year: "", now: "" }
   - { name: "Marilyn Mathew", degree: "NNIN REU intern", year: "2015", now: "" }
   - { name: "Grace Noel", degree: "NNCI REU intern", year: "2016", now: "" }
 
