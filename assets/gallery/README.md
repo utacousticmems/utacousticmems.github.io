@@ -19,6 +19,17 @@ Every photo in these folders appears on the website's [Gallery page](https://uta
 
 On the `assets/gallery` page click **Add file → Upload files** and drag in a whole folder of photos. The folder name becomes the album name (`summer-bbq-2026` is shown as "Summer bbq 2026"). To set a nicer title, a description or the order of albums, add the folder to `_data/gallery.yml`.
 
+## Group photos inside an album
+
+A folder inside an album folder is shown as its own group, with a heading, inside that album. The Conferences album uses one folder per conference, such as `conferences/2026-05-asa-philadelphia`. To add a group, open the album folder, click **Add file → Upload files** and drag in a whole folder of photos. Start the folder name with the date so the newest group comes first. To set its heading, add a line under the album's `sections:` in `_data/gallery.yml`:
+
+```yaml
+- folder: conferences
+  title: Conferences and travel
+  sections:
+    2026-05-asa-philadelphia: ASA meeting in Philadelphia, May 2026
+```
+
 ## Captions (optional)
 
 In `_data/gallery.yml`, under the album, add a line per photo:

@@ -65,7 +65,7 @@ wide: true
         {%- assign rest = items | where_exp: "f", "f.name != a.cover" -%}
         {%- assign items = lead | concat: rest -%}
       {%- endif -%}
-      {%- include gallery-album.html id=a.folder title=a.title text=a.text items=items captions=a.captions -%}
+      {%- include gallery-album.html id=a.folder title=a.title text=a.text items=items captions=a.captions sections=a.sections -%}
     {%- endif -%}
   {%- endfor -%}
 

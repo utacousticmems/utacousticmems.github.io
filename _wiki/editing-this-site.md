@@ -72,6 +72,8 @@ Before you upload:
 
 **New album:** on the `assets/gallery` page, click **Add file → Upload files** and drag in a whole folder of photos. The folder name becomes the album name. To give it a nicer title, a description, or a place in the order, add it to `_data/gallery.yml`.
 
+**Groups inside an album:** a folder inside an album folder is shown as its own group with a heading, for example one folder per conference in `assets/gallery/conferences/`. Start the folder name with the date (`2026-05-asa-philadelphia`) so the newest comes first, and set its heading under `sections:` in `_data/gallery.yml`.
+
 **Captions** are optional. In `_data/gallery.yml`, under the album:
 
 ```yaml

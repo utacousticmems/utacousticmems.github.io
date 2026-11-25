@@ -1,0 +1,20 @@
+{%- comment -%}
+  A grid of photo tiles, used by gallery-album.html. The first photo is shown large when there are 3 or more.
+  Parameters: items (static files), group (optional heading of the group; the photo viewer shows it after the caption).
+  Reads album_title and album_captions, set by gallery-album.html.
+{%- endcomment -%}
+{%- assign k = include.items | size %}
+  <div class="photo-grid{% if k >= 3 %} has-lead{% endif %}">
+    {%- for f in include.items -%}
+    {%- assign cap = album_captions[f.name] -%}
+    {%- assign full = cap -%}
+    {%- if include.group -%}
+      {%- if cap -%}{%- assign full = cap | append: " · " | append: include.group -%}{%- else -%}{%- assign full = include.group -%}{%- endif -%}
+    {%- endif -%}
+    {%- assign src = f.path | relative_url | uri_escape %}
+    <a class="photo" href="{{ src }}"{% if full %} data-caption="{{ full | escape }}"{% endif %}>
+      <img src="{{ src }}" alt="{% if full %}{{ full | escape }}{% else %}{{ album_title | escape }}, photo {{ forloop.index }}{% endif %}" loading="lazy" decoding="async">
+      {%- if cap %}<span class="photo-cap">{{ cap | escape }}</span>{% endif -%}
+    </a>
+    {%- endfor %}
+  </div>
