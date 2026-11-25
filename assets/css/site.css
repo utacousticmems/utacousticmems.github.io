@@ -460,6 +460,12 @@ code { font-family: var(--mono); font-size: .85em; background: var(--stone-bg); 
 .album-head { display: flex; align-items: baseline; justify-content: space-between; gap: 8px 24px; flex-wrap: wrap; margin-bottom: 22px; }
 .album-head h2 { font-size: 34px; font-weight: 800; letter-spacing: -0.03em; margin: 0; }
 .album-head p { margin: 0; font-size: 15px; }
+/* Groups inside an album, one per subfolder (for example one per conference) */
+.album-sub { margin-top: 44px; }
+.album-head + .album-sub { margin-top: 0; }
+.sub-head { display: flex; align-items: baseline; justify-content: space-between; gap: 4px 16px; flex-wrap: wrap; padding-top: 18px; border-top: 1px solid var(--line); margin-bottom: 16px; }
+.sub-head h3 { font-size: 21px; font-weight: 700; letter-spacing: -0.02em; line-height: 1.25; margin: 0; }
+.sub-head p { margin: 0; font-size: 14px; }
 .photo-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
 .photo { position: relative; display: block; aspect-ratio: 3/2; overflow: hidden; border-radius: var(--r-lg); background: var(--stone-bg); cursor: zoom-in; }
 .photo img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 50% 40%; transition: transform .9s var(--ease); }
@@ -494,6 +500,9 @@ code { font-family: var(--mono); font-size: .85em; background: var(--stone-bg); 
   .gallery-chips { margin-bottom: 40px; }
   .album + .album { margin-top: 64px; }
   .album-head h2 { font-size: 28px; }
+  .album-sub { margin-top: 32px; }
+  .sub-head { padding-top: 14px; margin-bottom: 12px; }
+  .sub-head h3 { font-size: 18px; }
   .photo-grid { grid-template-columns: 1fr 1fr; gap: 10px; }
   .photo { border-radius: var(--r-md); }
   .has-lead .photo:first-child { grid-row: auto; aspect-ratio: 3/2; border-radius: var(--r-lg); }
