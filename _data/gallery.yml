@@ -10,6 +10,8 @@
 # text:     optional one-line description
 # captions: optional, one line per photo: file name, colon, caption
 #           (wrap the caption in double quotes if it contains a colon)
+# cover:    optional, file name of the photo to show first and large
+#           (without it, the newest file name comes first)
 
 - folder: team-building
   title: Team building
@@ -20,6 +22,11 @@
 - folder: lab
   title: In the lab
   text: Benches, setups and cleanroom days.
+
+- folder: field
+  title: In the field
+  text: Measurements and tests outside the lab.
+  cover: 2025-10-29-pool-test-1.jpg
 
 - folder: conferences
   title: Conferences and travel

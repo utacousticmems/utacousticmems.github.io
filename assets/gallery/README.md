@@ -12,7 +12,7 @@ Every photo in these folders appears on the website's [Gallery page](https://uta
 
 - **JPG or PNG only.** iPhone `.HEIC` files do not show in most browsers. Export them as JPEG first.
 - **Shrink big photos.** A phone photo is often 3 to 8 MB. Resize it to about 2400 pixels on the long side (usually under 1 MB) so the page loads quickly and the site stays within GitHub's 1 GB limit. On a Mac: open the photo in Preview, **Tools → Adjust Size**, then **File → Export** as JPEG.
-- **Name files so they sort by date,** such as `2026-10-lake-travis-1.jpg`. Lowercase, hyphens, no spaces. The newest name is shown first, and the first photo of an album is shown large.
+- **Name files so they sort by date,** such as `2026-10-lake-travis-1.jpg`. Lowercase, hyphens, no spaces. The newest name is shown first, and the first photo of an album is shown large. To show a different photo large, add `cover: file-name.jpg` under the album in `_data/gallery.yml`.
 - **This site is public.** Upload a photo only if everyone in it is fine with being shown. Nothing with unpublished results, proposal text, or anything under NDA or export control on a screen, whiteboard or bench in the background.
 
 ## Start a new album
