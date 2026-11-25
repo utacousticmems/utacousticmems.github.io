@@ -67,7 +67,7 @@ Before you upload:
 
 - **JPG or PNG only.** iPhone `.HEIC` files do not show in most browsers; export them as JPEG first.
 - **Shrink big photos** to about 2400 pixels on the long side, usually under 1 MB. On a Mac: open in Preview, **Tools → Adjust Size**, then **File → Export** as JPEG. The whole site has to stay under GitHub's 1 GB limit.
-- **Name files so they sort by date,** such as `2026-10-lake-travis-1.jpg` (lowercase, hyphens, no spaces). The newest name comes first, and the first photo of an album is shown large.
+- **Name files so they sort by date,** such as `2026-10-lake-travis-1.jpg` (lowercase, hyphens, no spaces). The newest name comes first, and the first photo of an album is shown large. To show a different photo large, add `cover: file-name.jpg` under the album in `_data/gallery.yml`.
 - **Ask first.** The site is public, so upload a photo only if everyone in it is fine with being shown, and check the background for screens or whiteboards with unpublished work.
 
 **New album:** on the `assets/gallery` page, click **Add file → Upload files** and drag in a whole folder of photos. The folder name becomes the album name. To give it a nicer title, a description, or a place in the order, add it to `_data/gallery.yml`.
