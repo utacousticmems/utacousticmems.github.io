@@ -1,0 +1,40 @@
+# Looks for new papers every Monday and opens a pull request to add them to the
+# Publications page. Nothing goes live until someone merges that pull request.
+# How it works: https://utacousticmems.github.io/wiki/publication-updates/
+name: Weekly publications check
+
+on:
+  schedule:
+    - cron: "23 13 * * 1"   # Mondays 13:23 UTC (7:23 AM in Austin in winter, 8:23 AM in summer)
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: "Only show what would be added (open no pull request)"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write        # push the branch with the new papers
+  pull-requests: write   # open the pull request
+  issues: write          # labels, and a note if a pull request can't be opened
+  actions: write         # keep the weekly schedule from being paused
+
+concurrency:
+  group: publications-bot
+  cancel-in-progress: false
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+      - run: pip install pyyaml==6.0.2
+      - name: Look for new papers
+        env:
+          GH_TOKEN: ${{ github.token }}
+          OPENALEX_API_KEY: ${{ secrets.OPENALEX_API_KEY }}
+        run: python .github/publications-bot/update_publications.py ${{ inputs.dry_run && '--dry-run' || '' }}

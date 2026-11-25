@@ -1,0 +1,32 @@
+# Settings for the weekly publications check.
+# How it works: https://utacousticmems.github.io/wiki/publication-updates/
+# To change a setting, open this file on GitHub, click the pencil icon, edit, and click "Commit changes".
+# Lines starting with # are notes and are ignored.
+
+# Whose new papers to look for. Prof. Hall is an author on every group paper, so he is enough.
+people:
+  - name: Neal A. Hall
+    orcid: 0000-0001-5237-8927     # https://orcid.org/0000-0001-5237-8927
+    show_as: N. A. Hall            # how his name is written on the page (it is shown in bold there)
+    # OpenAlex sometimes splits one person into two profiles. Papers found only through
+    # these extra profiles are added only when someone already on the page is a co-author.
+    extra_openalex_ids: [A5112463774]
+
+# Only papers published on or after this date are suggested.
+start_date: 2026-01-01
+
+# GitHub accounts asked to review each pull request.
+reviewers:
+  - ehsanvatan
+
+# Papers that should never be suggested: their DOI, or arXiv:NUMBER for arXiv preprints.
+skip:
+  - 10.7759/cureus.114521   # a medical paper by a different Neal Hall
+
+# Words to keep capitalized when titles are changed to sentence case
+# (names of people, places and materials). Many common ones are built in.
+keep_capitalized: []
+
+# Optional contact email sent to Crossref with each lookup, so they can reach you if
+# something goes wrong. Leave empty to send none.
+contact_email: ""
