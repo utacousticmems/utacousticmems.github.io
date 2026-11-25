@@ -83,6 +83,7 @@
   title: Thickness-field excited bimorph lithium niobate piezoelectric transducer
   venue: Journal of Microelectromechanical Systems
   details: 35(5), 762
+  doi: 10.1109/JMEMS.2026.3708315
 - year: 2026
   type: journal
   authors: V. Chulukhadze, Z. Liu, Z. Yao, L. Matto, T.-H. Hsu, N. Ravi, X. Niu, M. E. Liao, M. S. Goorsky, N. A. Hall, R. Lu
@@ -126,24 +127,28 @@
   title: Lithium niobate microphone with high SNR potential
   venue: IEEE Sensors Journal
   details: 25(10), 18115
+  doi: 10.1109/JSEN.2025.3555885
 - year: 2025
   type: journal
   authors: X. Niu, C. A. Stalder, Z. Liu, Y. Meng, E. Vatankhah, N. A. Hall
   title: Characterization and modeling of an AlN piezoelectric fly-inspired in-plane directional MEMS microphone packaged with an integrated circuit amplifier
   venue: IEEE Sensors Journal
   details: 25(13), 25459
+  doi: 10.1109/JSEN.2025.3568295
 - year: 2025
   type: journal
   authors: Y. Meng, E. Vatankhah, X. Niu, Z. Liu, N. A. Hall
   title: A novel cantilever-based silicon photonic accelerometer using Mach–Zehnder interferometer targeting 10-ng/√Hz noise floor
   venue: IEEE Sensors Journal
   details: 25(7), 10942–10948
+  doi: 10.1109/JSEN.2025.3535418
 - year: 2025
   type: journal
   authors: Y. Meng, X. Niu, E. Vatankhah, Z. Liu, N. A. Hall
   title: A novel opto-mechanical accelerometer in low-loss silicon nitride photonics platform with high dynamic range achieved via heterodyne detection
   venue: IEEE Sensors Journal
   details: 25(15), 28290
+  doi: 10.1109/JSEN.2025.3581087
 - year: 2025
   type: conference
   authors: Z. Yao, V. Chulukhadze, Z. Liu, X. Niu, T.-H. Hsu, B. Kim, N. A. Hall, R. Lu
@@ -162,6 +167,7 @@
   title: Characterization of an immersion lithium niobate piezoelectric micromachined ultrasound transducer using laser Doppler vibrometry and hydrophone measurements
   venue: Proceedings of Meetings on Acoustics
   details: 56, 030002
+  doi: 10.1121/2.0002310
 - year: 2025
   type: conference
   authors: E. Vatankhah, Y. Meng, X. Niu, Z. Liu, N. A. Hall
@@ -174,24 +180,28 @@
   title: Novel optomechanical microphones using integrated photonics waveguide
   venue: The Journal of the Acoustical Society of America
   details: 158(4 Suppl.), A66
+  doi: 10.1121/10.0040141
 - year: 2025
   type: abstract
   authors: E. Vatankhah, Y. Meng, X. Niu, Z. Liu, N. A. Hall
   title: "Magnetostrictive-based jerk sensor: experimental characterization and analytical estimation of sensitivity"
   venue: The Journal of the Acoustical Society of America
   details: 157(4 Suppl.), A73
+  doi: 10.1121/10.0037435
 - year: 2025
   type: abstract
   authors: X. Niu, D. Kim, Z. Liu, Y. Meng, E. Vatankhah, N. A. Hall
   title: A fly-inspired multi directional MEMS microphone
   venue: The Journal of the Acoustical Society of America
   details: 157(4 Suppl.), A193
+  doi: 10.1121/10.0037867
 - year: 2025
   type: abstract
   authors: Y. Meng, X. Niu, E. Vatankhah, Z. Liu, N. A. Hall
   title: A cantilever beam-based optomechanical inertial sensor in silicon nitride photonics platform
   venue: The Journal of the Acoustical Society of America
   details: 157(4 Suppl.), A148
+  doi: 10.1121/10.0037711
 - year: 2025
   type: abstract
   authors: X. Niu, V. Chulukhadze, Z. Liu, E. Vatankhah, Y. Wang, Y. Meng, L. Matto, M. S. Goorsky, R. Lu, N. A. Hall
@@ -280,7 +290,7 @@
 
 # ---------------- Added Nov 2026 from Prof. Hall's Google Scholar profile ----------------
 # era: pre-ut marks Prof. Hall's work before UT (Georgia Tech, Sandia); it is listed in its own section.
-- {year: 2026, type: journal, authors: 'Y. Meng, S. Madan, N. A. Hall', title: Free-space optical accelerometer with high dynamic range using phase generated carrier demodulation achieved via integrated coil modulation, venue: IEEE Sensors Journal}
+- {year: 2026, type: journal, authors: 'Y. Meng, S. Madan, N. A. Hall', title: Free-space optical accelerometer with high dynamic range using phase generated carrier demodulation achieved via integrated coil modulation, venue: IEEE Sensors Journal, details: '26(14), 20916–20924', doi: 10.1109/JSEN.2026.3699447}
 - {year: 2022, type: journal, authors: 'R. P. Williams, E. Vatankhah, N. A. Hall', title: Multidegree-of-freedom state-space modeling of nonlinear pull-in dynamics of an electrostatic mems microphone, venue: Journal of Microelectromechanical Systems, details: '31 (4), 589-598'}
 - {year: 2022, type: patent, authors: 'N. A. Hall, R. P. Williams, E. Vatankhah', title: Focal Point Determination Based on Nonlinear Mixing of Sound Beams, venue: 'US Patent App. 17/505,195'}
 - {year: 2022, type: patent, authors: 'N. A. Hall, R. P. Williams, E. Vatankhah', title: Nonlinear Mixing of Sound Beams for Focal Point Determination, venue: 'US Patent App. 17/505,145'}
