@@ -45,7 +45,7 @@ lede: Graduate students, postdocs and undergraduates in Electrical and Computer 
     <thead><tr><th>Name</th><th>Role in the group</th><th>Year</th><th>Now</th></tr></thead>
     <tbody>
       {%- for a in site.data.people.alumni -%}
-      <tr><td>{{ a.name }}</td><td>{{ a.degree }}</td><td>{{ a.year }}</td><td>{{ a.now }}</td></tr>
+      <tr><td>{% if a.link %}<a href="{{ a.link }}">{{ a.name }}</a>{% else %}{{ a.name }}{% endif %}</td><td>{{ a.degree }}</td><td>{{ a.year }}</td><td>{{ a.now }}</td></tr>
       {%- endfor -%}
     </tbody>
   </table>

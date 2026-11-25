@@ -230,6 +230,7 @@ code { font-family: var(--mono); font-size: .85em; background: var(--stone-bg); 
 .alumni th { font-size: 12px; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; color: var(--ink-3); text-align: left; padding: 10px 12px; border-bottom: 1px solid var(--limestone); }
 .alumni td { padding: 12px; border-bottom: 1px solid var(--line); }
 .alumni td:first-child { font-weight: 600; color: var(--charcoal); }
+.alumni td:first-child a { color: inherit; }
 .people-group > .muted { text-align: center; margin-top: 24px; font-size: 14px; }
 
 /* Publications */
