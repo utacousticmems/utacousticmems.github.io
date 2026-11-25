@@ -55,11 +55,17 @@ wide: true
 {%- endif %}
 
 <div class="albums">
-  {%- comment %} 1. Albums listed in _data/gallery.yml, in that order {% endcomment -%}
+  {%- comment %} 1. Albums listed in _data/gallery.yml, in that order. An album's "cover" photo goes first (shown large). {% endcomment -%}
   {%- for a in site.data.gallery -%}
     {%- assign g = groups | where: "name", a.folder | first -%}
     {%- if g -%}
-      {%- include gallery-album.html id=a.folder title=a.title text=a.text items=g.items captions=a.captions -%}
+      {%- assign items = g.items -%}
+      {%- if a.cover -%}
+        {%- assign lead = items | where: "name", a.cover -%}
+        {%- assign rest = items | where_exp: "f", "f.name != a.cover" -%}
+        {%- assign items = lead | concat: rest -%}
+      {%- endif -%}
+      {%- include gallery-album.html id=a.folder title=a.title text=a.text items=items captions=a.captions sections=a.sections -%}
     {%- endif -%}
   {%- endfor -%}
 

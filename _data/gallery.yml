@@ -10,6 +10,12 @@
 # text:     optional one-line description
 # captions: optional, one line per photo: file name, colon, caption
 #           (wrap the caption in double quotes if it contains a colon)
+# cover:    optional, file name of the photo to show first and large
+#           (without it, the newest file name comes first)
+# sections: optional, headings for subfolders. Photos in a subfolder of the
+#           album folder (for example one subfolder per conference) are shown
+#           as their own group under a heading, newest folder name first.
+#           One line per subfolder: folder name, colon, heading.
 
 - folder: team-building
   title: Team building
@@ -21,10 +27,38 @@
   title: In the lab
   text: Benches, setups and cleanroom days.
 
+- folder: field
+  title: In the field
+  text: Measurements and tests outside the lab.
+  cover: 2025-10-29-pool-test-1.jpg
+
 - folder: conferences
   title: Conferences and travel
   text: Talks, posters and the trips around them.
+  # One subfolder per conference, named date first, like 2026-05-asa-philadelphia
+  sections:
+    2026-05-asa-philadelphia: ASA meeting in Philadelphia, May 2026
+    2025-05-asa-new-orleans: ASA meeting in New Orleans, May 2025
+    2023-02-imac-austin: IMAC in Austin, February 2023
+  captions:
+    2026-05-asa-philadelphia-2.jpg: Talk on the rotational Doppler effect on a MEMS diaphragm
+    2026-05-asa-philadelphia-1.jpg: Talk on automated electrode layouts for piezoelectric microphones
+    2025-05-asa-new-orleans-6.jpg: Group dinner
+    2025-05-asa-new-orleans-5.jpg: Talk on a lithium niobate MEMS microphone
+    2025-05-asa-new-orleans-4.jpg: Talk on fabricating a photonic sensor
+    2025-05-asa-new-orleans-3.jpg: Talk on Terfenol-D magnetostriction
+    2025-05-asa-new-orleans-2.jpg: Talk on a lithium niobate PMUT
+    2025-05-asa-new-orleans-1.jpg: Sunset over the Mississippi
+    2023-02-imac-austin.jpg: Second-place best paper award
 
 - folder: graduations
   title: Defenses and graduations
   text: Dissertation defenses, hooding and send-offs.
+  # No dates in this album: not in captions, not in file names, and none
+  # left in the photos' hidden metadata.
+  cover: graduation.jpg
+  captions:
+    graduation.jpg: Graduation
+    phd-defense-3.jpg: PhD defense
+    phd-defense-2.jpg: PhD defense
+    phd-defense-1.jpg: PhD defense

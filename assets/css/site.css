@@ -230,6 +230,7 @@ code { font-family: var(--mono); font-size: .85em; background: var(--stone-bg); 
 .alumni th { font-size: 12px; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; color: var(--ink-3); text-align: left; padding: 10px 12px; border-bottom: 1px solid var(--limestone); }
 .alumni td { padding: 12px; border-bottom: 1px solid var(--line); }
 .alumni td:first-child { font-weight: 600; color: var(--charcoal); }
+.alumni td:first-child a { color: inherit; }
 .people-group > .muted { text-align: center; margin-top: 24px; font-size: 14px; }
 
 /* Publications */
@@ -460,15 +461,22 @@ code { font-family: var(--mono); font-size: .85em; background: var(--stone-bg); 
 .album-head { display: flex; align-items: baseline; justify-content: space-between; gap: 8px 24px; flex-wrap: wrap; margin-bottom: 22px; }
 .album-head h2 { font-size: 34px; font-weight: 800; letter-spacing: -0.03em; margin: 0; }
 .album-head p { margin: 0; font-size: 15px; }
+/* Groups inside an album, one per subfolder (for example one per conference) */
+.album-sub { margin-top: 44px; }
+.album-head + .album-sub { margin-top: 0; }
+.sub-head { display: flex; align-items: baseline; justify-content: space-between; gap: 4px 16px; flex-wrap: wrap; padding-top: 18px; border-top: 1px solid var(--line); margin-bottom: 16px; }
+.sub-head h3 { font-size: 21px; font-weight: 700; letter-spacing: -0.02em; line-height: 1.25; margin: 0; }
+.sub-head p { margin: 0; font-size: 14px; }
 .photo-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
 .photo { position: relative; display: block; aspect-ratio: 3/2; overflow: hidden; border-radius: var(--r-lg); background: var(--stone-bg); cursor: zoom-in; }
 .photo img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 50% 40%; transition: transform .9s var(--ease); }
 .photo:hover img { transform: scale(1.04); }
 .photo:focus-visible { outline: 3px solid var(--orange); outline-offset: 3px; }
 .has-lead .photo:first-child { grid-column: span 2; grid-row: span 2; aspect-ratio: auto; border-radius: var(--r-xl); }
-.photo-cap { position: absolute; left: 0; right: 0; bottom: 0; padding: 44px 18px 14px; font-size: 14px; font-weight: 600; line-height: 1.3; color: #fff; background: linear-gradient(180deg, rgba(22,28,33,0) 0%, rgba(22,28,33,.78) 100%); pointer-events: none; }
+/* Caption: bottom spacing is a transparent border, not padding, so the 2-line clamp cuts off cleanly and a 3rd line never peeks out below it */
+.photo-cap { position: absolute; left: 0; right: 0; bottom: 0; padding: 44px 18px 0; border-bottom: 14px solid transparent; font-size: 14px; font-weight: 600; line-height: 1.3; color: #fff; background: linear-gradient(180deg, rgba(22,28,33,0) 0%, rgba(22,28,33,.78) 100%) border-box; pointer-events: none; }
 .photo-cap { display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2; line-clamp: 2; overflow: hidden; }
-.has-lead .photo:first-child .photo-cap { font-size: 17px; padding: 64px 26px 22px; }
+.has-lead .photo:first-child .photo-cap { font-size: 17px; padding: 64px 26px 0; border-bottom-width: 22px; }
 .gallery-empty { text-align: center; background: var(--stone-bg); border-radius: var(--r-xl); padding: 88px 28px; max-width: var(--wrap); margin: 0 auto; }
 .gallery-empty h2 { font-size: clamp(28px, 3.6vw, 40px); font-weight: 800; letter-spacing: -0.03em; }
 .gallery-empty p { max-width: 520px; margin: 0 auto; }
@@ -493,11 +501,14 @@ code { font-family: var(--mono); font-size: .85em; background: var(--stone-bg); 
   .gallery-chips { margin-bottom: 40px; }
   .album + .album { margin-top: 64px; }
   .album-head h2 { font-size: 28px; }
+  .album-sub { margin-top: 32px; }
+  .sub-head { padding-top: 14px; margin-bottom: 12px; }
+  .sub-head h3 { font-size: 18px; }
   .photo-grid { grid-template-columns: 1fr 1fr; gap: 10px; }
   .photo { border-radius: var(--r-md); }
   .has-lead .photo:first-child { grid-row: auto; aspect-ratio: 3/2; border-radius: var(--r-lg); }
-  .photo-cap { font-size: 12.5px; padding: 30px 12px 10px; }
-  .has-lead .photo:first-child .photo-cap { font-size: 15px; padding: 48px 16px 14px; }
+  .photo-cap { font-size: 12.5px; padding: 30px 12px 0; border-bottom-width: 10px; }
+  .has-lead .photo:first-child .photo-cap { font-size: 15px; padding: 48px 16px 0; border-bottom-width: 14px; }
   .gallery-empty { padding: 64px 22px; }
   .lb-stage { padding: 64px 12px 84px; }
   .lb-prev, .lb-next { top: auto; bottom: 20px; margin: 0; }

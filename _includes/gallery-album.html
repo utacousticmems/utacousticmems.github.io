@@ -1,21 +1,43 @@
 {%- comment -%}
   One album on the Gallery page.
-  Parameters: id, title, text (optional), items (static files), captions (optional map: file name -> caption)
+  Parameters: id, title, text (optional), items (static files), captions (optional map: file name -> caption),
+  sections (optional map: subfolder name -> heading).
+  Photos in a subfolder of the album folder (for example conferences/2025-05-asa-new-orleans/) are shown
+  as their own group under a heading, newest folder name first. Photos directly in the album folder come first.
 {%- endcomment -%}
 {%- assign n = include.items | size -%}
+{%- assign album_title = include.title -%}
+{%- assign album_captions = include.captions -%}
+{%- assign album_sections = include.sections -%}
+{%- comment %} Path is /assets/gallery/<album>/<subfolder or file name>: part 4 is a file name (has a dot) or a subfolder {% endcomment -%}
+{%- assign parts = include.items | group_by_exp: "f", "f.path | split: '/' | slice: 4 | first" -%}
+{%- assign album_loose = "" | split: "" -%}
+{%- assign album_subs = "" | split: "" -%}
+{%- for p in parts -%}
+  {%- if p.name == nil or p.name contains "." -%}
+    {%- assign album_loose = album_loose | concat: p.items -%}
+  {%- else -%}
+    {%- assign album_subs = album_subs | push: p -%}
+  {%- endif -%}
+{%- endfor -%}
+{%- assign album_subs = album_subs | sort: "name" | reverse -%}
 <section class="album" id="{{ include.id }}" data-album="{{ include.id }}">
   <div class="album-head">
-    <h2>{{ include.title }}</h2>
+    <h2>{{ album_title }}</h2>
     <p class="muted">{% if include.text %}{{ include.text }} · {% endif %}{{ n }} photo{% if n != 1 %}s{% endif %}</p>
   </div>
-  <div class="photo-grid{% if n >= 3 %} has-lead{% endif %}">
-    {%- for f in include.items -%}
-    {%- assign cap = include.captions[f.name] -%}
-    {%- assign src = f.path | relative_url | uri_escape %}
-    <a class="photo" href="{{ src }}"{% if cap %} data-caption="{{ cap | escape }}"{% endif %}>
-      <img src="{{ src }}" alt="{% if cap %}{{ cap | escape }}{% else %}{{ include.title | escape }}, photo {{ forloop.index }}{% endif %}" loading="lazy" decoding="async">
-      {%- if cap %}<span class="photo-cap">{{ cap | escape }}</span>{% endif -%}
-    </a>
-    {%- endfor %}
+  {%- if album_loose.size > 0 -%}
+  {%- include gallery-grid.html items=album_loose -%}
+  {%- endif -%}
+  {%- for s in album_subs -%}
+  {%- assign sub_title = album_sections[s.name] -%}
+  {%- unless sub_title -%}{%- assign sub_title = s.name | replace: "-", " " | replace: "_", " " | capitalize -%}{%- endunless %}
+  <div class="album-sub">
+    <div class="sub-head">
+      <h3>{{ sub_title }}</h3>
+      <p class="muted">{{ s.size }} photo{% if s.size != 1 %}s{% endif %}</p>
+    </div>
+    {%- include gallery-grid.html items=s.items group=sub_title %}
   </div>
+  {%- endfor %}
 </section>
