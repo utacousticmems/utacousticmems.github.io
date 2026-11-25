@@ -13,7 +13,7 @@ people:
     extra_openalex_ids: [A5112463774]
 
 # Only papers published on or after this date are suggested.
-start_date: 2026-01-01
+start_date: 2025-01-01
 
 # GitHub accounts asked to review each pull request.
 reviewers:
