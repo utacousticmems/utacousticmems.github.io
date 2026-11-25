@@ -23,7 +23,9 @@ Everything on this site lives in a GitHub repository. You can edit any of it in 
 | Images | `assets/img/` (people photos in `assets/people/`, wiki images in `assets/wiki/`) |
 
 ## Add a paper
-Copy an existing entry in `_data/publications.yml`, paste it at the top of the right year, and change the fields:
+New papers with a DOI are found automatically every Monday and arrive as a pull request for someone to check and merge. See [Automatic publication updates]({{ '/wiki/publication-updates/' | relative_url }}). Add a paper by hand only if it has no DOI (most patents and theses) or the weekly check missed it.
+
+To add one by hand, copy an existing entry in `_data/publications.yml`, paste it at the top of the right year, and change the fields:
 
 ```yaml
 - year: 2027
