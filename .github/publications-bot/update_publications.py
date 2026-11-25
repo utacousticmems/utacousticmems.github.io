@@ -514,7 +514,8 @@ def marker_keys(body: str, marker: str = MARKER) -> set[str]:
 
 
 def bot_prs(state: str) -> list[dict]:
-    prs = gh_json(["pr", "list", "--state", state, "--label", LABEL, "--limit", "100",
+    """Pull requests from this check's branches (found by branch name, so a missing label doesn't matter)."""
+    prs = gh_json(["pr", "list", "--state", state, "--limit", "200",
                    "--json", "number,url,body,headRefName,mergedAt,mergeable,title"]) or []
     return [p for p in prs if str(p.get("headRefName", "")).startswith(BRANCH_PREFIX)]
 
@@ -783,6 +784,8 @@ def main() -> int:
         sug_text += f"{e['_key']}  # {e['_date']} {e['title'][:70]}\n"
     for k in sorted(newly_rejected - read_suggested(sug_text)):
         sug_text += f"{k}  # removed during review\n"
+    for k in sorted(rejected - read_suggested(sug_text)):
+        sug_text += f"{k}  # in a pull request that was closed without merging\n"
     sug_file.write_text(sug_text, encoding="utf-8")
     run(["git", "add", PUBS_PATH, SUGGESTED_PATH])
     n = len(items)
@@ -829,6 +832,9 @@ def open_pull_request(branch: str, title: str, body: str, reviewers: list[str]) 
         body_file = f.name
     r = run(["gh", "pr", "create", "--base", default, "--head", branch, "--title", title,
              "--body-file", body_file, "--label", LABEL], check=False)
+    if r.returncode != 0 and "label" in (r.stderr or "").lower():
+        r = run(["gh", "pr", "create", "--base", default, "--head", branch, "--title", title,
+                 "--body-file", body_file], check=False)
     if r.returncode == 0:
         url = r.stdout.strip().splitlines()[-1]
         log(f"Opened pull request: {url}")
