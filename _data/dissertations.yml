@@ -4,6 +4,18 @@
 # url: the copy in the UT library (Texas ScholarWorks, repositories.lib.utexas.edu).
 #      Leave it out until the library posts the dissertation; the title then shows without a link.
 
+- name: Yuqi Meng
+  degree: Ph.D.
+  year: 2026
+  title: Design, fabrication, and characterization of integrated photonic accelerometer based on optomechanical transduction
+  url: https://repositories.lib.utexas.edu/items/87ddeba6-db00-420f-8089-7b093b543219
+
+- name: Ehsan Vatankhah
+  degree: Ph.D.
+  year: 2026
+  title: Magnetostrictive inertial sensors and hydrophones
+  url: https://repositories.lib.utexas.edu/items/8eee000f-968d-4913-8743-031fdd458dcb
+
 - name: Xiaoyu Niu
   degree: Ph.D.
   year:
