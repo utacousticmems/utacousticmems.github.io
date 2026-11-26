@@ -8,6 +8,30 @@
 # ---------------- 2026 ----------------
 - year: 2026
   type: preprint
+  authors: T.-H. Hsu, J. Huang, Z. Liu, Y.-C. Wang, V. Chulukhadze, N. A. Hall, R. Lu
+  title: Bilayer periodically poled piezoelectric thin-film lithium tantalate platform for passive-layer-free flexural and torsional actuation
+  venue: arXiv
+  url: https://arxiv.org/abs/2611.16044
+- year: 2026
+  type: preprint
+  authors: V. Chulukhadze, J. Huang, Z. Liu, W. Leskowitz, T.-H. Hsu, Y. Ma, U. Rawat, Y. Yu, B. Bahr, N. A. Hall, R. Lu
+  title: Thickness-field-excited bimorph piezoelectric micromachined ultrasonic transducer in submicrometer thin-film lithium niobate
+  venue: arXiv
+  url: https://arxiv.org/abs/2611.13300
+- year: 2026
+  type: preprint
+  authors: Q. Hu, Y. Meng, E. Vatankhah, Z. Liu, W. Wang, N. A. Hall
+  title: A fly-inspired directional microphone with integrated-photonic microring resonator transduction
+  venue: Research Square (preprint)
+  doi: 10.21203/rs.3.rs-10705247/v1
+- year: 2026
+  type: preprint
+  authors: I. Anderson, Z. Liu, V. Tallavajhula, Y.-C. Wang, T.-H. Hsu, N. A. Hall, R. Lu
+  title: 13,000-fold frequency down conversion from 280 MHz to 21 kHz using mechanical frequency combs
+  venue: arXiv
+  url: https://arxiv.org/abs/2611.08759
+- year: 2026
+  type: preprint
   authors: Z. Liu, X. Gao, Y.-C. Wang, X. Niu, E. Vatankhah, M. Kang, S. Madan, Y. Meng, R. Lu, A. Alù, D. Burghoff, N. A. Hall
   title: "Mechanical frequency combs via three-wave-mixing parametric excitation: a scalable inertial-sensing modality"
   venue: Research Square (preprint)
@@ -91,6 +115,13 @@
   venue: IEEE Transactions on Ultrasonics
   details: 73(5), 574
   doi: 10.1109/TUSON.2026.3680394
+- year: 2026
+  type: conference
+  authors: W. Leskowitz, E. Vatankhah, Y. Meng, Z. Liu, Y.-C. Wang, Z. Yan, N. A. Hall
+  title: Automated electrode layout discovery for piezoelectric microphone optimization
+  venue: Proceedings of Meetings on Acoustics
+  details: 61, 030002
+  doi: 10.1121/2.0002395
 - year: 2026
   type: abstract
   authors: W. Leskowitz, E. Vatankhah, Y. Meng, Z. Liu, Y.-C. Wang, Z. Yan, N. A. Hall
