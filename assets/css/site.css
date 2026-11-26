@@ -254,6 +254,7 @@ code { font-family: var(--mono); font-size: .85em; background: var(--stone-bg); 
 .badge-migrated { background: var(--stone-bg); color: var(--ink-2); }
 .badge-needs-check { background: var(--tangerine); color: var(--ink); }
 .note { margin-top: 48px; text-align: center; font-size: 14px; }
+.pub-theses-intro { margin: 0 0 4px; font-size: 15px; }
 
 /* Join */
 .join-grid { display: grid; grid-template-columns: 1fr 340px; gap: 64px; align-items: start; }

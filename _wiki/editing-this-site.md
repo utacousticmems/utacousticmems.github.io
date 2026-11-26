@@ -14,6 +14,7 @@ Everything on this site lives in a GitHub repository. You can edit any of it in 
 | To change… | Edit this file |
 |---|---|
 | A paper | `_data/publications.yml` |
+| An alumni dissertation or thesis | `_data/dissertations.yml` |
 | A person, or move someone to alumni | `_data/people.yml` |
 | A news item | `_data/news.yml` |
 | A research area | `_data/research.yml` |
@@ -23,7 +24,7 @@ Everything on this site lives in a GitHub repository. You can edit any of it in 
 | Images | `assets/img/` (people photos in `assets/people/`, wiki images in `assets/wiki/`) |
 
 ## Add a paper
-New papers with a DOI are found automatically every Monday and arrive as a pull request for someone to check and merge. See [Automatic publication updates]({{ '/wiki/publication-updates/' | relative_url }}). Add a paper by hand only if it has no DOI (most patents and theses) or the weekly check missed it.
+New papers with a DOI are found automatically every Monday and arrive as a pull request for someone to check and merge. See [Automatic publication updates]({{ '/wiki/publication-updates/' | relative_url }}). Add a paper by hand only if it has no DOI (most patents) or the weekly check missed it. Dissertations and theses go in `_data/dissertations.yml` instead, newest at the top, and show at the bottom of the Publications page.
 
 To add one by hand, copy an existing entry in `_data/publications.yml`, paste it at the top of the right year, and change the fields:
 
@@ -44,7 +45,7 @@ YAML is picky about indentation (two spaces) and about colons inside text. If a 
 ## Add yourself
 In `_data/people.yml`, add an entry under `phd:` (or `postdocs:` / `undergrads:`). For a photo, upload a square JPG (at least 400 × 400 px) to `assets/people/` and set `photo: yourname.jpg`.
 
-When you graduate, move your entry to `alumni:` and fill in `year:` and `now:`.
+When you graduate, move your entry to `alumni:` and fill in `year:` and `now:`. Once the UT library posts your dissertation or thesis, add it at the top of `_data/dissertations.yml` with the link to its library page.
 
 ## Add a news item
 Add an entry at the **top** of `_data/news.yml`:

@@ -1,9 +1,10 @@
 ---
 title: Publications
 permalink: /publications/
-lede: Journal articles, conference papers, meeting abstracts, preprints and patents.
+lede: Journal articles, conference papers, meeting abstracts, preprints, patents and alumni dissertations.
 ---
 {%- assign all = site.data.publications -%}
+{%- assign theses = site.data.dissertations -%}
 {%- assign pubs = all | where_exp: "p", "p.era != 'pre-ut'" -%}
 {%- assign early = all | where: "era", "pre-ut" -%}
 {%- assign years = pubs | map: "year" | uniq | sort | reverse -%}
@@ -12,12 +13,15 @@ lede: Journal articles, conference papers, meeting abstracts, preprints and pate
 <div class="pub-tools">
   <input type="search" id="pub-search" placeholder="Search titles, authors, venues" aria-label="Search publications">
   <div class="chips" role="group" aria-label="Filter by type">
-    <button class="chip is-on" data-type="all">All <span>{{ pubs.size }}</span></button>
+    <button class="chip is-on" data-type="all">All <span>{{ pubs.size | plus: theses.size }}</span></button>
     {%- for t in types -%}{%- assign tp = t | split: "|" -%}{%- assign n = pubs | where: "type", tp[0] -%}
     {%- if n.size > 0 %}
     <button class="chip" data-type="{{ tp[0] }}">{{ tp[1] }} <span>{{ n.size }}</span></button>
     {%- endif -%}
     {%- endfor %}
+    {%- if theses.size > 0 %}
+    <button class="chip" data-type="thesis">Dissertation <span>{{ theses.size }}</span></button>
+    {%- endif %}
   </div>
 </div>
 
@@ -30,6 +34,25 @@ lede: Journal articles, conference papers, meeting abstracts, preprints and pate
   </ol>
 </section>
 {%- endfor -%}
+
+{%- if theses.size > 0 %}
+<section class="pub-year pub-theses" id="dissertations">
+  <h2>Dissertations and theses</h2>
+  <p class="muted pub-theses-intro">Ph.D. dissertations and master’s theses by group alumni. Titles link to the copies in the UT library.</p>
+  <ol class="pubs">
+    {%- for d in theses %}
+    <li class="pub" data-type="thesis">
+      <span class="pub-type t-thesis">{{ d.degree }}</span>
+      <div>
+        <div class="pub-title">{% if d.url %}<a href="{{ d.url }}" target="_blank" rel="noopener">{{ d.title }}</a>{% else %}{{ d.title }}{% endif %}</div>
+        <div class="pub-authors">{{ d.name }}</div>
+        <div class="pub-venue"><em>{% if d.degree == "M.S." %}M.S. thesis{% else %}Ph.D. dissertation{% endif %}, The University of Texas at Austin</em>{% if d.year %} ({{ d.year }}){% endif %}</div>
+      </div>
+    </li>
+    {%- endfor %}
+  </ol>
+</section>
+{%- endif %}
 
 <details class="pub-early" id="pub-early">
   <summary>Prof. Hall’s earlier work at Georgia Tech and Sandia National Laboratories, {{ early_years.last }}–{{ early_years.first }} <span>{{ early.size }}</span></summary>
