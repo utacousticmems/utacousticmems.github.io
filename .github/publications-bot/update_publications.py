@@ -53,6 +53,8 @@ USER_AGENT = "publications-bot/1.0" + (f" (+https://github.com/{REPO})" if REPO 
 
 ARXIV_RE = re.compile(r"(?:arxiv\.org/abs/|10\.48550/arxiv\.|arxiv:\s*)(\d{4}\.\d{4,5})", re.I)
 YEAR_HEADER_RE = re.compile(r"^# -+ (\d{4}) -+\s*$")
+SECTION_RE = re.compile(r"^# -{4,}")  # any section header in publications.yml
+TYPE_ORDER = ["preprint", "journal", "conference", "abstract", "patent", "other"]  # order within a year
 SKIP_TYPES = {"paratext", "erratum", "retraction", "editorial", "peer-review", "dataset",
               "supplementary-materials", "libguides", "grant", "standard"}
 SKIP_TITLE_RE = re.compile(r"^(erratum|errata|correction|corrections to|author correction|"
@@ -334,8 +336,13 @@ def entry_yaml(entry: dict) -> str:
     return "\n".join(lines) + "\n"
 
 
+def _type_rank(t: str) -> int:
+    return TYPE_ORDER.index(t) if t in TYPE_ORDER else len(TYPE_ORDER)
+
+
 def insert_entries(text: str, entries: list[dict]) -> str:
-    """Add entries at the top of their year in publications.yml, newest first."""
+    """Add entries to their year in publications.yml. Within a year the page lists preprints, then journal
+    papers, conference papers, abstracts and patents, newest first; each entry goes on top of its group."""
     for e in sorted(entries, key=lambda e: e["_date"]):  # oldest first, so the newest ends up on top
         lines = text.splitlines(keepends=True)
         year = int(e["year"])
@@ -344,7 +351,25 @@ def insert_entries(text: str, entries: list[dict]) -> str:
         same = [i for i, y in headers if y == year]
         older = [i for i, y in headers if y < year]
         if same:
-            lines.insert(same[0] + 1, block)
+            start = same[0] + 1
+            end = next((j for j in range(start, len(lines)) if SECTION_RE.match(lines[j])), len(lines))
+            pos = None
+            for j in range(start, end):
+                if not lines[j].startswith("- "):
+                    continue
+                m = re.search(r"\btype:\s*['\"]?(\w+)", lines[j])  # flow entry: { year: ..., type: ... }
+                k = j + 1
+                while not m and k < end and not lines[k].startswith("- "):
+                    m = re.match(r"\s+type:\s*['\"]?(\w+)", lines[k])
+                    k += 1
+                if _type_rank(m.group(1) if m else "") >= _type_rank(e["type"]):
+                    pos = j
+                    break
+            if pos is None:  # after the last entry of the year
+                pos = end
+                while pos > start and not lines[pos - 1].strip():
+                    pos -= 1
+            lines.insert(pos, block)
         elif older:
             lines.insert(older[0], f"# ---------------- {year} ----------------\n{block}\n")
         else:  # older than every dated section: add a section at the end

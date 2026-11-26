@@ -1,3 +1,8 @@
 # Papers the weekly publications check has already suggested, one per line.
 # The check never suggests these again, even if they were removed during review.
 # It adds lines here itself; you don't need to edit this file.
+arxiv:2611.16044  # 2026-11-11 Bilayer periodically poled piezoelectric thin-film lithium tantalate p
+arxiv:2611.13300  # 2026-11-09 Thickness-field-excited bimorph piezoelectric micromachined ultrasonic
+10.21203/rs.3.rs-10705247/v1  # 2026-11-06 A fly-inspired directional microphone with integrated-photonic microri
+arxiv:2611.08759  # 2026-11-05 13,000-fold frequency down conversion from 280 MHz to 21 kHz using mec
+10.1121/2.0002395  # 2026-01-01 Automated electrode layout discovery for piezoelectric microphone opti
