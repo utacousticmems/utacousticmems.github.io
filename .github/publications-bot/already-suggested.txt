@@ -1,0 +1,3 @@
+# Papers the weekly publications check has already suggested, one per line.
+# The check never suggests these again, even if they were removed during review.
+# It adds lines here itself; you don't need to edit this file.

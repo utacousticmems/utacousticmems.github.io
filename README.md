@@ -26,7 +26,7 @@ Open a file on GitHub, click the pencil icon, edit, *Commit changes*. The site r
 
 | To change… | Edit |
 |---|---|
-| Papers | `_data/publications.yml` |
+| Papers | `_data/publications.yml` (new papers with a DOI arrive by themselves as a weekly pull request; see the wiki page *Automatic publication updates*) |
 | People, alumni, "where our PhDs go" | `_data/people.yml` |
 | News | `_data/news.yml` (newest at top) |
 | Research areas | `_data/research.yml` |
@@ -59,6 +59,7 @@ assets/css/site.css      all styling (colors and fonts at the top; SF Pro on App
 assets/img/              research photos and journal covers
 assets/gallery/          gallery photos, one folder per album (see the README in that folder)
 assets/video/            recruiting film (1080p, compressed to 32 MB) and poster frame
+.github/publications-bot/  weekly check for new papers (settings in settings.yml)
 ```
 
 ## To do
