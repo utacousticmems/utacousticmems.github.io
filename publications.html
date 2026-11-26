@@ -46,7 +46,7 @@ lede: Journal articles, conference papers, meeting abstracts, preprints, patents
       <div>
         <div class="pub-title">{% if d.url %}<a href="{{ d.url }}" target="_blank" rel="noopener">{{ d.title }}</a>{% else %}{{ d.title }}{% endif %}</div>
         <div class="pub-authors">{{ d.name }}</div>
-        <div class="pub-venue"><em>{% if d.degree == "M.S." %}M.S. thesis{% else %}Ph.D. dissertation{% endif %}, The University of Texas at Austin</em>{% if d.year %} ({{ d.year }}){% endif %}</div>
+        <div class="pub-venue"><em>{% if d.degree == "M.S." %}M.S. thesis{% else %}Ph.D. dissertation{% endif %}, The University of Texas at Austin</em></div>
       </div>
     </li>
     {%- endfor %}
