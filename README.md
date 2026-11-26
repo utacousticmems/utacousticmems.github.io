@@ -28,6 +28,7 @@ Open a file on GitHub, click the pencil icon, edit, *Commit changes*. The site r
 |---|---|
 | Papers | `_data/publications.yml` (new papers with a DOI arrive by themselves as a weekly pull request; see the wiki page *Automatic publication updates*) |
 | People, alumni, "where our PhDs go" | `_data/people.yml` |
+| Alumni dissertations and theses | `_data/dissertations.yml` (newest at top) |
 | News | `_data/news.yml` (newest at top) |
 | Research areas | `_data/research.yml` |
 | Gallery photos | upload to `assets/gallery/<album>/` (they appear automatically); album titles and captions in `_data/gallery.yml` |

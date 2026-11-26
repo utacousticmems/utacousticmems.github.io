@@ -1,0 +1,76 @@
+# Ph.D. dissertations and M.S. theses by group alumni, shown at the bottom of /publications/.
+# Newest first: when someone graduates, add their entry at the top.
+# degree: Ph.D. or M.S.
+# url: the copy in the UT library (Texas ScholarWorks, repositories.lib.utexas.edu).
+#      Leave it out until the library posts the dissertation; the title then shows without a link.
+
+- name: Yuqi Meng
+  degree: Ph.D.
+  year: 2026
+  title: Design, fabrication, and characterization of integrated photonic accelerometer based on optomechanical transduction
+  url: https://repositories.lib.utexas.edu/items/87ddeba6-db00-420f-8089-7b093b543219
+
+- name: Ehsan Vatankhah
+  degree: Ph.D.
+  year: 2026
+  title: Magnetostrictive inertial sensors and hydrophones
+  url: https://repositories.lib.utexas.edu/items/8eee000f-968d-4913-8743-031fdd458dcb
+
+- name: Xiaoyu Niu
+  degree: Ph.D.
+  year:
+  title: MEMS based directional acoustic transducers
+  url: https://repositories.lib.utexas.edu/items/2b35ab6d-f155-4d79-8884-69c26bb7e61b
+
+- name: Carly A. Stalder
+  degree: M.S.
+  year:
+  title: Design, fabrication, and evaluation of a biologically-inspired piezoelectric MEMS microphone with in-plane directivity
+  url: https://hdl.handle.net/2152/86453
+
+- name: Yoonho Seo
+  degree: Ph.D.
+  year: 2020
+  title: Dynamic pressure sensors for hypersonic flow measurements
+  url: https://hdl.handle.net/2152/85548
+
+- name: Randall P. Williams
+  degree: Ph.D.
+  year:
+  title: Modeling and analysis of MEMS inertial sensors with grating-based interferometric optical readout
+
+- name: Donghwan Kim
+  degree: Ph.D.
+  year: 2018
+  title: Design of an optical microelectromechanical-system microphone with sub 15-dBA noise floor
+  url: https://hdl.handle.net/2152/68085
+
+- name: Colton D. Snell
+  degree: M.S.
+  year: 2017
+  title: Capacitive shear stress sensor with DC sensing capability for fluid flow measurements
+  url: https://hdl.handle.net/2152/62892
+
+- name: Jingqiang Zha
+  degree: M.S.
+  year: 2015
+  title: Optimization of in-plane directional microphone
+  url: https://repositories.lib.utexas.edu/items/9f4aae85-3acb-4619-8d09-e9a0f967cb59
+
+- name: Michael L. Kuntzman
+  degree: Ph.D.
+  year: 2014
+  title: Micromachined in-plane acoustic pressure gradient sensors
+  url: https://hdl.handle.net/2152/31015
+
+- name: Karen D. Kirk
+  degree: M.S.
+  year: 2012
+  title: Design, fabrication, and testing of a MEMS z-axis directional piezoelectric microphone
+  url: https://hdl.handle.net/2152/ETD-UT-2012-05-5321
+
+- name: Michael L. Kuntzman
+  degree: M.S.
+  year: 2010
+  title: Modeling and prototyping of a micromachined optical microphone
+  url: https://hdl.handle.net/2152/ETD-UT-2010-12-2644
