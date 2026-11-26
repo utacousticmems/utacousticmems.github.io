@@ -29,6 +29,17 @@ If last week's pull request is still open, new papers are added to it instead of
 
 Before merging you can also fix a typo, change the type (`journal`, `conference`, `abstract`, `preprint`), or add `highlight: true` or a `cover:` badge, the same way as in step 4. Titles are changed to sentence case automatically, so check names of people, places and materials.
 
+## If you get an issue instead of a pull request
+GitHub lets the program open pull requests only if a setting allows it, and in the utacousticmems organization that setting is locked. Until it is turned on, the program opens an issue called **New publications found: please review** instead, assigned to the reviewers:
+
+1. Open the issue and click **Open the pull request page**.
+2. Click the green **Create pull request** button.
+3. Review the pull request as above, then merge it.
+
+To skip all the papers, close the issue. The program closes the issue by itself once the papers are merged. The link always shows the latest list, so the link in an older email still works.
+
+To turn the setting on, an owner of the utacousticmems organization opens the organization's **Settings → Actions → General**, ticks **Allow GitHub Actions to create and approve pull requests** under **Workflow permissions**, and clicks **Save**. Then a repository admin ticks the same box in this repository's **Settings → Actions → General**. After that, pull requests arrive directly.
+
 ## What it doesn't do
 - **Papers without a DOI**, such as most patents and theses, still need to be added by hand. See [Editing this site]({{ '/wiki/editing-this-site/' | relative_url }}).
 - **Missed papers.** Now and then OpenAlex doesn't connect a paper to Prof. Hall (the Transducers 2025 paper is one). Add those by hand too.
@@ -42,7 +53,7 @@ They are in `.github/publications-bot/settings.yml`. Open it on GitHub, click th
 |---|---|
 | `people` | Whose papers to look for: a name and an ORCID iD. |
 | `start_date` | Only papers published on or after this date are suggested. |
-| `reviewers` | GitHub accounts asked to review each pull request. |
+| `reviewers` | GitHub accounts asked to review each pull request (or assigned the issue, see above). |
 | `skip` | Papers never to suggest: a DOI, or `arXiv:NUMBER` for an arXiv preprint. |
 | `keep_capitalized` | Extra words to keep capitalized when titles are changed to sentence case. |
 
@@ -52,7 +63,7 @@ They are in `.github/publications-bot/settings.yml`. Open it on GitHub, click th
 In the repository, open **Actions**, then **Weekly publications check**, then **Run workflow**. Tick **Only show what would be added** to try it without opening a pull request. Each run's page shows a short report of what it found and what it skipped.
 
 ## If something stops working
-- **An issue appeared instead of a pull request:** GitHub needs permission for the program to open pull requests. A repository admin opens **Settings → Actions → General**, ticks **Allow GitHub Actions to create and approve pull requests** under **Workflow permissions**, and clicks **Save**. If the box is greyed out, an organization owner ticks the same box in the organization's **Settings → Actions → General** first.
+- **An issue appeared instead of a pull request:** see [If you get an issue instead of a pull request](#if-you-get-an-issue-instead-of-a-pull-request).
 - **GitHub paused the weekly run:** GitHub pauses scheduled runs after 60 days without any change to the repository. The program tries to prevent this. To restart it, open **Actions → Weekly publications check** and click **Enable workflow**.
 - **A run failed with an OpenAlex error about an API key:** get a free key at [openalex.org](https://openalex.org) (sign up, then **Settings → API key**), and add it in the repository under **Settings → Secrets and variables → Actions → New repository secret**, named `OPENALEX_API_KEY`.
 

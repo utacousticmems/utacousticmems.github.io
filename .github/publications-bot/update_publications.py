@@ -45,6 +45,9 @@ BRANCH_PREFIX = "publications-bot/"
 LABEL = "publications-bot"
 MARKER = "publications-bot-dois"          # hidden list of the DOIs a pull request suggests
 SUPERSEDED = "publications-bot-superseded"  # a pull request the bot replaced with a fresh one
+ISSUE_TITLE = "New publications found: please review"  # used when GitHub won't let the check open a pull request
+REVIEW_BRANCH = BRANCH_PREFIX + "review"  # fixed branch for that issue's link, so links in older emails keep working
+DONE = "publications-bot-done"            # marks an issue the check closed itself; a person closing one means "skip"
 REPO = os.environ.get("GITHUB_REPOSITORY", "")
 USER_AGENT = "publications-bot/1.0" + (f" (+https://github.com/{REPO})" if REPO else "")
 
@@ -448,6 +451,9 @@ def details_of(work: dict, cr: dict | None, typ: str) -> str:
     if not vol:
         return ""  # early access: volume and pages are not final yet
     issue = re.sub(r"[_ ]?supplement", " Suppl.", issue, flags=re.I).strip()
+    first, _, last = pages.partition("-")
+    if first and first == last:
+        pages = first
     pages = pages.replace("-", "–")
     s = vol + (f"({issue})" if issue else "")
     if pages:
@@ -625,6 +631,9 @@ def main() -> int:
             rejected |= marker_keys(pr.get("body"), SUPERSEDED)
         else:
             rejected |= marker_keys(pr.get("body"))
+    for issue in bot_issues("closed"):
+        if DONE not in (issue.get("body") or ""):
+            rejected |= marker_keys(issue.get("body"))  # closed by a person: skip these papers
 
     mode, pr, branch_ref, newly_rejected = "new", None, main_sha, set()
     page_entries = list(main_entries)
@@ -755,8 +764,12 @@ def main() -> int:
              "The publications list changed since this was opened, so the weekly check is replacing it with "
              "a fresh pull request. Papers removed from this one stay skipped."], check=False)
         pr = None
+    if mode == "append":
+        close_bot_issues(f"The pull request with these papers is open now: {pr['url']}")
     if not items:
         log("Nothing new this week.")
+        if not pr:
+            close_bot_issues("Nothing is waiting for review any more: the papers are on the page or were skipped.")
         cleanup_branches(keep_branch=pr["headRefName"] if pr else None)
         return finish()
 
@@ -785,7 +798,7 @@ def main() -> int:
     for k in sorted(newly_rejected - read_suggested(sug_text)):
         sug_text += f"{k}  # removed during review\n"
     for k in sorted(rejected - read_suggested(sug_text)):
-        sug_text += f"{k}  # in a pull request that was closed without merging\n"
+        sug_text += f"{k}  # skipped: its pull request or issue was closed without merging\n"
     sug_file.write_text(sug_text, encoding="utf-8")
     run(["git", "add", PUBS_PATH, SUGGESTED_PATH])
     n = len(items)
@@ -810,7 +823,7 @@ def main() -> int:
         run(["gh", "pr", "edit", str(pr["number"]), "--title", title, "--body-file", "-"], check=False, input_text=body)
         log(f"Updated pull request #{pr['number']}: {pr['url']}")
     else:
-        open_pull_request(branch, title, body, reviewers)
+        branch = open_pull_request(branch, title, body, reviewers)
     cleanup_branches(keep_branch=branch)
     return finish()
 
@@ -823,7 +836,9 @@ def new_branch_name() -> str:
     return name
 
 
-def open_pull_request(branch: str, title: str, body: str, reviewers: list[str]) -> None:
+def open_pull_request(branch: str, title: str, body: str, reviewers: list[str]) -> str:
+    """Opens the pull request, or an issue with a one-click link if GitHub won't allow that.
+    Returns the branch that now holds the papers."""
     run(["gh", "label", "create", LABEL, "--color", "1D76DB", "--force",
          "--description", "Opened by the weekly publications check"], check=False)
     default = (gh_json(["repo", "view", "--json", "defaultBranchRef"]) or {}).get("defaultBranchRef", {}).get("name") or "main"
@@ -838,34 +853,76 @@ def open_pull_request(branch: str, title: str, body: str, reviewers: list[str]) 
     if r.returncode == 0:
         url = r.stdout.strip().splitlines()[-1]
         log(f"Opened pull request: {url}")
+        close_bot_issues(f"The pull request with these papers is open now: {url}")
         for who in reviewers:
             rr = run(["gh", "pr", "edit", url, "--add-reviewer", who], check=False)
             if rr.returncode != 0:
                 log(f"(Could not ask {who} to review: {rr.stderr.strip()[:200]})")
-        return
+        return branch
     err = (r.stderr or "").strip()
     log(f"Could not open the pull request: {err[:400]}")
-    # Usually means "Allow GitHub Actions to create and approve pull requests" is off.
+    # Usually means "Allow GitHub Actions to create and approve pull requests" is off (often locked by the
+    # organization). The branch is pushed, so a person can open the pull request with one click instead.
+    # The papers move to one fixed branch, so the link in an older email still works and shows the latest list.
+    if branch != REVIEW_BRANCH and run(["git", "push", "--force", "origin", f"HEAD:refs/heads/{REVIEW_BRANCH}"],
+                                       check=False).returncode == 0:
+        run(["git", "push", "origin", "--delete", branch], check=False)
+        branch = REVIEW_BRANCH
+    pr_text = body
+    if len(urllib.parse.quote(pr_text)) > 6000:  # keep the link short enough for browsers
+        pr_text = ("Papers found by the weekly publications check. They are listed in the issue "
+                   f"“{ISSUE_TITLE}” and under **Files changed**.\n\n" + body[body.index(f"<!-- {MARKER}"):])
     compare = (f"https://github.com/{REPO}/compare/{default}...{urllib.parse.quote(branch, safe='/')}"
-               f"?expand=1&labels={LABEL}&title={urllib.parse.quote(title)}")
+               f"?expand=1&labels={LABEL}&title={urllib.parse.quote(title)}&body={urllib.parse.quote(pr_text)}")
+    org = REPO.split("/")[0] or "the"
     issue_body = (
-        "The weekly publications check found new papers, but GitHub did not let it open a pull request.\n\n"
-        f"**To review them now:** [open the pull request]({compare}), click **Create pull request**, check the "
-        "papers, then **Merge pull request**.\n\n"
-        "**To make this automatic next time** (once, needs a repository admin): open **Settings → Actions → "
-        "General**, scroll to **Workflow permissions**, tick **Allow GitHub Actions to create and approve pull "
-        "requests**, and click **Save**. If the box is greyed out, an organization owner has to tick the same box "
-        "under the organization's **Settings → Actions → General** first.\n\n"
+        "The weekly publications check found new papers for the Publications page.\n\n"
+        "**To add them (about 2 minutes):**\n"
+        f"1. [Open the pull request page]({compare}).\n"
+        "2. Click the green **Create pull request** button.\n"
+        "3. Check the papers (listed below, and under **Files changed**), then click **Merge pull request**.\n\n"
+        "To leave a paper out, delete it under **Files changed** before merging; it won't be suggested again. "
+        "To skip them all, close this issue. The weekly check closes it by itself once the papers are merged.\n\n"
+        "**Why the extra step:** GitHub doesn't let the check open the pull request itself. To change that, an owner "
+        f"of the {org} organization opens the organization's **Settings → Actions → General**, ticks **Allow GitHub "
+        "Actions to create and approve pull requests** under **Workflow permissions**, and clicks **Save**. Then a "
+        "repository admin ticks the same box in this repository's **Settings → Actions → General**.\n\n"
         f"<details><summary>The papers</summary>\n\n{body}\n</details>\n"
     )
-    issues = gh_json(["issue", "list", "--label", LABEL, "--state", "open", "--json", "number"]) or []
+    issues = bot_issues()
     if issues:
-        run(["gh", "issue", "edit", str(issues[0]["number"]), "--body-file", "-"], check=False, input_text=issue_body)
-        log(f"Updated issue #{issues[0]['number']} with the new papers.")
-    else:
-        rr = run(["gh", "issue", "create", "--title", "New publications found: please review",
-                  "--label", LABEL, "--body-file", "-"], check=False, input_text=issue_body)
-        log(rr.stdout.strip() or rr.stderr.strip()[:300])
+        num = str(issues[0]["number"])
+        old_keys = marker_keys(issues[0].get("body") or "")
+        run(["gh", "issue", "edit", num, "--body-file", "-"], check=False, input_text=issue_body)
+        if marker_keys(body) - old_keys:
+            run(["gh", "issue", "comment", num, "--body",
+                 "More papers were found this week. The list and the link above are updated."], check=False)
+        log(f"Updated issue #{num} with the papers and a fresh link.")
+        return branch
+    rr = run(["gh", "issue", "create", "--title", ISSUE_TITLE, "--label", LABEL, "--body-file", "-"],
+             check=False, input_text=issue_body)
+    if rr.returncode != 0:
+        rr = run(["gh", "issue", "create", "--title", ISSUE_TITLE, "--body-file", "-"], check=False, input_text=issue_body)
+    url = (rr.stdout or "").strip().splitlines()[-1] if rr.returncode == 0 and rr.stdout.strip() else ""
+    log(f"Opened issue {url}" if url else f"Could not open an issue either: {(rr.stderr or '').strip()[:300]}")
+    for who in reviewers if url else []:
+        run(["gh", "issue", "edit", url, "--add-assignee", who], check=False)
+    return branch
+
+
+def bot_issues(state: str = "open") -> list[dict]:
+    """Issues this check opened because it could not open a pull request."""
+    issues = gh_json(["issue", "list", "--state", state, "--limit", "100", "--json", "number,title,body"]) or []
+    return [i for i in issues if i.get("title") == ISSUE_TITLE]
+
+
+def close_bot_issues(comment: str) -> None:
+    for i in bot_issues():
+        num = str(i["number"])
+        run(["gh", "issue", "edit", num, "--body-file", "-"], check=False,
+            input_text=(i.get("body") or "") + f"\n<!-- {DONE} -->\n")
+        run(["gh", "issue", "close", num, "--comment", comment], check=False)
+        log(f"Closed issue #{num}.")
 
 
 def cleanup_branches(keep_branch: str | None) -> None:
