@@ -1,0 +1,60 @@
+# Useful links page (/links/). It is linked from the footer, under "Students", and is not in the top menu.
+# Groups show in this order, and links in the order listed. Keep the whole page short (8 to 14 links).
+# Use https:// addresses only, and open a new link once in your browser to check that it loads.
+#   name: the link text
+#   url:  the full address
+#   note: optional; one short line shown in grey under the link
+
+- group: At UT
+  links:
+    - name: Texas Acoustics
+      url: https://www.texasacoustics.org/
+      note: Acoustics courses, seminars and research across UT
+    - name: Microelectronics Research Center
+      url: https://research.utexas.edu/mrc
+      note: The cleanroom where we make our devices
+    - name: Chandra Family Department of ECE
+      url: https://ece.utexas.edu/
+      note: Our home department
+    - name: Applied Research Laboratories
+      url: https://www.arlut.utexas.edu/
+      note: UT's applied research lab, a long-time center for acoustics
+
+- group: Societies and journals
+  links:
+    - name: Acoustical Society of America
+      url: https://acousticalsociety.org/
+      note: Our home society and conference
+    - name: JASA
+      url: https://pubs.aip.org/asa/jasa
+      note: The Journal of the Acoustical Society of America
+    - name: POMA
+      url: https://pubs.aip.org/asa/poma
+      note: Proceedings of Meetings on Acoustics, open access
+    - name: IEEE Sensors Journal
+      url: https://ieee-sensors.org/ieee-sensors-journal/
+      note: IEEE Sensors Council
+    - name: JMEMS
+      url: https://eds.ieee.org/publications/journal-of-microelectromechanical-systems
+      note: Journal of Microelectromechanical Systems, IEEE
+
+- group: Acoustics tools
+  links:
+    - name: Acoustics and vibration animations
+      url: https://www.acs.psu.edu/drussell/demos.html
+      note: Daniel A. Russell, Penn State
+    - name: Speed of sound and fluid properties
+      url: https://webbook.nist.gov/chemistry/fluid/
+      note: Water, gases and more, from NIST
+    - name: Speed of sound in water
+      url: https://resource.npl.co.uk/acoustics/techguides/soundpurewater/
+      note: Calculator from the UK's National Physical Laboratory
+
+- group: For students
+  links:
+    - name: ASA student chapter at UT
+      url: https://atscasa.org/
+      note: Seminars, speakers and outreach for acoustics students
+    - name: Graduate admissions
+      url: https://graduate.utexas.edu/admissions
+      note: How to apply to graduate school at UT Austin

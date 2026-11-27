@@ -34,6 +34,7 @@ Open a file on GitHub, click the pencil icon, edit, *Commit changes*. The site r
 | Gallery photos | upload to `assets/gallery/<album>/` (they appear automatically); album titles and captions in `_data/gallery.yml` |
 | Wiki pages | `_wiki/*.md` (start from `_templates/wiki-page.md`) |
 | Wiki sections | `_data/wiki_categories.yml` |
+| Useful links page (linked from the footer) | `_data/links.yml` |
 | Home / Join / Visit text | `index.html`, `join.html`, `visit.html` |
 | Images | `assets/img/`, people photos `assets/people/`, wiki images `assets/wiki/` |
 
