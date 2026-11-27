@@ -35,7 +35,7 @@ To add one by hand, copy an existing entry in `_data/publications.yml`, paste it
   title: Title in sentence case
   venue: Journal name
   details: 12(3), 456    # volume(issue), pages or article number
-  doi: 10.xxxx/xxxxx     # or url: https://...
+  doi: 10.xxxx/xxxxx     # or url: https://... (for a patent, its patents.google.com page)
   cover: Cover article, March 2027   # optional
   highlight: true        # optional: show under its research area
 ```
@@ -45,7 +45,7 @@ YAML is picky about indentation (two spaces) and about colons inside text. If a 
 ## Add yourself
 In `_data/people.yml`, add an entry under `phd:` (or `postdocs:` / `undergrads:`). For a photo, upload a square JPG (at least 400 × 400 px) to `assets/people/` and set `photo: yourname.jpg`.
 
-When you graduate, move your entry to `alumni:` and fill in `year:` and `now:`. Once the UT library posts your dissertation or thesis, add it at the top of `_data/dissertations.yml` with the link to its library page.
+When you graduate, move your entry to `alumni:`, set `degree:` (the People page groups alumni by it) and fill in `now:` with where you went. Once the UT library posts your dissertation or thesis, add it at the top of `_data/dissertations.yml` with the link to its library page.
 
 ## Add a news item
 Add an entry at the **top** of `_data/news.yml`:

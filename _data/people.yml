@@ -1,6 +1,7 @@
 # People shown on /people/.
 # To add a photo: put a square JPG in assets/people/ and set photo: <filename>.
 # Move someone to alumni when they graduate and fill in "now" (where they went).
+# focus: one line on their research; leave it "" for someone still choosing a topic.
 
 pi:
   name: Neal A. Hall
@@ -51,6 +52,8 @@ undergrads: []
 
 # Alumni, most recent at the top. "now" = current position if known. Leave blank rather than guess.
 # Optional link: (e.g. Google Scholar) turns the name into a link.
+# Shown grouped by degree: Ph.D., M.S., Postdoc, and everyone else under "Undergraduate
+# researchers and interns" (an REU intern's role is shown next to the name). year is not shown.
 alumni:
   - { name: "Zihuan Liu", degree: "Ph.D.", year: "", now: "Apple", link: "https://scholar.google.com/citations?user=Tz_bpBUAAAAJ" }
   - { name: "Yuqi Meng", degree: "Ph.D.", year: "", now: "Apple" }

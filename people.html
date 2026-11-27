@@ -31,7 +31,7 @@ lede: Graduate students, postdocs and undergraduates in Electrical and Computer 
         <div class="avatar">{% if p.photo and p.photo != "" %}<img src="{{ '/assets/people/' | append: p.photo | relative_url }}" alt="{{ p.name }}" loading="lazy">{% else %}{%- assign w = p.name | split: " " -%}{{ w.first | slice: 0 }}{{ w.last | slice: 0 }}{% endif %}</div>
         <div>
           <h3>{% if p.link %}<a href="{{ p.link }}">{{ p.name }}</a>{% else %}{{ p.name }}{% endif %}</h3>
-          <p>{{ p.focus }}</p>
+          {% if p.focus and p.focus != "" %}<p>{{ p.focus }}</p>{% endif %}
         </div>
       </div>
       {%- endfor -%}
@@ -42,14 +42,20 @@ lede: Graduate students, postdocs and undergraduates in Electrical and Computer 
 
 <section class="people-group">
   <h2>Alumni</h2>
-  <table class="alumni">
-    <thead><tr><th>Name</th><th>Role in the group</th><th>Year</th><th>Now</th></tr></thead>
-    <tbody>
-      {%- for a in site.data.people.alumni -%}
-      <tr><td>{% if a.link %}<a href="{{ a.link }}">{{ a.name }}</a>{% else %}{{ a.name }}{% endif %}</td><td>{{ a.degree }}</td><td>{{ a.year }}</td><td>{{ a.now }}</td></tr>
-      {%- endfor -%}
-    </tbody>
-  </table>
+  {%- comment %} Grouped by degree, in the order of _data/people.yml (most recent first) {% endcomment -%}
+  {%- assign a_phd = "" | split: "" -%}{%- assign a_ms = "" | split: "" -%}{%- assign a_pd = "" | split: "" -%}{%- assign a_ug = "" | split: "" -%}
+  {%- for a in site.data.people.alumni -%}
+    {%- case a.degree -%}
+      {%- when "Ph.D." -%}{%- assign a_phd = a_phd | push: a -%}
+      {%- when "M.S." -%}{%- assign a_ms = a_ms | push: a -%}
+      {%- when "Postdoc" -%}{%- assign a_pd = a_pd | push: a -%}
+      {%- else -%}{%- assign a_ug = a_ug | push: a -%}
+    {%- endcase -%}
+  {%- endfor -%}
+  {%- include alumni-group.html title="Ph.D. graduates" people=a_phd -%}
+  {%- include alumni-group.html title="M.S. graduates" people=a_ms -%}
+  {%- include alumni-group.html title="Postdoctoral researchers" people=a_pd -%}
+  {%- include alumni-group.html title="Undergraduate researchers and interns" people=a_ug %}
   <p class="muted">We are always looking for motivated new students. See <a href="{{ '/join/' | relative_url }}">how to join</a>.</p>
   <p class="muted">Alumni: tell us where you are now and we will add it. Email <a href="mailto:{{ site.pi_email }}">{{ site.pi_email }}</a>.</p>
 </section>

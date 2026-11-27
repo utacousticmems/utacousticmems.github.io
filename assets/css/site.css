@@ -226,16 +226,20 @@ code { font-family: var(--mono); font-size: .85em; background: var(--stone-bg); 
 .avatar-lg { width: 240px; height: 240px; border-radius: var(--r-xl); font-size: 72px; background: var(--orange); }
 .people-group { padding: 80px 0 0; }
 .people-group > h2 { text-align: center; font-size: 40px; font-weight: 800; letter-spacing: -0.035em; margin-bottom: 32px; }
-.people-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+.people-grid { display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; }
+.people-grid > .person { flex: 0 1 calc((100% - 40px) / 3); }
 .person { display: flex; flex-direction: column; align-items: center; text-align: center; gap: 14px; background: var(--stone-bg); border-radius: var(--r-lg); padding: 32px 22px; }
 .person h3 { margin: 0 0 4px; font-size: 19px; }
 .person h3 a { color: var(--charcoal); }
 .person p { margin: 0; color: var(--ink-3); font-size: 14px; line-height: 1.4; }
-.alumni { width: 100%; border-collapse: collapse; font-size: 15px; }
-.alumni th { font-size: 12px; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; color: var(--ink-3); text-align: left; padding: 10px 12px; border-bottom: 1px solid var(--limestone); }
-.alumni td { padding: 12px; border-bottom: 1px solid var(--line); }
-.alumni td:first-child { font-weight: 600; color: var(--charcoal); }
-.alumni td:first-child a { color: inherit; }
+.alumni-group + .alumni-group { margin-top: 36px; }
+.alumni-group .label-h { margin: 0 0 4px; }
+.alumni-list { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(3, 1fr); column-gap: 28px; }
+.alumni-list li { display: flex; flex-direction: column; padding: 12px 0; border-top: 1px solid var(--line); }
+.alumni-name { font-size: 15.5px; font-weight: 600; color: var(--charcoal); line-height: 1.35; }
+.alumni-name a { color: inherit; text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 3px; text-decoration-color: rgba(51,63,72,.35); }
+.alumni-name a:hover { color: var(--orange); text-decoration-color: currentColor; }
+.alumni-now { font-size: 14px; color: var(--ink-3); line-height: 1.35; margin-top: 2px; }
 .people-group > .muted { text-align: center; margin-top: 24px; font-size: 14px; }
 
 /* Publications */
@@ -389,7 +393,8 @@ code { font-family: var(--mono); font-size: .85em; background: var(--stone-bg); 
   .join-side { position: static; }
   .wiki-grid { grid-template-columns: 1fr; gap: 32px; }
   .wiki-side { position: static; order: 2; border-top: 1px solid var(--line); padding-top: 28px; }
-  .people-grid { grid-template-columns: 1fr 1fr; }
+  .people-grid > .person { flex-basis: calc((100% - 20px) / 2); }
+  .alumni-list { grid-template-columns: 1fr 1fr; }
   .pi { grid-template-columns: 1fr; gap: 28px; padding: 36px; }
   .avatar-lg { width: 160px; height: 160px; font-size: 52px; }
   .footer-grid { grid-template-columns: 1fr 1fr; }
@@ -411,7 +416,8 @@ code { font-family: var(--mono); font-size: .85em; background: var(--stone-bg); 
   .panel, .stats { padding: 80px 0; }
   .cta { padding: 96px 0; }
   .section-sub { font-size: 19px; margin-bottom: 40px; }
-  .stat-grid, .news-cards, .visit-grid, .fac-grid, .wiki-index, .heritage-grid, .lab-grid, .people-grid { grid-template-columns: 1fr; }
+  .stat-grid, .news-cards, .visit-grid, .fac-grid, .wiki-index, .heritage-grid, .lab-grid, .alumni-list { grid-template-columns: 1fr; }
+  .people-grid > .person { flex-basis: 100%; }
   .stat { padding: 32px 26px 28px; }
   .bento { grid-template-columns: 1fr; }
   .tile, .tile-3, .tile-4, .tile-5, .tile-6 { grid-column: auto; flex-direction: column; }
@@ -431,7 +437,6 @@ code { font-family: var(--mono); font-size: .85em; background: var(--stone-bg); 
   .news-full li { grid-template-columns: 1fr; grid-template-areas: "when" "main"; }
   .news-thumb { display: none; }
   .footer-grid { grid-template-columns: 1fr; gap: 28px; }
-  .alumni th:nth-child(3), .alumni td:nth-child(3) { display: none; }
 }
 
 /* Readability (WCAG AA). Links inside running text are underlined, so they do not rely on color alone. */

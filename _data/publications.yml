@@ -139,6 +139,18 @@
   doi: 10.1121/10.0045442
 - year: 2026
   type: patent
+  authors: X. Niu, N. A. Hall
+  title: Lithium niobate MEMS microphone
+  venue: U.S. Patent Application Publication US 2026/0292408 A1
+  url: https://patents.google.com/patent/US20260292408A1
+- year: 2026
+  type: patent
+  authors: N. A. Hall, X. Niu
+  title: Gamepad microphone
+  venue: U.S. Patent Application Publication US 2026/0022009 A1
+  url: https://patents.google.com/patent/US20260022009A1
+- year: 2026
+  type: patent
   authors: N. A. Hall, Z. Liu, E. Vatankhah, Y. Meng, X. Niu
   title: Transducer probe for direct ultrasonic neuromodulation and measurement
   venue: U.S. Patent Application Publication US 2026/0061226 A1
@@ -250,6 +262,12 @@
   venue: The Journal of the Acoustical Society of America
   details: 157, A147
   doi: 10.1121/10.0037705
+- year: 2025
+  type: patent
+  authors: N. A. Hall
+  title: Transducer probe for direct ultrasonic neuromodulation and measurement
+  venue: U.S. Patent Application Publication US 2025/0345636 A1
+  url: https://patents.google.com/patent/US20250345636A1
 
 # ---------------- 2023 ----------------
 - year: 2023
@@ -259,24 +277,35 @@
   venue: Society for Experimental Mechanics Annual Conference (Computer Vision & Laser Vibrometry, Vol. 6)
   details: 121–126
   award: IMAC XLI Best Paper Award, 2nd place
+  doi: 10.1007/978-3-031-34910-2_15
 - year: 2023
   type: conference
   authors: E. Vatankhah, C. Hodges, X. Niu, Z. Liu, Y. Meng, A. S. Belyakov, N. A. Hall
   title: Magnetoelastic vibration sensors
   venue: Society for Experimental Mechanics Annual Conference
   details: 25–29
+  doi: 10.1007/978-3-031-34938-6_4
 - year: 2023
   type: conference
   authors: Y. Meng, X. Niu, R. P. Williams, E. Vatankhah, Z. Liu, N. A. Hall
   title: State-space modeling of nonlinear electrostatic transducers and experimental characterization using LDV
   venue: Society for Experimental Mechanics Annual Conference
   details: 259–264
+  doi: 10.1007/978-3-031-36999-5_33
+- year: 2023
+  type: abstract
+  authors: X. Niu, Y. Meng, E. Vatankhah, N. A. Hall
+  title: The design of an optomechanical microphone using a photonic waveguide interferometer
+  venue: The Journal of the Acoustical Society of America
+  details: 153(3 Suppl.), A144
+  doi: 10.1121/10.0018445
 - year: 2023
   type: abstract
   authors: E. Vatankhah, Y. Meng, Z. Liu, X. Niu, N. A. Hall
   title: Characterization of high intensity progressive ultrasound beams in air at 300 kHz
   venue: The Journal of the Acoustical Society of America
   details: 153(5), 2878
+  doi: 10.1121/10.0019376
 
 # ---------------- 2022 ----------------
 - year: 2022
@@ -285,6 +314,14 @@
   title: An air-coupled electrostatic ultrasound transducer using a MEMS microphone architecture
   venue: Journal of Microelectromechanical Systems
   details: 31(5), 813–819
+  doi: 10.1109/jmems.2022.3190714
+- year: 2022
+  type: abstract
+  authors: Z. Liu, E. Vatankhah, Y. Meng, X. Niu, N. A. Hall
+  title: Measurement of airborne ultrasound using laser Doppler vibrometry
+  venue: The Journal of the Acoustical Society of America
+  details: 152(4 Suppl.), A261
+  doi: 10.1121/10.0016205
 - year: 2022
   type: abstract
   authors: X. Niu, Y. Meng, Z. Liu, E. Vatankhah, N. A. Hall
@@ -292,109 +329,165 @@
   venue: The Journal of the Acoustical Society of America
   details: 152(4 Suppl.), A50–A51
   award: Best Presentation Award, Engineering Acoustics
+  doi: 10.1121/10.0015506
 - year: 2022
   type: abstract
   authors: Y. Meng, E. Vatankhah, Z. Liu, X. Niu, R. P. Williams, N. A. Hall
   title: Experimental characterization of high intensity progressive ultrasound beams in air
   venue: The Journal of the Acoustical Society of America
   details: 152(4 Suppl.), A51
+  doi: 10.1121/10.0015510
+
+# ---------------- 2021 ----------------
+- year: 2021
+  type: patent
+  authors: N. A. Hall, D. Kim, R. P. Williams, D. P. Gawalt, B. D. Avenson, C. T. Garcia, K. L. Gleason
+  title: Solid-state shear stress sensors with high selectivity
+  venue: US Patent 11,073,433
+  url: https://patents.google.com/patent/US11073433B2
 
 # ---------------- 2011–2020 (from the previous site) ----------------
-- { year: 2020, type: journal, authors: "Y. Seo, D. Kim, N. A. Hall", title: "On-diaphragm thermistor for high-temperature dynamic pressure sensors", venue: "IEEE Sensors Journal" }
-- { year: 2019, type: journal, authors: "Y. Seo, D. Kim, N. A. Hall", title: "Piezoelectric pressure sensors for hypersonic flow measurements", venue: "Journal of Microelectromechanical Systems", details: "28(2), 271–278" }
-- { year: 2019, type: journal, authors: "D. Kim, N. A. Hall", title: "A shear-stress sensor for hypersonic flow measurements", venue: "Journal of Microelectromechanical Systems" }
-- { year: 2019, type: journal, authors: "R. P. Williams, N. A. Hall", title: "A Thévenin-inspired approach to multiple scattering in acoustics", venue: "Journal of Vibration and Acoustics", details: "141(1)" }
+- { year: 2020, type: journal, authors: "Y. Seo, D. Kim, N. A. Hall", title: "On-diaphragm thermistor for high-temperature dynamic pressure sensors", venue: "IEEE Sensors Journal", details: "20(5), 2287–2293", doi: "10.1109/jsen.2019.2953397" }
+- { year: 2019, type: journal, authors: "Y. Seo, D. Kim, N. A. Hall", title: "Piezoelectric pressure sensors for hypersonic flow measurements", venue: "Journal of Microelectromechanical Systems", details: "28(2), 271–278", doi: "10.1109/jmems.2019.2899266" }
+- { year: 2019, type: journal, authors: "D. Kim, N. A. Hall", title: "A shear-stress sensor for hypersonic flow measurement", venue: "Journal of Microelectromechanical Systems", details: "28(4), 628–633", doi: "10.1109/jmems.2019.2899256" }
+- { year: 2019, type: journal, authors: "R. P. Williams, N. A. Hall", title: "A Thévenin-inspired approach to multiple scattering in acoustics", venue: "Journal of Vibration and Acoustics", details: "141(1), 011016", doi: "10.1115/1.4040927" }
 - { year: 2019, type: conference, authors: "Y. Seo, D. Kim, N. A. Hall", title: "High-temperature piezoelectric pressure sensors for hypersonic flow measurements", venue: "Transducers / Eurosensors XXXIII, Berlin", doi: "10.1109/TRANSDUCERS.2019.8808755", award: "Outstanding Paper Award, poster category" }
 - { year: 2019, type: conference, authors: "R. P. Williams, B. Avenson, N. A. Hall", title: "Grating-based acceleration sensors with optical interferometric readout and closed-loop control", venue: "Transducers / Eurosensors XXXIII, Berlin", doi: "10.1109/TRANSDUCERS.2019.8808749" }
-- { year: 2018, type: journal, authors: "R. P. Williams, D. Kim, K. L. Gleason, N. A. Hall", title: "Towards acoustic particle velocity sensors in air using entrained balloons: measurements and modeling", venue: "The Journal of the Acoustical Society of America" }
-- { year: 2017, type: journal, authors: "R. Williams, S. K. Hord, N. A. Hall", title: "Optically-read displacement detection using phase-modulated diffraction gratings with reduced zeroth-order reflections", venue: "Applied Physics Letters" }
+- { year: 2018, type: journal, authors: "R. P. Williams, D. Kim, K. L. Gleason, N. A. Hall", title: "Towards acoustic particle velocity sensors in air using entrained balloons: measurements and modeling", venue: "The Journal of the Acoustical Society of America", details: "143(2), 780–785", doi: "10.1121/1.5022801" }
+- { year: 2017, type: journal, authors: "R. Williams, S. K. Hord, N. A. Hall", title: "Optically-read displacement detection using phase-modulated diffraction gratings with reduced zeroth-order reflections", venue: "Applied Physics Letters", details: "110(15), 151104", doi: "10.1063/1.4979541" }
 - { year: 2017, type: journal, authors: "Y. Seo, D. Corona, N. A. Hall", title: "On the theoretical maximum achievable signal-to-noise ratio (SNR) of piezoelectric microphones", venue: "Sensors and Actuators A: Physical", doi: "10.1016/j.sna.2017.04.001" }
-- { year: 2017, type: journal, authors: "R. P. Williams, D. Kim, D. P. Gawalt, N. A. Hall", title: "Surface micromachined differential piezoelectric shear-stress sensors", venue: "Journal of Micromechanics and Microengineering", details: "27(1), 015011" }
-- { year: 2016, type: journal, authors: "R. Williams, N. A. Hall", title: "Thévenin acoustics", venue: "The Journal of the Acoustical Society of America" }
-- { year: 2015, type: journal, authors: "M. L. Kuntzman, D. Kim, N. A. Hall", title: "Microfabrication and experimental evaluation of a rotational capacitive micromachined ultrasonic transducer", venue: "Journal of Microelectromechanical Systems" }
-- { year: 2015, type: journal, authors: "M. L. Kuntzman, N. N. Hewa-Kasakarage, A. Rocha, D. Kim, N. A. Hall", title: "Micromachined in-plane pressure-gradient piezoelectric microphones", venue: "IEEE Sensors Journal" }
-- { year: 2014, type: journal, authors: "D. Kim, M. L. Kuntzman, N. A. Hall", title: "A transmission line model of back-cavity dynamics for in-plane pressure-gradient microphones", venue: "The Journal of the Acoustical Society of America" }
-- { year: 2014, type: journal, authors: "D. Kim, N. N. Hewa-Kasakarage, N. A. Hall", title: "A theoretical and experimental comparison of 3-3 and 3-1 mode piezoelectric microelectromechanical systems (MEMS)", venue: "Sensors and Actuators A: Physical" }
-- { year: 2014, type: journal, authors: "D. Kim, M. L. Kuntzman, N. A. Hall", title: "A rotational capacitive micromachined ultrasonic transducer (RCMUT) with an internally sealed pivot", venue: "IEEE Transactions on Ultrasonics, Ferroelectrics, and Frequency Control" }
-- { year: 2014, type: journal, authors: "M. L. Kuntzman, N. A. Hall", title: "Sound source localization inspired by the ears of the Ormia ochracea", venue: "Applied Physics Letters" }
-- { year: 2014, type: journal, authors: "M. L. Kuntzman, N. A. Hall", title: "A broadband, capacitive, surface-micromachined, omnidirectional microphone with more than 200 kHz bandwidth", venue: "The Journal of the Acoustical Society of America" }
-- { year: 2014, type: journal, authors: "D. Kim, N. A. Hall", title: "Towards a sub 15-dBA optical micromachined microphone", venue: "The Journal of the Acoustical Society of America" }
-- { year: 2014, type: journal, authors: "D. Kim, C. T. Garcia, B. Avenson, N. A. Hall", title: "Design and experimental evaluation of a low-noise backplate for a grating-based optical interferometric sensor", venue: "Journal of Microelectromechanical Systems" }
-- { year: 2014, type: journal, authors: "M. L. Kuntzman, N. A. Hall", title: "Rotational capacitive micromachined ultrasonic transducers (cMUTs)", venue: "Journal of Microelectromechanical Systems" }
-- { year: 2013, type: journal, authors: "N. N. Hewa-Kasakarage, D. Kim, M. L. Kuntzman, N. A. Hall", title: "Micromachined piezoelectric accelerometers via epitaxial silicon cantilevers and bulk silicon proof masses", venue: "Journal of Microelectromechanical Systems" }
-- { year: 2013, type: journal, authors: "M. L. Kuntzman, D. Kim, N. N. Hewa-Kasakarage, K. D. Kirk, N. A. Hall", title: "Network modeling of multiple-port, multiple-vibration-mode transducers and resonators", venue: "Sensors and Actuators A: Physical" }
-- { year: 2013, type: journal, authors: "D. Kim, N. N. Hewa-Kasakarage, M. L. Kuntzman, K. D. Kirk, S. H. Yoon, N. A. Hall", title: "Piezoelectric micromachined microphones with out-of-plane directivity", venue: "Applied Physics Letters" }
-- { year: 2013, type: journal, authors: "D. Kim, N. N. Hewa-Kasakarage, S. H. Yoon, K. D. Kirk, M. Kuntzman, N. A. Hall", title: "Electrical admittance spectroscopy for piezoelectric MEMS", venue: "Journal of Microelectromechanical Systems" }
-- { year: 2013, type: journal, authors: "M. L. Kuntzman, J. G. Lee, N. N. Hewa-Kasakarage, D. Kim, N. A. Hall", title: "Micromachined piezoelectric microphones with in-plane directivity", venue: "Applied Physics Letters" }
-- { year: 2012, type: journal, authors: "J. W. Suk, K. Kirk, Y. Hao, N. A. Hall, R. S. Ruoff", title: "Thermoacoustic sound generation from monolayer graphene for transparent and flexible sound sources", venue: "Advanced Materials" }
-- { year: 2012, type: journal, authors: "D. Kim, N. N. Hewa-Kasakarage, S. Yoon, N. A. Hall", title: "On the minimum coupling required for maximum theoretical power capture from vibration energy harvesters", venue: "Applied Physics Letters" }
-- { year: 2011, type: journal, authors: "M. L. Kuntzman, C. T. Garcia, A. G. Onaran, B. Avenson, K. D. Kirk, N. A. Hall", title: "Performance and modeling of a fully packaged micromachined optical microphone", venue: "Journal of Microelectromechanical Systems" }
+- { year: 2017, type: journal, authors: "R. P. Williams, D. Kim, D. P. Gawalt, N. A. Hall", title: "Surface micromachined differential piezoelectric shear-stress sensors", venue: "Journal of Micromechanics and Microengineering", details: "27(1), 015011", doi: "10.1088/0960-1317/27/1/015011" }
+- { year: 2016, type: journal, authors: "R. Williams, N. A. Hall", title: "Thévenin acoustics", venue: "The Journal of the Acoustical Society of America", details: "140(6), 4449–4455", doi: "10.1121/1.4971284" }
+- { year: 2015, type: journal, authors: "M. L. Kuntzman, D. Kim, N. A. Hall", title: "Microfabrication and experimental evaluation of a rotational capacitive micromachined ultrasonic transducer", venue: "Journal of Microelectromechanical Systems", details: "24(2), 404–413", doi: "10.1109/jmems.2014.2332255" }
+- { year: 2015, type: journal, authors: "M. L. Kuntzman, N. N. Hewa-Kasakarage, A. Rocha, D. Kim, N. A. Hall", title: "Micromachined in-plane pressure-gradient piezoelectric microphones", venue: "IEEE Sensors Journal", details: "15(3), 1347–1357", doi: "10.1109/jsen.2014.2361118" }
+- { year: 2014, type: journal, authors: "D. Kim, M. L. Kuntzman, N. A. Hall", title: "A transmission-line model of back-cavity dynamics for in-plane pressure-differential microphones", venue: "The Journal of the Acoustical Society of America", details: "136(5), 2544–2553", doi: "10.1121/1.4897401" }
+- { year: 2014, type: journal, authors: "D. Kim, N. N. Hewa-Kasakarage, N. A. Hall", title: "A theoretical and experimental comparison of 3-3 and 3-1 mode piezoelectric microelectromechanical systems (MEMS)", venue: "Sensors and Actuators A: Physical", details: "219, 112–122", doi: "10.1016/j.sna.2014.08.006" }
+- { year: 2014, type: journal, authors: "D. Kim, M. L. Kuntzman, N. A. Hall", title: "A rotational capacitive micromachined ultrasonic transducer (RCMUT) with an internally sealed pivot", venue: "IEEE Transactions on Ultrasonics, Ferroelectrics, and Frequency Control", details: "61(9), 1545–1551", doi: "10.1109/tuffc.2014.3068" }
+- { year: 2014, type: journal, authors: "M. L. Kuntzman, N. A. Hall", title: "Sound source localization inspired by the ears of the Ormia ochracea", venue: "Applied Physics Letters", details: "105(3), 033701", doi: "10.1063/1.4887370" }
+- { year: 2014, type: journal, authors: "M. L. Kuntzman, N. A. Hall", title: "A broadband, capacitive, surface-micromachined, omnidirectional microphone with more than 200 kHz bandwidth", venue: "The Journal of the Acoustical Society of America", details: "135(6), 3416–3424", doi: "10.1121/1.4874620" }
+- { year: 2014, type: journal, authors: "D. Kim, N. A. Hall", title: "Towards a sub 15-dBA optical micromachined microphone", venue: "The Journal of the Acoustical Society of America", details: "135(5), 2664–2673", doi: "10.1121/1.4871181" }
+- { year: 2014, type: journal, authors: "D. Kim, C. T. Garcia, B. Avenson, N. A. Hall", title: "Design and experimental evaluation of a low-noise backplate for a grating-based optical interferometric sensor", venue: "Journal of Microelectromechanical Systems", details: "23(5), 1101–1111", doi: "10.1109/jmems.2014.2304840" }
+- { year: 2014, type: journal, authors: "M. L. Kuntzman, N. A. Hall", title: "Rotational capacitive micromachined ultrasonic transducers (cMUTs)", venue: "Journal of Microelectromechanical Systems", details: "23(1), 1–3", doi: "10.1109/jmems.2013.2288577" }
+- { year: 2013, type: journal, authors: "N. N. Hewa-Kasakarage, D. Kim, M. L. Kuntzman, N. A. Hall", title: "Micromachined piezoelectric accelerometers via epitaxial silicon cantilevers and bulk silicon proof masses", venue: "Journal of Microelectromechanical Systems", details: "22(6), 1438–1446", doi: "10.1109/jmems.2013.2262581" }
+- { year: 2013, type: journal, authors: "M. L. Kuntzman, D. Kim, N. N. Hewa-Kasakarage, K. D. Kirk, N. A. Hall", title: "Network modeling of multiple-port, multiple-vibration-mode transducers and resonators", venue: "Sensors and Actuators A: Physical", details: "201, 93–100", doi: "10.1016/j.sna.2013.05.031" }
+- { year: 2013, type: journal, authors: "D. Kim, N. N. Hewa-Kasakarage, M. L. Kuntzman, K. D. Kirk, S. H. Yoon, N. A. Hall", title: "Piezoelectric micromachined microphones with out-of-plane directivity", venue: "Applied Physics Letters", details: "103(1), 013502", doi: "10.1063/1.4812298" }
+- { year: 2013, type: journal, authors: "D. Kim, N. N. Hewa-Kasakarage, S. H. Yoon, K. D. Kirk, M. Kuntzman, N. A. Hall", title: "Electrical admittance spectroscopy for piezoelectric MEMS", venue: "Journal of Microelectromechanical Systems", details: "22(2), 295–302", doi: "10.1109/jmems.2012.2221157" }
+- { year: 2013, type: journal, authors: "M. L. Kuntzman, J. G. Lee, N. N. Hewa-Kasakarage, D. Kim, N. A. Hall", title: "Micromachined piezoelectric microphones with in-plane directivity", venue: "Applied Physics Letters", details: "102(5), 054109", doi: "10.1063/1.4776687" }
+- { year: 2012, type: journal, authors: "J. W. Suk, K. Kirk, Y. Hao, N. A. Hall, R. S. Ruoff", title: "Thermoacoustic sound generation from monolayer graphene for transparent and flexible sound sources", venue: "Advanced Materials", details: "24(47), 6342–6347", doi: "10.1002/adma.201201782" }
+- { year: 2012, type: journal, authors: "D. Kim, N. N. Hewa-Kasakarage, S. Yoon, N. A. Hall", title: "On the minimum coupling required for maximum theoretical power capture from vibration energy harvesters", venue: "Applied Physics Letters", details: "101(10), 103904", doi: "10.1063/1.4749824" }
+- { year: 2011, type: journal, authors: "M. L. Kuntzman, C. T. Garcia, A. G. Onaran, B. Avenson, K. D. Kirk, N. A. Hall", title: "Performance and modeling of a fully packaged micromachined optical microphone", venue: "Journal of Microelectromechanical Systems", details: "20(4), 828–833", doi: "10.1109/jmems.2011.2148164" }
 
 # ---------------- Added Nov 2026 from Prof. Hall's Google Scholar profile ----------------
 # era: pre-ut marks Prof. Hall's work before UT (Georgia Tech, Sandia); it is listed in its own section.
 - {year: 2026, type: journal, authors: 'Y. Meng, S. Madan, N. A. Hall', title: Free-space optical accelerometer with high dynamic range using phase generated carrier demodulation achieved via integrated coil modulation, venue: IEEE Sensors Journal, details: '26(14), 20916–20924', doi: 10.1109/JSEN.2026.3699447}
-- {year: 2022, type: journal, authors: 'R. P. Williams, E. Vatankhah, N. A. Hall', title: Multidegree-of-freedom state-space modeling of nonlinear pull-in dynamics of an electrostatic mems microphone, venue: Journal of Microelectromechanical Systems, details: '31 (4), 589-598'}
-- {year: 2022, type: patent, authors: 'N. A. Hall, R. P. Williams, E. Vatankhah', title: Focal Point Determination Based on Nonlinear Mixing of Sound Beams, venue: 'US Patent App. 17/505,195'}
-- {year: 2022, type: patent, authors: 'N. A. Hall, R. P. Williams, E. Vatankhah', title: Nonlinear Mixing of Sound Beams for Focal Point Determination, venue: 'US Patent App. 17/505,145'}
-- {year: 2020, type: journal, authors: 'X. Tang, S. Li, X. Yang, L. Shen, W. Zhao, R. P. Williams, J. Liu, Z. Tan, N. A. Hall, et al.', title: An energy-efficient time-domain incremental zoom capacitance-to-digital converter, venue: IEEE Journal of Solid-State Circuits, details: '55 (11), 3064-3075'}
-- {year: 2020, type: journal, authors: 'J. H. Cho, Y. Seo, A. Dolocan, N. A. Hall, M. A. Cullinan', title: Monolayer Graphene Grown on Nanoscale Pt Films Deposited on TiO2 Substrates for Micro-and Nanoelectromechanical Systems, venue: ACS Applied Nano Materials, details: '3 (10), 9731-9739'}
-- {year: 2020, type: journal, authors: 'Y. Seo, R. P. Williams, C. A. Stalder, D. Kim, N. A. Hall', title: Micromachined piezoresistive-sensed diaphragms for infrasonic monitoring, venue: IEEE Sensors Journal, details: '21 (1), 257-264'}
-- {year: 2020, type: abstract, authors: N. A. Hall, title: Engineering an optical microphone for consumer electronics, venue: The Journal of the Acoustical Society of America, details: '148 (4_Supplement), 2639'}
-- {year: 2019, type: conference, authors: 'X. Tang, S. Li, L. Shen, W. Zhao, X. Yang, R. Williams, J. Liu, Z. Tan, N. A. Hall, et al.', title: 18.2 A 16fJ/conversion-step time-domain two-step capacitance-to-digital converter, venue: '2019 IEEE International Solid-State Circuits Conference (ISSCC), 296-297'}
-- {year: 2019, type: abstract, authors: 'R. P. Williams, Y. Seo, C. A. Stalder, B. D. Avenson, Q. S. Buoy, D. Kim, N. A. Hall', title: Infrasound microphones using microfabricated piezoresistive silicon diaphragms, venue: The Journal of the Acoustical Society of America, details: '146 (4_Supplement), 2996'}
-- {year: 2019, type: abstract, authors: 'C. A. Stalder, D. Kim, Y. Seo, N. A. Hall', title: Fly-inspired microphones with piezoelectric readout, venue: The Journal of the Acoustical Society of America, details: '146 (4_Supplement), 2996'}
-- {year: 2017, type: abstract, authors: 'N. A. Hall, M. Kuntzman, D. Kim', title: A biologically inspired piezoelectric microphone, venue: The Journal of the Acoustical Society of America, details: '141 (5_Supplement), 3794'}
-- {year: 2017, type: abstract, authors: 'R. P. Williams, N. A. Hall', title: Two-port network theory applied to multi-body scattering, venue: The Journal of the Acoustical Society of America, details: '141 (5_Supplement), 3795'}
-- {year: 2016, type: patent, authors: 'N. A. Hall, D. Kim', title: Multi-mode microphones, venue: 'US Patent 9,479,875'}
-- {year: 2016, type: patent, authors: 'N. A. Hall, D. Kim', title: Multi-mode microphones, venue: 'US Patent 9,503,820'}
-- {year: 2016, type: patent, authors: 'N. A. Hall, M. L. Kuntzman, D. Kim, N. Hewa-Kasakarage', title: Acoustic sensor, venue: 'US Patent 9,372,111'}
-- {year: 2016, type: patent, authors: 'N. A. Hall, M. L. Kuntzman, K. K. Sauceda', title: Surface micromachined microphone with broadband signal detection, venue: 'US Patent App. 15/111,080'}
-- {year: 2016, type: abstract, authors: 'R. P. Williams, S. K. Hord, N. A. Hall', title: Optical displacement detection using multi-level diffraction gratings having no zeroth-order reflection, venue: The Journal of the Acoustical Society of America, details: '140 (4_Supplement), 3422'}
-- {year: 2013, type: abstract, authors: 'M. L. Kuntzman, N. N. Hewa-Kasakarage, D. Kim, A. Rocha, N. A. Hall', title: Design optimization of a piezoelectric microphone with in-plane directivity, venue: The Journal of the Acoustical Society of America, details: '134 (5_Supplement), 4092'}
-- {year: 2013, type: abstract, authors: 'M. L. Kuntzman, N. N. Hewa-Kasakarage, D. Kim, N. A. Hall', title: Network modeling of multiple-port transducers across multiple modes of vibration, venue: The Journal of the Acoustical Society of America, details: '134 (5_Supplement), 4185'}
-- {year: 2013, type: abstract, authors: 'D. Kim, N. N. Hewa-Kasakarage, M. L. Kuntzman, N. A. Hall', title: Experimental comparison of 3-3 and 3-1 mode piezoelectric microelectromechanical systems, venue: The Journal of the Acoustical Society of America, details: '134 (5_Supplement), 4123'}
-- {year: 2012, type: patent, authors: 'N. A. Hall, M. L. Kuntzman, K. D. Kirk', title: Differential microphone with sealed backside cavities and diaphragms coupled to a rocking structure thereby providing resistance to deflection under atmospheric pressure and …, venue: 'US Patent App. 13/441,079'}
-- {year: 2012, type: other, authors: N. A. Hall, title: Electrostatic MEMS microphones, venue: Encyclopedia of Nanotechnology, details: 775-783}
-- {year: 2010, type: abstract, authors: 'M. L. Kuntzman, K. D. Kirk, C. T. Garcia, G. A. Onaran, N. A. Hall', title: Commercial packaging of an optical microelectromechanical systems microphone, venue: The Journal of the Acoustical Society of America, details: '128 (4_Supplement), 2444'}
-- {year: 2009, type: journal, era: pre-ut, authors: 'R. N. Miles, Q. Su, W. Cui, M. Shetye, F. L. Degertekin, B. Bicen, C. Garcia, et al.', title: A low-noise differential microphone inspired by the ears of the parasitoid fly Ormia ochracea, venue: The Journal of the Acoustical Society of America, details: '125 (4), 2013-2026'}
-- {year: 2009, type: journal, era: pre-ut, authors: 'B. Bicen, S. Jolly, K. Jeelani, C. T. Garcia, N. A. Hall, F. L. Degertekin, Q. Su, et al.', title: Integrated optical displacement detection and electrostatic actuation for directional optical microphones with micromachined biomimetic diaphragms, venue: IEEE Sensors Journal, details: '9 (12), 1933-1941'}
-- {year: 2009, type: patent, era: pre-ut, authors: 'F. L. Degertekin, W. Lee, N. A. Hall', title: Displacement sensor employing discrete light pulse detection, venue: 'US Patent 7,485,847'}
-- {year: 2009, type: patent, era: pre-ut, authors: 'N. A. Hall, F. L. Degertekin', title: Displacement-measuring optical device with orifice, venue: 'US Patent 7,518,737'}
-- {year: 2008, type: journal, era: pre-ut, authors: 'N. A. Hall, M. Okandan, R. Littrell, D. K. Serkland, G. A. Keeler, K. Peterson, et al.', title: Micromachined accelerometers with optical interferometric read-out and integrated electrostatic actuation, venue: Journal of Microelectromechanical Systems, details: '17 (1), 37-44'}
-- {year: 2008, type: patent, era: pre-ut, authors: 'F. L. Degertekin, N. A. Hall, W. Lee', title: Highly-sensitive displacement-measuring optical device, venue: 'US Patent 7,440,117'}
-- {year: 2008, type: journal, era: pre-ut, authors: 'N. A. Hall, M. Okandan, R. Littrell, B. Bicen, F. L. Degertekin', title: Simulation of thin-film damping and thermal mechanical noise spectra for advanced micromachined microphone structures, venue: Journal of Microelectromechanical Systems, details: '17 (3), 688-697'}
-- {year: 2008, type: abstract, era: pre-ut, authors: 'B. Bicen, C. Garcia, N. A. Hall, M. Okandan, W. Cui, Q. T. Su, R. N. Miles, et al.', title: Diffraction based optical MEMS microphones and accelerometers with active electrostatic force feedback, venue: The Journal of the Acoustical Society of America, details: '123 (5_Supplement), 3230'}
-- {year: 2008, type: abstract, era: pre-ut, authors: 'R. N. Miles, Q. T. Su, W. Cui, S. A. Jones, F. L. Degertekin, B. Bicen, C. Garcia, et al.', title: A low-noise biomimetic differential microphone, venue: The Journal of the Acoustical Society of America, details: '123 (5_Supplement), 3228'}
+- {year: 2022, type: journal, authors: 'R. P. Williams, E. Vatankhah, N. A. Hall', title: Multidegree-of-freedom state-space modeling of nonlinear pull-in dynamics of an electrostatic mems microphone, venue: Journal of Microelectromechanical Systems, details: "31(4), 589–598", doi: "10.1109/jmems.2022.3174571"}
+- {year: 2022, type: patent, authors: 'N. A. Hall, R. P. Williams, E. Vatankhah', title: Focal Point Determination Based on Nonlinear Mixing of Sound Beams, venue: 'US Patent App. 17/505,195', url: "https://patents.google.com/patent/US20220128517A1"}
+- {year: 2022, type: patent, authors: 'N. A. Hall, R. P. Williams, E. Vatankhah', title: Nonlinear Mixing of Sound Beams for Focal Point Determination, venue: 'US Patent App. 17/505,145', url: "https://patents.google.com/patent/US20220132240A1"}
+- {year: 2020, type: journal, authors: 'X. Tang, S. Li, X. Yang, L. Shen, W. Zhao, R. P. Williams, J. Liu, Z. Tan, N. A. Hall, et al.', title: An energy-efficient time-domain incremental zoom capacitance-to-digital converter, venue: IEEE Journal of Solid-State Circuits, details: "55(11), 3064–3075", doi: "10.1109/jssc.2020.3005812"}
+- {year: 2020, type: journal, authors: 'J. H. Cho, Y. Seo, A. Dolocan, N. A. Hall, M. A. Cullinan', title: "Monolayer Graphene Grown on Nanoscale Pt Films Deposited on TiO₂ Substrates for Micro- and Nanoelectromechanical Systems", venue: ACS Applied Nano Materials, details: "3(10), 9731–9739", doi: "10.1021/acsanm.0c01839"}
+- {year: 2020, type: journal, authors: 'Y. Seo, R. P. Williams, C. A. Stalder, D. Kim, N. A. Hall', title: Micromachined piezoresistive-sensed diaphragms for infrasonic monitoring, venue: IEEE Sensors Journal, details: "21(1), 257–264", doi: "10.1109/jsen.2020.3014567"}
+- {year: 2020, type: abstract, authors: N. A. Hall, title: Engineering an optical microphone for consumer electronics, venue: The Journal of the Acoustical Society of America, details: "148(4 Suppl.), 2639", doi: "10.1121/1.5147335"}
+- {year: 2019, type: conference, authors: 'X. Tang, S. Li, L. Shen, W. Zhao, X. Yang, R. Williams, J. Liu, Z. Tan, N. A. Hall, et al.', title: 18.2 A 16fJ/conversion-step time-domain two-step capacitance-to-digital converter, venue: '2019 IEEE International Solid-State Circuits Conference (ISSCC), 296-297', doi: "10.1109/isscc.2019.8662359"}
+- {year: 2019, type: abstract, authors: 'R. P. Williams, Y. Seo, C. A. Stalder, B. D. Avenson, Q. S. Buoy, D. Kim, N. A. Hall', title: Infrasound microphones using microfabricated piezoresistive silicon diaphragms, venue: The Journal of the Acoustical Society of America, details: "146(4 Suppl.), 2996", doi: "10.1121/1.5137370"}
+- {year: 2019, type: abstract, authors: 'C. A. Stalder, D. Kim, Y. Seo, N. A. Hall', title: Fly-inspired microphones with piezoelectric readout, venue: The Journal of the Acoustical Society of America, details: "146(4 Suppl.), 2996", doi: "10.1121/1.5137372"}
+- {year: 2017, type: abstract, authors: 'N. A. Hall, M. Kuntzman, D. Kim', title: A biologically inspired piezoelectric microphone, venue: The Journal of the Acoustical Society of America, details: "141(5 Suppl.), 3794", doi: "10.1121/1.4988366"}
+- {year: 2017, type: abstract, authors: 'R. P. Williams, N. A. Hall', title: Two-port network theory applied to multi-body scattering, venue: The Journal of the Acoustical Society of America, details: "141(5 Suppl.), 3795", doi: "10.1121/1.4988371"}
+- {year: 2016, type: patent, authors: 'N. A. Hall, D. Kim', title: Multi-mode microphones, venue: 'US Patent 9,479,875', url: "https://patents.google.com/patent/US9479875B2"}
+- {year: 2016, type: patent, authors: 'N. A. Hall, D. Kim', title: Multi-mode microphones, venue: 'US Patent 9,503,820', url: "https://patents.google.com/patent/US9503820B2"}
+- {year: 2016, type: patent, authors: 'N. A. Hall, M. L. Kuntzman, D. Kim, N. Hewa-Kasakarage', title: Acoustic sensor, venue: 'US Patent 9,372,111', url: "https://patents.google.com/patent/US9372111B2"}
+- {year: 2016, type: patent, authors: 'N. A. Hall, M. L. Kuntzman, K. K. Sauceda', title: Surface micromachined microphone with broadband signal detection, venue: 'US Patent App. 15/111,080', url: "https://patents.google.com/patent/US20160337761A1"}
+- {year: 2016, type: abstract, authors: 'R. P. Williams, S. K. Hord, N. A. Hall', title: Optical displacement detection using multi-level diffraction gratings having no zeroth-order reflection, venue: The Journal of the Acoustical Society of America, details: "140(4 Suppl.), 3422", doi: "10.1121/1.4971006"}
+- {year: 2013, type: abstract, authors: 'M. L. Kuntzman, N. N. Hewa-Kasakarage, D. Kim, A. Rocha, N. A. Hall', title: Design optimization of a piezoelectric microphone with in-plane directivity, venue: The Journal of the Acoustical Society of America, details: "134(5 Suppl.), 4092", doi: "10.1121/1.4830945"}
+- {year: 2013, type: abstract, authors: 'M. L. Kuntzman, N. N. Hewa-Kasakarage, D. Kim, N. A. Hall', title: Network modeling of multiple-port transducers across multiple modes of vibration, venue: The Journal of the Acoustical Society of America, details: "134(5 Suppl.), 4185", doi: "10.1121/1.4831348"}
+- {year: 2013, type: abstract, authors: 'D. Kim, N. N. Hewa-Kasakarage, M. L. Kuntzman, N. A. Hall', title: Experimental comparison of 3-3 and 3-1 mode piezoelectric microelectromechanical systems, venue: The Journal of the Acoustical Society of America, details: "134(5 Suppl.), 4123", doi: "10.1121/1.4831147"}
+- {year: 2015, type: patent, authors: 'N. A. Hall, M. L. Kuntzman, K. D. Kirk', title: "Differential microphone with sealed backside cavities and diaphragms coupled to a rocking structure thereby providing resistance to deflection under atmospheric pressure and providing a directional response to sound pressure", venue: "US Patent 8,989,411", url: "https://patents.google.com/patent/US8989411B2"}
+- {year: 2012, type: other, authors: N. A. Hall, title: Electrostatic MEMS microphones, venue: Encyclopedia of Nanotechnology, details: "775–783", doi: "10.1007/978-90-481-9751-4_317"}
+- {year: 2010, type: abstract, authors: 'M. L. Kuntzman, K. D. Kirk, C. T. Garcia, G. A. Onaran, N. A. Hall', title: Commercial packaging of an optical microelectromechanical systems microphone, venue: The Journal of the Acoustical Society of America, details: "128(4 Suppl.), 2444", doi: "10.1121/1.3508741"}
+- {year: 2009, type: journal, era: pre-ut, authors: 'R. N. Miles, Q. Su, W. Cui, M. Shetye, F. L. Degertekin, B. Bicen, C. Garcia, et al.', title: A low-noise differential microphone inspired by the ears of the parasitoid fly Ormia ochracea, venue: The Journal of the Acoustical Society of America, details: "125(4), 2013–2026", doi: "10.1121/1.3082118"}
+- {year: 2009, type: journal, era: pre-ut, authors: 'B. Bicen, S. Jolly, K. Jeelani, C. T. Garcia, N. A. Hall, F. L. Degertekin, Q. Su, et al.', title: Integrated optical displacement detection and electrostatic actuation for directional optical microphones with micromachined biomimetic diaphragms, venue: IEEE Sensors Journal, details: "9(12), 1933–1941", doi: "10.1109/jsen.2009.2031810"}
+- {year: 2009, type: patent, era: pre-ut, authors: 'F. L. Degertekin, W. Lee, N. A. Hall', title: Displacement sensor employing discrete light pulse detection, venue: 'US Patent 7,485,847', url: "https://patents.google.com/patent/US7485847B2"}
+- {year: 2009, type: patent, era: pre-ut, authors: 'N. A. Hall, F. L. Degertekin', title: Displacement-measuring optical device with orifice, venue: 'US Patent 7,518,737', url: "https://patents.google.com/patent/US7518737B2"}
+- {year: 2008, type: journal, era: pre-ut, authors: 'N. A. Hall, M. Okandan, R. Littrell, D. K. Serkland, G. A. Keeler, K. Peterson, et al.', title: Micromachined accelerometers with optical interferometric read-out and integrated electrostatic actuation, venue: Journal of Microelectromechanical Systems, details: "17(1), 37–44", doi: "10.1109/jmems.2007.910243"}
+- {year: 2008, type: patent, era: pre-ut, authors: 'F. L. Degertekin, N. A. Hall, W. Lee', title: Highly-sensitive displacement-measuring optical device, venue: 'US Patent 7,440,117', url: "https://patents.google.com/patent/US7440117B2"}
+- {year: 2008, type: journal, era: pre-ut, authors: 'N. A. Hall, M. Okandan, R. Littrell, B. Bicen, F. L. Degertekin', title: Simulation of thin-film damping and thermal mechanical noise spectra for advanced micromachined microphone structures, venue: Journal of Microelectromechanical Systems, details: "17(3), 688–697", doi: "10.1109/jmems.2008.918384"}
+- {year: 2008, type: abstract, era: pre-ut, authors: 'B. Bicen, C. Garcia, N. A. Hall, M. Okandan, W. Cui, Q. T. Su, R. N. Miles, et al.', title: Diffraction based optical MEMS microphones and accelerometers with active electrostatic force feedback, venue: The Journal of the Acoustical Society of America, details: "123(5 Suppl.), 3230", doi: "10.1121/1.2933456"}
+- {year: 2008, type: abstract, era: pre-ut, authors: 'R. N. Miles, Q. T. Su, W. Cui, S. A. Jones, F. L. Degertekin, B. Bicen, C. Garcia, et al.', title: A low-noise biomimetic differential microphone, venue: The Journal of the Acoustical Society of America, details: "123(5 Suppl.), 3228", doi: "10.1121/1.2933452"}
 - {year: 2008, type: conference, era: pre-ut, authors: N. A. Hall, title: Micro-Seismometers via Advanced Mesoscale Fabrication, venue: '30th Monitoring Research Review: Ground-Based Nuclear Explosion Monitoring Technologies'}
-- {year: 2007, type: journal, era: pre-ut, authors: 'N. A. Hall, M. Okandan, R. Littrell, B. Bicen, F. L. Degertekin', title: Micromachined optical microphone structures with low thermal-mechanical noise levels, venue: The Journal of the Acoustical Society of America, details: '122 (4), 2031-2037'}
-- {year: 2007, type: journal, era: pre-ut, authors: 'R. Littrell, N. A. Hall, M. Okandan, R. Olsson, D. Serkland', title: Impact of relative intensity noise of vertical-cavity surface-emitting lasers on optics-based micromachined audio and seismic sensors, venue: Applied Optics, details: '46 (28), 6907-6911'}
-- {year: 2007, type: conference, era: pre-ut, authors: 'M. Okandan, N. A. Hall, B. Bicen, C. Garcia, F. L. Degertekin', title: Optical microphone structures fabricated for broad bandwidth and low noise, venue: '2007 IEEE Sensors, 1472-1475'}
-- {year: 2007, type: other, era: pre-ut, authors: 'M. Okandan, E. P. Parker, N. A. Hall, K. Peterson, P. Resick, D. Serkland', title: Ultrasensitive Directional Microphone Arrays for Military Operations in Urban Terrain, venue: 'Technical report, Sandia National Laboratories'}
-- {year: 2007, type: abstract, era: pre-ut, authors: 'C. T. Garcia, N. A. Hall, F. L. Degertekin, B. Bicen, K. Jeelani, M. S. Qureshi', title: An integrated optical microphone test-bed for acoustic measurements, venue: The Journal of the Acoustical Society of America, details: '121 (5_Supplement), 3155-3156'}
-- {year: 2006, type: patent, era: pre-ut, authors: 'F. L. Degertekin, N. A. Hall, W. Lee', title: Highly-sensitive displacement-measuring optical device, venue: 'US Patent 7,116,430'}
-- {year: 2006, type: conference, era: pre-ut, authors: 'W. Cui, B. Bicen, N. A. Hall, S. A. Jones, F. L. Degertekin, R. N. Miles', title: 'Optical sensing in a directional MEMS microphone inspired by the ears of the parasitoid fly, Ormia ochracea', venue: '19th IEEE International Conference on Micro Electro Mechanical Systems, 614-617'}
-- {year: 2006, type: journal, era: pre-ut, authors: 'N. A. Hall, M. Okandan, F. L. Degertekin', title: Surface and bulk-silicon-micromachined optical displacement sensor fabricated with the SwIFT-Lite™ process, venue: Journal of Microelectromechanical Systems, details: '15 (4), 770-776'}
-- {year: 2006, type: conference, era: pre-ut, authors: 'S. Y. Peng, M. S. Qureshi, P. E. Hasler, N. A. Hall, F. L. Degertekin', title: High SNR capacitive sensing transducer, venue: 2006 IEEE International Symposium on Circuits and Systems (ISCAS)}
-- {year: 2006, type: abstract, era: pre-ut, authors: 'F. L. Degertekin, N. A. Hall, B. Bicen', title: Micromachined microphones with diffraction-based optical interferometric readout, venue: The Journal of the Acoustical Society of America, details: '120 (5_Supplement), 3272'}
-- {year: 2006, type: abstract, era: pre-ut, authors: 'M. Okandan, N. A. Hall, R. Littrell, B. Bicen, F. L. Degertekin', title: The surface and bulk microfabrication of optical seismometers and vibrometers using Sandia National Laboratories’ silicon micromachining technology, venue: The Journal of the Acoustical Society of America, details: '120 (5_Supplement), 3329-3330'}
-- {year: 2006, type: abstract, era: pre-ut, authors: 'N. A. Hall, M. Okandan, F. L. Degertekin', title: Finite-element modeling of thin-film damping in micromachined microphones employing diffraction based optical readout, venue: The Journal of the Acoustical Society of America, details: '120 (5_Supplement), 3330'}
-- {year: 2006, type: other, era: pre-ut, authors: 'M. Okandan, N. A. Hall, R. Littrell', title: Interferometric Sensor Platform, venue: 'Technical report, Sandia National Laboratories'}
-- {year: 2005, type: journal, era: pre-ut, authors: 'N. A. Hall, B. Bicen, M. K. Jeelani, W. Lee, S. Qureshi, F. L. Degertekin, et al.', title: Micromachined microphones with diffraction-based optical displacement detection, venue: The Journal of the Acoustical Society of America, details: '118 (5), 3000-3009'}
-- {year: 2005, type: journal, era: pre-ut, authors: 'F. L. Degertekin, A. G. Onaran, M. Balantekin, W. Lee, N. A. Hall, C. F. Quate', title: Sensor for direct measurement of interaction forces in probe microscopy, venue: Applied Physics Letters, details: 87 (21)}
-- {year: 2005, type: other, era: pre-ut, authors: 'N. A. Hall, G. N. Nielson, D. W. Carr, R. H. Olsson III, G. R. Bogart, et al.', title: MEMS integrated with optics and nanostructures for sensor applications, venue: 'Technical report, Sandia National Laboratories'}
-- {year: 2004, type: journal, era: pre-ut, authors: 'W. Lee, N. A. Hall, Z. Zhou, F. L. Degertekin', title: Fabrication and characterization of a micromachined acoustic sensor with integrated optical readout, venue: IEEE Journal of Selected Topics in Quantum Electronics, details: '10 (3), 643-651'}
-- {year: 2004, type: conference, era: pre-ut, authors: 'N. A. Hall, R. Guldiken, J. McLean, F. L. Degertekin', title: 'Modeling and design of CMUTs using higher order vibration modes [capacitive micromachined ultrasonic transducers]', venue: '2004 IEEE Ultrasonics Symposium, Vol. 1, 260-263'}
-- {year: 2004, type: journal, era: pre-ut, authors: 'W. Lee, N. A. Hall, F. L. Degertekin', title: A grating-assisted resonant-cavity-enhanced optical displacement detection method for micromachined sensors, venue: Applied Physics Letters, details: '85 (15), 3032-3034'}
-- {year: 2004, type: other, era: pre-ut, authors: N. A. Hall, title: Micromachined broadband acoustic transducers with integrated optical displacement detection, venue: 'Ph.D. dissertation, Georgia Institute of Technology'}
-- {year: 2004, type: abstract, era: pre-ut, authors: 'N. A. Hall, W. Lee, M. K. Jeelani, F. L. Degertekin, M. Okandan', title: Micromachined microphones with integrated optical nanoscale displacement sensors, venue: The Journal of the Acoustical Society of America, details: '116 (4_Supplement), 2511'}
-- {year: 2003, type: journal, era: pre-ut, authors: 'N. A. Hall, W. Lee, F. L. Degertekin', title: Capacitive micromachined ultrasonic transducers with diffraction-based integrated optical displacement detection, venue: 'IEEE Transactions on Ultrasonics, Ferroelectrics, and Frequency Control', details: '50'}
-- {year: 2003, type: conference, era: pre-ut, authors: 'W. Lee, N. A. Hall, F. L. Degertekin', title: Micromachined acoustic sensor array with diffraction-based optical interferometric detection, venue: 'MOEMS Display and Imaging Systems 4985, 140-151'}
-- {year: 2003, type: conference, era: pre-ut, authors: 'F. L. Degertekin, N. A. Hall, W. Lee', title: Micromachined acoustic sensors with integrated optoelectronic readout, venue: 2003 IEEE/LEOS International Conference on Optical MEMS}
-- {year: 2002, type: journal, era: pre-ut, authors: 'N. A. Hall, F. L. Degertekin', title: Integrated optical interferometric detection method for micromachined capacitive acoustic transducers, venue: Applied Physics Letters, details: '80 (20), 3859-3861'}
-- {year: 2002, type: conference, era: pre-ut, authors: 'N. A. Hall, W. Lee, J. Dervan, F. L. Degertekin', title: Micromachined capacitive transducers with improved optical detection for ultrasound applications in air, venue: '2002 IEEE Ultrasonics Symposium, Vol. 2, 1027-1030'}
-- {year: 2002, type: abstract, era: pre-ut, authors: 'N. A. Hall, W. Lee, F. L. Degertekin', title: Broadband self-calibrating micromachined microphones with integrated optical displacement detection, venue: The Journal of the Acoustical Society of America, details: '112 (5_Supplement), 2234-2235'}
-- {year: 2001, type: conference, era: pre-ut, authors: 'N. A. Hall, F. L. Degertekin', title: Self-calibrating micromachined microphones with integrated optical displacement detection, venue: 'Transducers ’01 / Eurosensors XV, 11th International Conference on Solid-State Sensors and Actuators'}
-- {year: 2001, type: conference, era: pre-ut, authors: 'F. L. Degertekin, N. A. Hall, W. Lee', title: Capacitive micromachined ultrasonic transducers with integrated optoelectronic readout, venue: 2001 IEEE Ultrasonics Symposium}
-- {year: 2001, type: conference, era: pre-ut, authors: 'F. L. Degertekin, N. A. Hall', title: Micromachined microphone with optical interferometric readout, venue: 2001 IEEE International Symposium on Circuits and Systems}
-- {year: 2001, type: journal, era: pre-ut, authors: 'J. A. Carter, K. M. Martin, W. B. Campbell, N. A. Hall, O. A. Ezekoye', title: Design of an oscillating flow apparatus for the study of low Reynolds number particle dynamics, venue: Experiments in Fluids, details: '30 (5), 578-583'}
-- {year: 2000, type: conference, era: pre-ut, authors: 'N. A. Hall, F. L. Degertekin', title: An integrated optical detection method for capacitive micromachined ultrasonic transducers, venue: 2000 IEEE Ultrasonics Symposium}
+- {year: 2007, type: journal, era: pre-ut, authors: 'N. A. Hall, M. Okandan, R. Littrell, B. Bicen, F. L. Degertekin', title: Micromachined optical microphone structures with low thermal-mechanical noise levels, venue: The Journal of the Acoustical Society of America, details: "122(4), 2031–2037", doi: "10.1121/1.2769615"}
+- {year: 2007, type: journal, era: pre-ut, authors: 'R. Littrell, N. A. Hall, M. Okandan, R. Olsson, D. Serkland', title: Impact of relative intensity noise of vertical-cavity surface-emitting lasers on optics-based micromachined audio and seismic sensors, venue: Applied Optics, details: "46(28), 6907–6911", doi: "10.1364/ao.46.006907"}
+- {year: 2007, type: conference, era: pre-ut, authors: 'M. Okandan, N. A. Hall, B. Bicen, C. Garcia, F. L. Degertekin', title: Optical microphone structures fabricated for broad bandwidth and low noise, venue: '2007 IEEE Sensors, 1472-1475', doi: "10.1109/icsens.2007.4388692"}
+- {year: 2007, type: other, era: pre-ut, authors: 'M. Okandan, E. P. Parker, N. A. Hall, K. Peterson, P. Resick, D. Serkland', title: Ultrasensitive Directional Microphone Arrays for Military Operations in Urban Terrain, venue: 'Technical report, Sandia National Laboratories', doi: "10.2172/934861"}
+- {year: 2007, type: abstract, era: pre-ut, authors: 'C. T. Garcia, N. A. Hall, F. L. Degertekin, B. Bicen, K. Jeelani, M. S. Qureshi', title: An integrated optical microphone test-bed for acoustic measurements, venue: The Journal of the Acoustical Society of America, details: "121(5 Suppl.), 3155–3156", doi: "10.1121/1.4782202"}
+- {year: 2006, type: patent, era: pre-ut, authors: 'F. L. Degertekin, N. A. Hall, W. Lee', title: Highly-sensitive displacement-measuring optical device, venue: 'US Patent 7,116,430', url: "https://patents.google.com/patent/US7116430B2"}
+- {year: 2006, type: conference, era: pre-ut, authors: 'W. Cui, B. Bicen, N. A. Hall, S. A. Jones, F. L. Degertekin, R. N. Miles', title: 'Optical sensing in a directional MEMS microphone inspired by the ears of the parasitoid fly, Ormia ochracea', venue: '19th IEEE International Conference on Micro Electro Mechanical Systems, 614-617', doi: "10.1109/memsys.2006.1627874"}
+- {year: 2006, type: journal, era: pre-ut, authors: 'N. A. Hall, M. Okandan, F. L. Degertekin', title: Surface and bulk-silicon-micromachined optical displacement sensor fabricated with the SwIFT-Lite™ process, venue: Journal of Microelectromechanical Systems, details: "15(4), 770–776", doi: "10.1109/jmems.2006.878884"}
+- {year: 2006, type: conference, era: pre-ut, authors: 'S. Y. Peng, M. S. Qureshi, P. E. Hasler, N. A. Hall, F. L. Degertekin', title: High SNR capacitive sensing transducer, venue: 2006 IEEE International Symposium on Circuits and Systems (ISCAS), doi: "10.1109/iscas.2006.1692800"}
+- {year: 2006, type: abstract, era: pre-ut, authors: 'F. L. Degertekin, N. A. Hall, B. Bicen', title: Micromachined microphones with diffraction-based optical interferometric readout, venue: The Journal of the Acoustical Society of America, details: "120(5 Suppl.), 3272", doi: "10.1121/1.4777082"}
+- {year: 2006, type: abstract, era: pre-ut, authors: 'M. Okandan, N. A. Hall, R. Littrell, B. Bicen, F. L. Degertekin', title: The surface and bulk microfabrication of optical seismometers and vibrometers using Sandia National Laboratories’ silicon micromachining technology, venue: The Journal of the Acoustical Society of America, details: "120(5 Suppl.), 3329–3330", doi: "10.1121/1.4781256"}
+- {year: 2006, type: abstract, era: pre-ut, authors: 'N. A. Hall, M. Okandan, F. L. Degertekin', title: Finite-element modeling of thin-film damping in micromachined microphones employing diffraction based optical readout, venue: The Journal of the Acoustical Society of America, details: "120(5 Suppl.), 3330", doi: "10.1121/1.4781258"}
+- {year: 2006, type: other, era: pre-ut, authors: 'M. Okandan, N. A. Hall, R. Littrell', title: Interferometric Sensor Platform, venue: 'Technical report, Sandia National Laboratories', url: "https://www.osti.gov/biblio/1264465"}
+- {year: 2005, type: journal, era: pre-ut, authors: 'N. A. Hall, B. Bicen, M. K. Jeelani, W. Lee, S. Qureshi, F. L. Degertekin, et al.', title: Micromachined microphones with diffraction-based optical displacement detection, venue: The Journal of the Acoustical Society of America, details: "118(5), 3000–3009", doi: "10.1121/1.2062429"}
+- {year: 2005, type: journal, era: pre-ut, authors: 'F. L. Degertekin, A. G. Onaran, M. Balantekin, W. Lee, N. A. Hall, C. F. Quate', title: Sensor for direct measurement of interaction forces in probe microscopy, venue: Applied Physics Letters, details: "87(21), 213109", doi: "10.1063/1.2136430"}
+- {year: 2005, type: other, era: pre-ut, authors: 'N. A. Hall, G. N. Nielson, D. W. Carr, R. H. Olsson III, G. R. Bogart, et al.', title: MEMS integrated with optics and nanostructures for sensor applications, venue: 'Technical report, Sandia National Laboratories', url: "https://www.osti.gov/biblio/968424"}
+- {year: 2004, type: journal, era: pre-ut, authors: 'W. Lee, N. A. Hall, Z. Zhou, F. L. Degertekin', title: Fabrication and characterization of a micromachined acoustic sensor with integrated optical readout, venue: IEEE Journal of Selected Topics in Quantum Electronics, details: "10(3), 643–651", doi: "10.1109/jstqe.2004.829198"}
+- {year: 2004, type: conference, era: pre-ut, authors: 'N. A. Hall, R. Guldiken, J. McLean, F. L. Degertekin', title: "Modeling and design of CMUTs using higher order vibration modes", venue: '2004 IEEE Ultrasonics Symposium, Vol. 1, 260-263', doi: "10.1109/ultsym.2004.1417716"}
+- {year: 2004, type: journal, era: pre-ut, authors: 'W. Lee, N. A. Hall, F. L. Degertekin', title: A grating-assisted resonant-cavity-enhanced optical displacement detection method for micromachined sensors, venue: Applied Physics Letters, details: "85(15), 3032–3034", doi: "10.1063/1.1804605"}
+- {year: 2004, type: other, era: pre-ut, authors: N. A. Hall, title: Micromachined broadband acoustic transducers with integrated optical displacement detection, venue: 'Ph.D. dissertation, Georgia Institute of Technology', url: "https://hdl.handle.net/1853/4858"}
+- {year: 2004, type: abstract, era: pre-ut, authors: 'N. A. Hall, W. Lee, M. K. Jeelani, F. L. Degertekin, M. Okandan', title: Micromachined microphones with integrated optical nanoscale displacement sensors, venue: The Journal of the Acoustical Society of America, details: "116(4 Suppl.), 2511", doi: "10.1121/1.4785020"}
+- {year: 2003, type: journal, era: pre-ut, authors: 'N. A. Hall, W. Lee, F. L. Degertekin', title: Capacitive micromachined ultrasonic transducers with diffraction-based integrated optical displacement detection, venue: 'IEEE Transactions on Ultrasonics, Ferroelectrics, and Frequency Control', details: "50(11), 1570–1580", doi: "10.1109/tuffc.2003.1251141"}
+- {year: 2003, type: conference, era: pre-ut, authors: 'W. Lee, N. A. Hall, F. L. Degertekin', title: Micromachined acoustic sensor array with diffraction-based optical interferometric detection, venue: 'MOEMS Display and Imaging Systems 4985, 140-151', doi: "10.1117/12.472862"}
+- {year: 2003, type: conference, era: pre-ut, authors: 'F. L. Degertekin, N. A. Hall, W. Lee', title: Micromachined acoustic sensors with integrated optoelectronic readout, venue: 2003 IEEE/LEOS International Conference on Optical MEMS, doi: "10.1109/omems.2003.1233445"}
+- {year: 2002, type: journal, era: pre-ut, authors: 'N. A. Hall, F. L. Degertekin', title: Integrated optical interferometric detection method for micromachined capacitive acoustic transducers, venue: Applied Physics Letters, details: "80(20), 3859–3861", doi: "10.1063/1.1480486"}
+- {year: 2002, type: conference, era: pre-ut, authors: 'N. A. Hall, W. Lee, J. Dervan, F. L. Degertekin', title: Micromachined capacitive transducers with improved optical detection for ultrasound applications in air, venue: '2002 IEEE Ultrasonics Symposium, Vol. 2, 1027-1030', doi: "10.1109/ultsym.2002.1192470"}
+- {year: 2002, type: abstract, era: pre-ut, authors: 'N. A. Hall, W. Lee, F. L. Degertekin', title: Broadband self-calibrating micromachined microphones with integrated optical displacement detection, venue: The Journal of the Acoustical Society of America, details: "112(5 Suppl.), 2234–2235", doi: "10.1121/1.4778857"}
+- {year: 2001, type: conference, era: pre-ut, authors: 'N. A. Hall, F. L. Degertekin', title: Self-calibrating micromachined microphones with integrated optical displacement detection, venue: 'Transducers ’01 / Eurosensors XV, 11th International Conference on Solid-State Sensors and Actuators', doi: "10.1007/978-3-642-59497-7_27"}
+- {year: 2001, type: conference, era: pre-ut, authors: 'F. L. Degertekin, N. A. Hall, W. Lee', title: Capacitive micromachined ultrasonic transducers with integrated optoelectronic readout, venue: 2001 IEEE Ultrasonics Symposium, doi: "10.1109/ultsym.2001.991860"}
+- {year: 2001, type: conference, era: pre-ut, authors: 'F. L. Degertekin, N. A. Hall', title: Micromachined microphone with optical interferometric readout, venue: 2001 IEEE International Symposium on Circuits and Systems, doi: "10.1109/iscas.2001.921275"}
+- {year: 2001, type: journal, era: pre-ut, authors: 'J. A. Carter, K. M. Martin, W. B. Campbell, N. A. Hall, O. A. Ezekoye', title: Design of an oscillating flow apparatus for the study of low Reynolds number particle dynamics, venue: Experiments in Fluids, details: "30(5), 578–583", doi: "10.1007/s003480000238"}
+- {year: 2000, type: conference, era: pre-ut, authors: 'N. A. Hall, F. L. Degertekin', title: An integrated optical detection method for capacitive micromachined ultrasonic transducers, venue: 2000 IEEE Ultrasonics Symposium, doi: "10.1109/ultsym.2000.922698"}
+
+# ---------------- Added Nov 2026 after checking Crossref, OpenAlex and Google Patents ----------------
+- year: 2020
+  type: other
+  authors: N. A. Hall, D. Kim, R. P. Williams, Y. Seo, C. A. Stalder
+  title: Micromachined infrasound sensors (final report)
+  venue: Technical report, U.S. Department of Energy, National Nuclear Security Administration
+  doi: 10.2172/1591797
+- year: 2019
+  type: patent
+  authors: N. A. Hall, D. Kim, R. P. Williams, D. P. Gawalt, B. D. Avenson, C. T. Garcia, K. L. Gleason
+  title: Solid-state shear stress sensors with high selectivity
+  venue: US Patent 10,309,845
+  url: https://patents.google.com/patent/US10309845B2
+- year: 2019
+  type: abstract
+  authors: Y. Seo, D. Kim, N. A. Hall
+  title: Piezoelectric pressure sensors for hypersonic flow measurements at high-temperatures
+  venue: The Journal of the Acoustical Society of America
+  details: 146(4 Suppl.), 2997
+  doi: 10.1121/1.5137376
+- year: 2017
+  type: patent
+  authors: B. D. Avenson, M. R. Christensen, C. T. Garcia, N. A. Hall, A. G. Onaran, J. C. Schlicher, A. Zaatari
+  title: Closed loop control techniques for displacement sensors with optical readout
+  venue: US Patent 9,702,992
+  url: https://patents.google.com/patent/US9702992B2
+- year: 2017
+  type: patent
+  authors: N. A. Hall, C. T. Garcia, B. D. Avenson, A. G. Onaran
+  title: Entrained microphones
+  venue: US Patent 9,832,573
+  url: https://patents.google.com/patent/US9832573B2
+- year: 2013
+  type: patent
+  authors: B. D. Avenson, C. T. Garcia, N. A. Hall, A. G. Onaran
+  title: Optical microphone packaging
+  venue: US Patent 8,391,517
+  url: https://patents.google.com/patent/US8391517B2
+- year: 2011
+  type: abstract
+  authors: A. G. Onaran, C. T. Garcia, A. Liu, M. Christensen, M. L. Kuntzman, K. D. Kirk, N. A. Hall
+  title: State space modeling of surface mount silicon microphones
+  venue: The Journal of the Acoustical Society of America
+  details: 130(4 Suppl.), 2427
+  doi: 10.1121/1.3654726
