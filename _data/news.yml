@@ -52,10 +52,25 @@
   image: wedge-resonator.jpg
   tag: Paper
 
+- date: 2025-05-19
+  title: Ehsan Vatankhah wins first place at the ASA meeting in New Orleans
+  text: >-
+    Ehsan’s talk on a magnetostrictive jerk sensor took first place in the Structural Acoustics and
+    Vibration Young Presenter Competition.
+  link: https://ece.utexas.edu/news/ehsan-vatankhah-receives-first-place-talk-asa-conference
+  image: magnetostrictive-accelerometer.jpg
+  tag: Award
+
 - date: 2023-02-01
   when: "2023"
   title: Best Paper Award at IMAC XLI
   text: >-
     “Measurement of airborne ultrasound using laser Doppler vibrometry” (Liu et al.) wins second place
     for the Computer Vision and Laser Vibrometry technical division.
+  tag: Award
+
+- date: 2022-12-09
+  title: Xiaoyu Niu wins a Best Presentation Award at the ASA meeting in Nashville
+  text: Xiaoyu’s talk “MEMS microphones as ultrasonic transducers” won the Best Presentation Award in Engineering Acoustics.
+  link: https://ece.utexas.edu/news/xiaoyu-niu-receives-acoustical-society-america-best-paper-award
   tag: Award
