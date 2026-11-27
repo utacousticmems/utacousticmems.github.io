@@ -2,7 +2,7 @@
 title: "Plasmatherm #2 (RIE)"
 category: Cleanroom processes
 order: 5
-summary: Non-fluorine RIE chamber. Simpler to run than the Oxford, but it cannot reach 30 mTorr.
+description: Non-fluorine RIE chamber. Simpler to run than the Oxford, but it cannot reach 30 mTorr.
 authors: [Yuqi Meng]
 updated: Apr 2025
 status: Migrated

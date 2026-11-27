@@ -1,28 +1,28 @@
 ---
 title: Group wiki
 permalink: /wiki/
+description: "The Hall Lab's public wiki: cleanroom recipes, mask design rules and guides for new members of the UT Acoustic MEMS Group at UT Austin."
 lede: A public record of the prototyping techniques our students have worked out, so the next person starts where the last one finished. Design, fabricate, package, test.
 ---
 <div class="wiki-index">
   {%- for cat in site.data.wiki_categories -%}
   {%- assign pages = site.wiki | where: "category", cat.name | sort: "order" -%}
+  {%- if pages.size > 0 -%}
   <section class="wiki-cat">
     <h2>{{ cat.name }}</h2>
     <p class="muted">{{ cat.blurb }}</p>
-    {%- if pages.size > 0 -%}
     <ul class="wiki-list">
       {%- for p in pages -%}
       <li>
         <a href="{{ p.url | relative_url }}">{{ p.title }}</a>
-        {% if p.summary %}<span>{{ p.summary }}</span>{% endif %}
+        {%- assign p_desc = p.description | default: p.summary -%}
+        {% if p_desc %}<span>{{ p_desc }}</span>{% endif %}
         <span class="wiki-li-meta">{% if p.authors %}{{ p.authors | join: ", " }}{% endif %}{% if p.updated %} · {{ p.updated }}{% endif %}</span>
       </li>
       {%- endfor -%}
     </ul>
-    {%- else -%}
-    <p class="empty">No pages yet. LDV setup, hydrophone calibration and PIC fiber alignment are good first ones. Copy <code>_templates/wiki-page.md</code> to start.</p>
-    {%- endif -%}
   </section>
+  {%- endif -%}
   {%- endfor -%}
 </div>
 <aside class="callout">

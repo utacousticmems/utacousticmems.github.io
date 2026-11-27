@@ -31,7 +31,15 @@ defaults:
   - scope: { path: "", type: wiki }
     values: { layout: wiki }
   - scope: { path: "" }
-    values: { layout: page }
+    values:
+      layout: page
+      # Picture shown when a page is shared (LinkedIn, Slack, iMessage, email...).
+      # A page can use its own picture with image: in its header.
+      image:
+        path: /assets/img/social-preview.jpg
+        width: 1200
+        height: 630
+        alt: UT Acoustic MEMS Group, Hall Lab, The University of Texas at Austin
 
 plugins:
   - jekyll-seo-tag

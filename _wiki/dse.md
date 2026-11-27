@@ -2,7 +2,7 @@
 title: Deep silicon etch (DSE)
 category: Cleanroom processes
 order: 3
-summary: Keeping the sample cool is everything. He flow, backside pressure, cleanliness and Fomblin oil.
+description: Keeping the sample cool is everything. He flow, backside pressure, cleanliness and Fomblin oil.
 authors: [Zihuan Liu]
 updated: Mar 2024
 status: Migrated

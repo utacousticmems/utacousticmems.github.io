@@ -2,7 +2,7 @@
 title: Standard photolithography
 category: Cleanroom processes
 order: 1
-summary: AZ5214 as positive and image-reversal resist, and SU-8 3005 with an Omnicoat release layer.
+description: AZ5214 as positive and image-reversal resist, and SU-8 3005 with an Omnicoat release layer.
 authors: [Zihuan Liu]
 updated: Dec 2023
 status: Migrated

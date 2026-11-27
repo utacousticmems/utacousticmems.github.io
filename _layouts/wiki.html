@@ -6,7 +6,8 @@ layout: default
   <div class="wrap">
     <p class="kicker"><a href="{{ '/wiki/' | relative_url }}">Group wiki</a>{% if page.category %} / {{ page.category }}{% endif %}</p>
     <h1>{{ page.title }}</h1>
-    {% if page.summary %}<p class="lede">{{ page.summary }}</p>{% endif %}
+    {%- assign wiki_desc = page.description | default: page.summary -%}
+    {% if wiki_desc %}<p class="lede">{{ wiki_desc }}</p>{% endif %}
     <p class="wiki-meta">
       {% if page.authors %}By {{ page.authors | join: ", " }}{% endif %}
       {% if page.updated %} · Last checked {{ page.updated }}{% endif %}
@@ -19,7 +20,7 @@ layout: default
     {%- for cat in cats -%}
       {%- assign pages = site.wiki | where: "category", cat.name | sort: "order" -%}
       {%- if pages.size > 0 -%}
-      <h4>{{ cat.name }}</h4>
+      <h2 class="label-h">{{ cat.name }}</h2>
       <ul>
         {%- for p in pages -%}
         <li><a href="{{ p.url | relative_url }}"{% if p.url == page.url %} aria-current="page"{% endif %}>{{ p.title }}</a></li>

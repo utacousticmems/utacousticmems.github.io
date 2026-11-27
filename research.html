@@ -1,6 +1,7 @@
 ---
 title: Research
 permalink: /research/
+description: "Research at the UT Acoustic MEMS Group (Hall Lab), UT Austin: high-temperature sensors, piezoelectric MEMS, photonic accelerometers, microphones, hydrophones."
 lede: We design, fabricate, package and test MEMS and photonic sensors. Most projects run the full cycle in-house, from a model on paper to a device in the cleanroom to a measurement on the bench.
 ---
 <nav class="chips" aria-label="Research areas">
@@ -13,7 +14,7 @@ lede: We design, fabricate, package and test MEMS and photonic sensors. Most pro
   <div class="area-text">
     <h2>{{ r.title }}</h2>
     <p>{{ r.body }}</p>
-    <h4>Key papers</h4>
+    <h3 class="label-h">Key papers</h3>
     <ul class="mini-pubs">
       {%- for t in r.papers -%}
         {%- assign hit = site.data.publications | where: "title", t | first -%}
@@ -37,7 +38,7 @@ lede: We design, fabricate, package and test MEMS and photonic sensors. Most pro
     <figure><img src="{{ '/assets/img/immersion-pmut.jpg' | relative_url }}" alt="A hydrophone positioned over an immersion transducer array" loading="lazy"><figcaption>3-axis scanning ultrasound tanks</figcaption></figure>
     <figure><img src="{{ '/assets/img/comb-setup-render.jpg' | relative_url }}" alt="Rendering of a laser vibrometer measuring a device on a shaker" loading="lazy"><figcaption>A suite of electromechanical shakers for IMU testing</figcaption></figure>
   </div>
-  <p class="muted">Devices are fabricated in the <a href="https://www.mrc.utexas.edu/">Microelectronics Research Center</a> cleanroom (over 12,000 sq ft of Class 100 and 1000 space, part of the NSF NNCI) and tested in our Acoustical MEMS Test Laboratory in EER. More on <a href="{{ '/visit/' | relative_url }}#facilities">facilities</a>.</p>
+  <p class="muted">Devices are fabricated in the <a href="https://research.utexas.edu/mrc">Microelectronics Research Center</a> cleanroom (over 12,000 sq ft of Class 100 and 1000 space, part of the NSF NNCI) and tested in our Acoustical MEMS Test Laboratory in EER. More on <a href="{{ '/visit/' | relative_url }}#facilities">facilities</a>.</p>
 </section>
 
 <section class="heritage">

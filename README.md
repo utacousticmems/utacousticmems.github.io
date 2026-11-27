@@ -16,7 +16,7 @@ Built with [Jekyll](https://jekyllrb.com/) and hosted free on GitHub Pages.
    git push -u origin main
    ```
 4. **Turn on Pages:** repo → *Settings* → *Pages* → *Build and deployment* → Source: *Deploy from a branch* → Branch: `main` / `(root)` → *Save*. The site is live in 1–2 minutes.
-5. **Set `repo_url`** in `_config.yml` to the repo's URL so the "Edit on GitHub" links appear.
+5. **Set `repo_url`** in `_config.yml` to the repo's URL so the "edit this page on GitHub" links on wiki pages appear.
 6. **Point the old site here.** In the old Google Site, replace the home page with a short note and link to the new address (Google Sites cannot do a true redirect).
 7. Optional: a custom domain (e.g. a UT subdomain) can be added later under *Settings → Pages → Custom domain*.
 
@@ -56,9 +56,12 @@ _config.yml              site settings (title, baseurl, repo_url)
 _data/                   people, publications, news, research areas, wiki sections
 _wiki/                   one Markdown file per wiki page
 _layouts/, _includes/    page templates (rarely need changes)
-assets/css/site.css      all styling (colors and fonts at the top; SF Pro on Apple devices, Inter elsewhere)
+assets/css/site.css      all styling (colors and fonts at the top; Libre Franklin, UT's web typeface)
 assets/img/              research photos and journal covers
 assets/gallery/          gallery photos, one folder per album (see the README in that folder)
+assets/gallery-thumbs/   small copies of the gallery photos for fast loading (.github/scripts/make_gallery_thumbs.py)
+assets/icons/            site icons for browser tabs and phones (favicon.ico sits at the top level)
+assets/img/social-preview.jpg  picture shown when a page is shared on LinkedIn, Slack, iMessage...
 assets/video/            recruiting film (1080p, compressed to 32 MB) and poster frame
 .github/publications-bot/  weekly check for new papers (settings in settings.yml)
 ```

@@ -2,7 +2,7 @@
 title: FIJI ALD (Al₂O₃)
 category: Cleanroom processes
 order: 2
-summary: Al₂O₃ atomic layer deposition on the FIJI, with thickness results and edge-deposition tips.
+description: Al₂O₃ atomic layer deposition on the FIJI, with thickness results and edge-deposition tips.
 authors: [Zihuan Liu]
 updated: Dec 2023
 status: Needs check

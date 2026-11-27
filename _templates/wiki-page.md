@@ -2,7 +2,7 @@
 title: Page title
 category: Measurement        # Getting started | Cleanroom processes | Design | Measurement
 order: 10                    # position within the category
-summary: One sentence on what this page helps you do.
+description: One sentence on what this page helps you do.
 authors: [Your Name]
 updated: Jan 2027
 ---

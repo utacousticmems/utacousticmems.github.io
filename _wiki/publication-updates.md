@@ -2,7 +2,7 @@
 title: Automatic publication updates
 category: Getting started
 order: 3
-summary: How new papers reach the Publications page by themselves, and how to review them.
+description: How new papers reach the Publications page by themselves, and how to review them.
 authors: [UT Acoustic MEMS Group]
 updated: Nov 2026
 ---

@@ -2,7 +2,7 @@
 title: Editing this site
 category: Getting started
 order: 2
-summary: How to add a paper, a person, a news item or a wiki page. No coding needed.
+description: How to add a paper, a person, a news item or a wiki page. No coding needed.
 authors: [UT Acoustic MEMS Group]
 updated: Nov 2026
 ---
@@ -88,7 +88,7 @@ Before you upload:
 
 ## Write a wiki page
 1. Copy `_templates/wiki-page.md` into `_wiki/` and rename it, e.g. `_wiki/ldv-setup.md` (lowercase, hyphens). That name becomes the URL: `/wiki/ldv-setup/`.
-2. Fill in the header: `title`, `category` (must match one in `_data/wiki_categories.yml`), `order`, `summary`, `authors`, `updated`.
+2. Fill in the header: `title`, `category` (must match one in `_data/wiki_categories.yml`), `order`, `description` (one sentence; it shows under the title and in Google results), `authors`, `updated`.
 3. Write in Markdown. Put images in `assets/wiki/` and reference them as {% raw %}`![caption]({{ '/assets/wiki/your-image.jpg' | relative_url }})`{% endraw %}.
 
 **Keep it public-safe.** No account numbers, P-card details, vendor contacts, door codes, export-controlled or NDA material, or unpublished results. Those go on the internal wiki.
