@@ -1,5 +1,5 @@
 # Useful links page (/links/). It is linked from the footer, under "Students", and is not in the top menu.
-# Groups show in this order, and links in the order listed. Keep the whole page short (about 15 links).
+# Groups show in this order, and links in the order listed. Keep the whole page short (under 20 links).
 # Use https:// addresses only, and open a new link once in your browser to check that it loads.
 #   name: the link text
 #   url:  the full address
@@ -49,12 +49,21 @@
     - name: Speed of sound in water
       url: https://resource.npl.co.uk/acoustics/techguides/soundpurewater/
       note: Calculator from the UK's National Physical Laboratory
-    - name: Sound absorption in seawater
-      url: https://resource.npl.co.uk/acoustics/techguides/seaabsorption/
-      note: Loss vs frequency, temperature, salinity, depth, pH (NPL)
+
+- group: Ultrasound and transducers
+  links:
+    - name: Acoustic properties of tissues
+      url: https://itis.swiss/virtual-population/tissue-properties/database/acoustic-properties
+      note: Sound speed, attenuation, nonlinearity (IT'IS Foundation)
+    - name: k-Wave
+      url: https://www.k-wave.org/
+      note: Open-source MATLAB toolbox for ultrasound simulation
+    - name: FOCUS
+      url: https://www.egr.msu.edu/~fultras-web/
+      note: Transducer and array pressure fields (Michigan State)
     - name: Piezoelectric material constants
-      url: https://www.ctscorp.com/Files/DataSheets/Piezoelectric/Bulk-Piezoceramics/CTS-Piezoelectric-Bulk-Piezoceramics-Ceramic-Material-Properties-Datasheet.pdf
-      note: PZT grades and PMN-PT crystals, full tables (CTS, PDF)
+      url: https://en.wikipedia.org/wiki/List_of_piezoelectric_materials
+      note: PZT-5A, PZT-5H, AlN, LiNbO₃, LiTaO₃ and more (Wikipedia)
 
 - group: For students
   links:
