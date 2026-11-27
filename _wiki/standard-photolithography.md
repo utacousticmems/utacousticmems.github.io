@@ -38,7 +38,7 @@ References: Kayaku Advanced Materials SU-8 3000 datasheet and OmniCoat datasheet
 OmniCoat lets you strip SU-8 cleanly later.
 
 - Spin at 1000 rpm for 40 s, then bake at 200 °C for 1 min.
-- Apply 3 coats (about 17 nm each, roughly 40 nm total). Let the wafer cool to room temperature between coats.
+- Apply 3 coats, roughly 40 nm in total (the datasheet asks for at least 17 nm). Let the wafer cool to room temperature between coats.
 
 ### SU-8 process
 
