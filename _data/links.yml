@@ -46,24 +46,18 @@
     - name: Speed of sound and fluid properties
       url: https://webbook.nist.gov/chemistry/fluid/
       note: Water, gases and more, from NIST
-    - name: Speed of sound in water
-      url: https://resource.npl.co.uk/acoustics/techguides/soundpurewater/
-      note: Calculator from the UK's National Physical Laboratory
 
-- group: Ultrasound and transducers
+- group: Ultrasound simulation
   links:
-    - name: Acoustic properties of tissues
-      url: https://itis.swiss/virtual-population/tissue-properties/database/acoustic-properties
-      note: Sound speed, attenuation, nonlinearity (IT'IS Foundation)
     - name: k-Wave
       url: https://www.k-wave.org/
       note: Open-source MATLAB toolbox for ultrasound simulation
     - name: FOCUS
       url: https://www.egr.msu.edu/~fultras-web/
       note: Transducer and array pressure fields (Michigan State)
-    - name: Piezoelectric material constants
-      url: https://en.wikipedia.org/wiki/List_of_piezoelectric_materials
-      note: PZT-5A, PZT-5H, AlN, LiNbO₃, LiTaO₃ and more (Wikipedia)
+    - name: HIFU Beam
+      url: https://limu.msu.ru/en/hifu-beam/
+      note: Nonlinear HIFU fields with shocks (Moscow State, UW APL)
 
 - group: For students
   links:
