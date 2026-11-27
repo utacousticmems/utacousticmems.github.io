@@ -172,7 +172,11 @@ code { font-family: var(--mono); font-size: .85em; background: var(--stone-bg); 
 .page-head { padding: 96px 0 64px; text-align: center; }
 .page-head h1 { font-size: clamp(44px, 7vw, 76px); letter-spacing: -0.04em; margin: 0 auto 18px; max-width: 13em; }
 .lede { font-size: clamp(19px, 2vw, 23px); line-height: 1.4; color: var(--ink-3); max-width: 720px; margin: 0 auto; letter-spacing: -0.015em; }
+/* Small Google Scholar link under the intro (Publications page) */
 .lede-link { margin: 20px 0 0; }
+.scholar-link { display: inline-flex; align-items: center; gap: 8px; font-size: 15px; font-weight: 600; color: var(--ink-3); }
+.scholar-link:hover { color: var(--orange); text-decoration: none; }
+.scholar-icon { width: 20px; height: 20px; flex: none; fill: #4285f4; }
 .page-body { padding-bottom: 120px; }
 
 /* Chips */
