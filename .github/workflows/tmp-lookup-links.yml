@@ -19,4 +19,4 @@ jobs:
       - name: Look up links
         env:
           OPENALEX_API_KEY: ${{ secrets.OPENALEX_API_KEY }}
-        run: python .github/scripts/tmp_lookup_links2.py
+        run: python .github/scripts/tmp_lookup_links3.py
