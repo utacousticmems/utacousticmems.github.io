@@ -2,7 +2,7 @@
 title: Mask design
 category: Design
 order: 1
-description: AutoCAD rules that survive conversion, KLayout GDS2 prep, alignment marks and the EVG620 template.
+description: AutoCAD rules for a clean conversion, KLayout GDS2 prep, alignment marks and the EVG620 template.
 authors: [DK, Emma, Michael]
 updated: 2015–2017
 status: Needs check
@@ -62,7 +62,7 @@ A half-mask is rotated 180° and used for two different patterns, so its alignme
 - Put marks on both the left and right sides, and treat them as a full-wafer design even if only half the wafer carries devices.
 
 ## EVG620 4-inch template and backside alignment
-- The group keeps a 4-inch wafer template for the EVG620 (`EVG620_4in_wafer_holder.dwg`). Ask for it, or add it to `assets/wiki/`.
+- The group keeps a 4-inch wafer template for the EVG620 (`EVG620_4in_wafer_holder.dwg`). Ask in the group for a copy. If you have one, add it to `assets/wiki/` so others can download it here.
 - For backside alignment, place marks inside the area bounded by the blue lines in the template, well away from its edges. That area is the opening in the EVG620 chuck that the backside camera looks through.
 - Tell the tool trainer you need backside alignment.
-- The old notes (2017) say to use the EVG620 rather than the Karl Suss MA6 for backside alignment because of an MA6 BSA issue. Check whether that still applies.
+- The old notes (2017) say to use the EVG620 rather than the Karl Suss MA6 for backside alignment, because the MA6's backside alignment had a problem at the time. Check whether that still applies.

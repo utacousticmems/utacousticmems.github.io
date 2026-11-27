@@ -56,6 +56,7 @@ They are in `.github/publications-bot/settings.yml`. Open it on GitHub, click th
 | `reviewers` | GitHub accounts asked to review each pull request (or assigned the issue, see above). |
 | `skip` | Papers never to suggest: a DOI, or `arXiv:NUMBER` for an arXiv preprint. |
 | `keep_capitalized` | Extra words to keep capitalized when titles are changed to sentence case. |
+| `contact_email` | Optional. An email address sent to Crossref with each lookup, so they can reach you if something goes wrong. Leave it empty to send none. |
 
 `already-suggested.txt` in the same folder is the program's memory of what it has suggested. You don't need to edit it.
 
