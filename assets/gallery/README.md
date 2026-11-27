@@ -44,3 +44,7 @@ In `_data/gallery.yml`, under the album, add a line per photo:
 ## Remove a photo
 
 Open the photo on GitHub, click the **…** menu at the top right, then **Delete file** and **Commit changes**.
+
+## Faster loading (for whoever maintains the site)
+
+The page shows small copies of each photo in its tiles, kept in `assets/gallery-thumbs/`, and opens the full photo only when someone clicks it. A new photo without copies still shows, it just loads more slowly on phones. To make the missing copies (and remove copies of deleted photos), run this from the top folder of the repository: `python3 .github/scripts/make_gallery_thumbs.py` (needs Pillow).

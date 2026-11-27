@@ -2,6 +2,9 @@
   A grid of photo tiles, used by gallery-album.html. The first photo is shown large when there are 3 or more.
   Parameters: items (static files), group (optional heading of the group; the photo viewer shows it after the caption).
   Reads album_title and album_captions, set by gallery-album.html.
+  Tiles load small copies (640 and 1280 px wide) from assets/gallery-thumbs/ when they exist, so the page
+  loads fast on phones; the photo viewer always opens the full photo. Make the copies with
+  .github/scripts/make_gallery_thumbs.py. A photo without copies still shows, using the full photo.
 {%- endcomment -%}
 {%- assign k = include.items | size %}
   <div class="photo-grid{% if k >= 3 %} has-lead{% endif %}">
@@ -11,10 +14,20 @@
     {%- if include.group -%}
       {%- if cap -%}{%- assign full = cap | append: " · " | append: include.group -%}{%- else -%}{%- assign full = include.group -%}{%- endif -%}
     {%- endif -%}
-    {%- assign src = f.path | relative_url | uri_escape %}
+    {%- assign src = f.path | relative_url | uri_escape -%}
+    {%- assign thumb_dir = f.path | replace_first: "/assets/gallery/", "/assets/gallery-thumbs/" | split: "/" | pop | join: "/" -%}
+    {%- assign t_small = thumb_dir | append: "/" | append: f.basename | append: "-640.jpg" -%}
+    {%- assign t_large = thumb_dir | append: "/" | append: f.basename | append: "-1280.jpg" -%}
+    {%- assign has_small = site.static_files | where: "path", t_small | size -%}
+    {%- assign has_large = site.static_files | where: "path", t_large | size -%}
+    {%- if forloop.first and k >= 3 -%}
+      {%- assign tile_sizes = "(max-width: 734px) 100vw, (max-width: 1200px) 66vw, 770px" -%}
+    {%- else -%}
+      {%- assign tile_sizes = "(max-width: 734px) 50vw, (max-width: 1200px) 33vw, 380px" -%}
+    {%- endif %}
     <a class="photo" href="{{ src }}"{% if full %} data-caption="{{ full | escape }}"{% endif %}>
-      <img src="{{ src }}" alt="{% if full %}{{ full | escape }}{% else %}{{ album_title | escape }}, photo {{ forloop.index }}{% endif %}" loading="lazy" decoding="async">
-      {%- if cap %}<span class="photo-cap">{{ cap | escape }}</span>{% endif -%}
+      <img src="{% if has_small > 0 %}{{ t_small | relative_url | uri_escape }}{% else %}{{ src }}{% endif %}"{% if has_small > 0 and has_large > 0 %} srcset="{{ t_small | relative_url | uri_escape }} 640w, {{ t_large | relative_url | uri_escape }} 1280w" sizes="{{ tile_sizes }}"{% endif %} alt="{% if full %}{{ full | escape }}{% else %}{{ album_title | escape }}, photo {{ forloop.index }}{% endif %}" loading="lazy" decoding="async">
+      {%- if cap %}<span class="photo-cap" aria-hidden="true">{{ cap | escape }}</span>{% endif -%}
     </a>
     {%- endfor %}
   </div>
