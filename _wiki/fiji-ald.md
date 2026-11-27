@@ -12,7 +12,7 @@ status: Needs check
 
 ## Recipe
 - On the ALD tool, open the folder named for Zihuan Liu. Recipe: **AL2O3_300cycles**.
-- Expected result: about **60 nm** of Al₂O₃ from 300 cycles.
+- Expected result: about **30 nm** of Al₂O₃ from 300 cycles, at the usual ≈ 0.1 nm per cycle. One run measured about 60 nm (see below), so measure your own film.
 
 ## Thickness vs. cycles
 
@@ -22,7 +22,7 @@ status: Needs check
 | 2000 | ≈ 200 nm | ≈ 0.1 nm/cycle |
 | 700 | not recorded (the old page had only photos) | |
 
-The original page quotes roughly 0.1 nm per cycle and notes that growth is **not linear** in cycle count. The 300-cycle and 2000-cycle numbers above disagree with a single rate, so measure your own film before relying on either.
+Al₂O₃ ALD normally grows about 0.1 nm per cycle, and after the first few cycles the thickness grows in proportion to the number of cycles. The 2000-cycle result fits that rate. The 300-cycle measurement is about twice what it predicts, so check the ellipsometer model and measure your own film before relying on it.
 
 > **To do:** whoever next runs this recipe, add your cycles, measured thickness and date to the table.
 

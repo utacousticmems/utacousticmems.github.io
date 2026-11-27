@@ -33,6 +33,8 @@ Work through plane waves, acoustic impedance, reflection and transmission, spher
 ## 6. Transducers
 Learn lumped-parameter and equivalent-circuit modeling, including the physics of piezoelectric devices. Prof. Hall's Engineering Acoustics and Transducers course notes are the group's standard reference; ask a senior student for the current copy.
 
+- J. L. Butler and C. H. Sherman, *Transducers and Arrays for Underwater Sound*, 2nd ed. (Springer)
+
 ## 7. Day-to-day tools
 - **References:** Zotero. UT Libraries has a guide to Zotero storage.
 - **Figures:** save as SVG so they stay editable. Inkscape works well for figures.
