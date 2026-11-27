@@ -13,7 +13,8 @@ scholar_link: Prof. Hall’s Google Scholar profile
 {%- assign early = all | where: "era", "pre-ut" -%}
 {%- assign years = pubs | map: "year" | uniq | sort | reverse -%}
 {%- assign early_years = early | map: "year" | uniq | sort | reverse -%}
-{%- assign types = "journal|Journal,conference|Conference,abstract|Abstract,preprint|Preprint,patent|Patent,other|Other" | split: "," -%}
+{%- comment %} Filter buttons, in the same order as the papers within each year (see _includes/pub-year-items.html) {% endcomment -%}
+{%- assign types = "journal|Journal,conference|Conference,preprint|Preprint,abstract|Abstract,patent|Patent,other|Other" | split: "," -%}
 <div class="pub-tools">
   <input type="search" id="pub-search" placeholder="Search titles, authors, venues" aria-label="Search publications">
   <div class="chips" role="group" aria-label="Filter by type">
@@ -34,7 +35,7 @@ scholar_link: Prof. Hall’s Google Scholar profile
   <h2>{{ y }}</h2>
   <ol class="pubs">
     {%- assign items = pubs | where: "year", y -%}
-    {%- for p in items -%}{% include pub-item.html p=p %}{%- endfor -%}
+    {%- include pub-year-items.html items=items -%}
   </ol>
 </section>
 {%- endfor -%}
@@ -65,7 +66,7 @@ scholar_link: Prof. Hall’s Google Scholar profile
     <h2>{{ y }}</h2>
     <ol class="pubs">
       {%- assign items = early | where: "year", y -%}
-      {%- for p in items -%}{% include pub-item.html p=p %}{%- endfor -%}
+      {%- include pub-year-items.html items=items -%}
     </ol>
   </section>
   {%- endfor -%}

@@ -1,0 +1,13 @@
+{%- comment -%}
+  The papers of one year on the Publications page, journal papers first.
+  Parameter: items (the year's entries from _data/publications.yml, in file order).
+  Within each type the file order is kept. A type not in this list goes last.
+{%- endcomment -%}
+{%- assign type_order = "journal,conference,preprint,abstract,patent,other" | split: "," -%}
+{%- for t in type_order -%}
+  {%- assign group = include.items | where: "type", t -%}
+  {%- for p in group -%}{% include pub-item.html p=p %}{%- endfor -%}
+{%- endfor -%}
+{%- for p in include.items -%}
+  {%- unless type_order contains p.type -%}{% include pub-item.html p=p %}{%- endunless -%}
+{%- endfor -%}
