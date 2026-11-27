@@ -6,6 +6,7 @@ layout: default
     {% if page.kicker %}<p class="eyebrow reveal">{{ page.kicker }}</p>{% endif %}
     <h1 class="reveal">{{ page.title }}</h1>
     {% if page.lede %}<p class="lede reveal">{{ page.lede }}</p>{% endif %}
+    {% if page.scholar_link %}<p class="lede-link reveal"><a class="link-arrow" href="{{ site.scholar_url }}" target="_blank" rel="noopener">{{ page.scholar_link }}</a></p>{% endif %}
   </div>
 </section>
 <div class="{% if page.wide %}wrap-wide{% else %}wrap{% endif %} page-body">
