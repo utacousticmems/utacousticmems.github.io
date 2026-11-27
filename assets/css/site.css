@@ -474,6 +474,16 @@ main p a:not([class]):hover, .prose li a:not([class]):hover { text-decoration-co
 /* Website credit, in the footer's bottom line */
 .footer-base .credit-name { color: #dfe4e7; font-weight: 600; }
 
+/* Useful links (/links/): small group labels, link names, a short grey note under each */
+.links-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 44px 48px; }
+.link-group .label-h { margin: 0 0 6px; }
+.link-list { list-style: none; padding: 0; margin: 0; }
+.link-list li { display: flex; flex-direction: column; padding: 13px 0; border-top: 1px solid var(--line); }
+.link-list a { align-self: flex-start; font-weight: 700; font-size: 17px; color: var(--charcoal); }
+.link-list a:hover { color: var(--orange); text-decoration: none; }
+.link-list span { font-size: 14px; color: var(--ink-3); }
+@media (max-width: 734px) { .links-grid { grid-template-columns: 1fr; gap: 36px; } }
+
 /* Page not found */
 .notfound { text-align: center; }
 .notfound .btn { margin-bottom: 28px; }

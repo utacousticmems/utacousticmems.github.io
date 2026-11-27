@@ -20,6 +20,7 @@ Everything on this site lives in a GitHub repository. You can edit any of it in 
 | A research area | `_data/research.yml` |
 | Gallery photos | upload to `assets/gallery/<album>/`; titles and captions in `_data/gallery.yml` |
 | A wiki page | `_wiki/<page-name>.md` |
+| The Useful links page (linked from the footer) | `_data/links.yml` |
 | Home, Join, Visit pages | `index.html`, `join.html`, `visit.html` |
 | Images | `assets/img/` (people photos in `assets/people/`, wiki images in `assets/wiki/`) |
 
