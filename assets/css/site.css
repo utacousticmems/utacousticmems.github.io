@@ -6,7 +6,7 @@
 
 :root {
   --orange: #bf5700;
-  --orange-dark: #9c4700;   /* hover state only (a shade, not a tint) */
+  --orange-dark: #9c4700;   /* a shade, not a tint: hover states, and orange text on the stone background (4.5:1 contrast) */
   --charcoal: #333f48;
   --night: #161c21;         /* charcoal, darkened, for dark sections */
   --night-tile: #222a31;
@@ -15,7 +15,7 @@
   --tangerine: #f8971f;
   --ink: #1d2328;
   --ink-2: #47525b;
-  --ink-3: #6e777e;
+  --ink-3: #626b72;         /* dark enough for 4.5:1 contrast on white and stone */
   --line: #e4e1d9;
   --font: "Libre Franklin", Arial, Helvetica, sans-serif;
   --mono: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
@@ -37,7 +37,7 @@ h1, h2, h3, h4 { margin: 0 0 .45em; color: var(--charcoal); line-height: 1.1; le
 h1 { font-size: clamp(40px, 6vw, 64px); font-weight: 800; letter-spacing: -0.032em; }
 h2 { font-size: clamp(28px, 3.6vw, 40px); }
 h3 { font-size: 21px; }
-h4 { font-size: 12px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: var(--ink-3); margin: 1.6em 0 .6em; }
+h4, .label-h { font-size: 12px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: var(--ink-3); margin: 1.6em 0 .6em; line-height: 1.1; }
 p { margin: 0 0 1em; }
 code { font-family: var(--mono); font-size: .85em; background: var(--stone-bg); padding: .12em .4em; border-radius: 6px; }
 .wrap { max-width: var(--wrap); margin: 0 auto; padding: 0 24px; }
@@ -120,7 +120,7 @@ code { font-family: var(--mono); font-size: .85em; background: var(--stone-bg); 
 .stat-big { font-size: clamp(44px, 6vw, 68px); font-weight: 800; letter-spacing: -0.04em; line-height: 1.05; margin: 12px 0 14px; color: var(--orange); white-space: nowrap; }
 .stat:nth-child(even) .stat-big { color: #fff; }
 .stat-a { font-size: 16px; color: #a7b0b6; line-height: 1.45; }
-.stat-src { font-size: 12.5px; color: #7d878e; margin-top: auto; padding-top: 22px; }
+.stat-src { font-size: 12.5px; color: #949ea5; margin-top: auto; padding-top: 22px; }
 
 /* Bento tiles */
 .bento { display: grid; grid-template-columns: repeat(6, 1fr); gap: 20px; }
@@ -193,7 +193,7 @@ code { font-family: var(--mono); font-size: .85em; background: var(--stone-bg); 
 .area-img img { width: 100%; aspect-ratio: 1; object-fit: cover; border-radius: var(--r-xl); background: #111; }
 .area-text h2 { font-size: 34px; font-weight: 800; letter-spacing: -0.03em; }
 .area-text > p { color: var(--ink-2); }
-.area-text h4 { color: var(--orange); }
+.area-text .label-h { color: var(--orange); }
 .mini-pubs { list-style: none; padding: 0; margin: 0; }
 .mini-pubs li { padding: 12px 0; border-top: 1px solid var(--line); font-size: 14.5px; line-height: 1.4; }
 .mini-pubs a { color: var(--charcoal); font-weight: 600; }
@@ -327,8 +327,8 @@ code { font-family: var(--mono); font-size: .85em; background: var(--stone-bg); 
 .wiki-meta { font-size: 13px; color: var(--ink-3); margin: 18px 0 0; }
 .wiki-grid { max-width: var(--wrap-wide); display: grid; grid-template-columns: 240px 1fr; gap: 64px; padding-top: 48px; padding-bottom: 120px; }
 .wiki-side { position: sticky; top: 80px; align-self: start; font-size: 14px; }
-.wiki-side h4 { margin: 1.6em 0 .4em; color: var(--charcoal); font-size: 12px; }
-.wiki-side h4:first-child { margin-top: 0; }
+.wiki-side .label-h { margin: 1.6em 0 .4em; color: var(--charcoal); font-size: 12px; }
+.wiki-side .label-h:first-child { margin-top: 0; }
 .wiki-side ul { list-style: none; padding: 0; margin: 0; }
 .wiki-side a { display: block; padding: 6px 12px; color: var(--ink-3); border-radius: 8px; }
 .wiki-side a:hover { color: var(--charcoal); background: var(--stone-bg); text-decoration: none; }
@@ -344,7 +344,6 @@ code { font-family: var(--mono); font-size: .85em; background: var(--stone-bg); 
 .wiki-list a:hover { color: var(--orange); text-decoration: none; }
 .wiki-list span { font-size: 14px; color: var(--ink-3); }
 .wiki-list .wiki-li-meta { font-size: 12px; color: var(--ink-3); margin-top: 3px; }
-.empty { font-size: 14px; color: var(--ink-3); background: #fff; padding: 16px 18px; border-radius: var(--r-sm); margin-top: 14px; }
 .callout { margin-top: 20px; padding: 36px; border-radius: var(--r-xl); background: var(--night); color: #a7b0b6; }
 .callout h3 { color: #fff; }
 .callout strong { color: #fff; }
@@ -360,9 +359,9 @@ code { font-family: var(--mono); font-size: .85em; background: var(--stone-bg); 
 .news-when .news-tag { font-size: 12px; font-weight: 700; color: var(--orange); text-transform: uppercase; letter-spacing: .06em; }
 .news-main { grid-area: main; }
 .news-thumb { grid-area: thumb; width: 140px; height: 105px; object-fit: cover; border-radius: var(--r-md); }
-.news-main h3 { font-size: 24px; font-weight: 800; letter-spacing: -0.03em; }
-.news-main h3 a { color: var(--charcoal); }
-.news-main h3 a:hover { color: var(--orange); text-decoration: none; }
+.news-main h2 { font-size: 24px; font-weight: 800; letter-spacing: -0.03em; }
+.news-main h2 a { color: var(--charcoal); }
+.news-main h2 a:hover { color: var(--orange); text-decoration: none; }
 .news-main p { margin: 0; color: var(--ink-3); }
 
 /* Footer */
@@ -371,7 +370,7 @@ code { font-family: var(--mono); font-size: .85em; background: var(--stone-bg); 
 .footer-brand img { height: 42px; width: auto; margin-bottom: 18px; }
 .footer-brand p { line-height: 1.6; margin: 0; }
 .footer-brand strong { color: #fff; font-size: 15px; }
-.site-footer h4 { color: #fff; margin: 4px 0 14px; letter-spacing: .08em; }
+.site-footer .footer-h { font-size: 12px; font-weight: 700; text-transform: uppercase; line-height: 1.1; color: #fff; margin: 4px 0 14px; letter-spacing: .08em; }
 .footer-grid a, .footer-grid span { display: block; color: #dfe4e7; margin-bottom: 8px; }
 .footer-grid a:hover { color: var(--tangerine); text-decoration: none; }
 .footer-base { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 10px; margin-top: 44px; padding-top: 20px; border-top: 1px solid rgba(255,255,255,.1); font-size: 12px; color: #7d878e; max-width: var(--wrap-wide); }
@@ -435,6 +434,12 @@ code { font-family: var(--mono); font-size: .85em; background: var(--stone-bg); 
   .alumni th:nth-child(3), .alumni td:nth-child(3) { display: none; }
 }
 
+/* Readability (WCAG AA). Links inside running text are underlined, so they do not rely on color alone. */
+main p a:not([class]), .prose li a:not([class]) { text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 3px; text-decoration-color: rgba(191,87,0,.45); }
+main p a:not([class]):hover, .prose li a:not([class]):hover { text-decoration-color: currentColor; }
+/* Burnt orange is a little too light for small text on the stone background, so it darkens one shade there */
+.news-card .news-meta, .place .kicker, .pi-contact a, .heritage-grid p a, .wiki-side a[aria-current] { color: var(--orange-dark); }
+
 /* Filtering: the hidden attribute must win over display rules like .pub { display: grid } */
 [hidden] { display: none !important; }
 
@@ -457,10 +462,12 @@ code { font-family: var(--mono); font-size: .85em; background: var(--stone-bg); 
   .brand-name small { font-size: 11px; }
 }
 
-/* Small credit line just above the footer */
-.site-credit { padding: 0 0 32px; background: #fff; }
-.site-credit p { margin: 0 auto; text-align: left; font-size: 12px; color: var(--ink-3); }
-.credit-name { color: var(--orange); font-weight: 600; }
+/* Website credit, in the footer's bottom line */
+.footer-base .credit-name { color: #dfe4e7; font-weight: 600; }
+
+/* Page not found */
+.notfound { text-align: center; }
+.notfound .btn { margin-bottom: 28px; }
 
 /* Gallery: albums of photo tiles, a larger lead photo per album, full-screen viewer */
 .gallery-chips { margin-bottom: 56px; }
@@ -488,7 +495,6 @@ code { font-family: var(--mono); font-size: .85em; background: var(--stone-bg); 
 .gallery-empty { text-align: center; background: var(--stone-bg); border-radius: var(--r-xl); padding: 88px 28px; max-width: var(--wrap); margin: 0 auto; }
 .gallery-empty h2 { font-size: clamp(28px, 3.6vw, 40px); font-weight: 800; letter-spacing: -0.03em; }
 .gallery-empty p { max-width: 520px; margin: 0 auto; }
-.gallery-note { margin-top: 72px; }
 
 .lightbox { position: fixed; inset: 0; width: 100vw; height: 100vh; height: 100dvh; max-width: none; max-height: none; margin: 0; padding: 0; border: 0; background: rgba(14,18,21,.96); color: #fff; overflow: hidden; }
 .lightbox::backdrop { background: rgba(14,18,21,.96); }

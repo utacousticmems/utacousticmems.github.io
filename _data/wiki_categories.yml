@@ -1,4 +1,7 @@
 # Order of sections in the wiki sidebar and on /wiki/.
+# A section only shows on the site once it has at least one page.
+# Good first Measurement pages: LDV setup, hydrophone calibration, PIC fiber alignment
+# (copy _templates/wiki-page.md to start).
 - name: Getting started
   blurb: For new members and anyone editing this site.
 - name: Cleanroom processes

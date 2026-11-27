@@ -2,7 +2,7 @@
 title: Mask design
 category: Design
 order: 1
-summary: AutoCAD rules that survive conversion, KLayout GDS2 prep, alignment marks and the EVG620 template.
+description: AutoCAD rules that survive conversion, KLayout GDS2 prep, alignment marks and the EVG620 template.
 authors: [DK, Emma, Michael]
 updated: 2015–2017
 status: Needs check

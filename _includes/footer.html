@@ -8,7 +8,7 @@
       The University of Texas at Austin</p>
     </div>
     <div>
-      <h4>Explore</h4>
+      <h2 class="footer-h">Explore</h2>
       <a href="{{ '/research/' | relative_url }}">Research</a>
       <a href="{{ '/people/' | relative_url }}">People</a>
       <a href="{{ '/publications/' | relative_url }}">Publications</a>
@@ -16,13 +16,13 @@
       <a href="{{ '/gallery/' | relative_url }}">Gallery</a>
     </div>
     <div>
-      <h4>Students</h4>
+      <h2 class="footer-h">Students</h2>
       <a href="{{ '/join/' | relative_url }}">Prospective students</a>
       <a href="{{ '/wiki/new-member-guide/' | relative_url }}">New member guide</a>
       <a href="{{ '/wiki/' | relative_url }}">Group wiki</a>
     </div>
     <div>
-      <h4>Contact</h4>
+      <h2 class="footer-h">Contact</h2>
       <span>Prof. Neal A. Hall</span>
       <a href="mailto:{{ site.pi_email }}">{{ site.pi_email }}</a>
       <span>EER 4.802 · 512-471-2349</span>
@@ -31,6 +31,6 @@
   </div>
   <div class="wrap footer-base">
     <span>© {{ site.time | date: "%Y" }} The University of Texas at Austin · UT Acoustic MEMS Group (Hall Lab)</span>
-    <span>Updated {{ site.time | date: "%B %Y" }}{% if site.repo_url != "" %} · <a href="{{ site.repo_url }}">Edit on GitHub</a>{% endif %}</span>
+    <span>Website designed and built by <span class="credit-name">Zihuan Liu</span> · Updated {{ site.time | date: "%B %Y" }}</span>
   </div>
 </footer>

@@ -2,7 +2,7 @@
 title: New member guide
 category: Getting started
 order: 1
-summary: What to learn before and during your first semester, with books and tools.
+description: What to learn before and during your first semester, with books and tools.
 authors: [UT Acoustic MEMS Group]
 updated: Nov 2026
 ---

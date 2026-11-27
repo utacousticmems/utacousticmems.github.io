@@ -2,7 +2,7 @@
 title: Oxford 80 RIE
 category: Cleanroom processes
 order: 4
-summary: Fluorine RIE for SiO₂ and Al₂O₃. Operating steps, pressure limits and polymer control.
+description: Fluorine RIE for SiO₂ and Al₂O₃. Operating steps, pressure limits and polymer control.
 authors: [Yuqi Meng]
 updated: Apr 2025
 status: Migrated
