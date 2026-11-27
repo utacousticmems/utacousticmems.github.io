@@ -29,9 +29,10 @@ Fomblin oil carries heat from the sample to the carrier.
 
 1. Put on a second pair of gloves.
 2. With a Q-tip, apply a thin layer of oil to the **backside of the sample**.
-3. Take off the outer gloves.
+3. Take off the outer gloves, so you don't carry oil onto the carrier wafer.
+4. Place the sample, oiled side down, on the carrier wafer.
 
-**Keep oil off the carrier wafer.** Oil contamination damages the chamber.
+**Keep oil off the rest of the carrier wafer.** Oil contamination damages the chamber.
 
 ## 5. Standard recipe and etch rate
 - Recipe: **ZL_4inch DSE standard**

@@ -20,7 +20,7 @@ status: Needs check
 |---|---|---|
 | 300 | ≈ 60 nm (ellipsometer) | ≈ 0.2 nm/cycle |
 | 2000 | ≈ 200 nm | ≈ 0.1 nm/cycle |
-| 700 | result shown in photos on the old page | |
+| 700 | not recorded (the old page had only photos) | |
 
 The original page quotes roughly 0.1 nm per cycle and notes that growth is **not linear** in cycle count. The 300-cycle and 2000-cycle numbers above disagree with a single rate, so measure your own film before relying on either.
 

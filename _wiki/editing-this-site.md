@@ -30,7 +30,7 @@ To add one by hand, copy an existing entry in `_data/publications.yml`, paste it
 
 ```yaml
 - year: 2027
-  type: journal          # journal | conference | abstract | preprint | patent
+  type: journal          # journal | conference | abstract | preprint | patent | other
   authors: A. Student, B. Student, N. A. Hall
   title: Title in sentence case
   venue: Journal name

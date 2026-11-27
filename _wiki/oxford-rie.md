@@ -11,7 +11,7 @@ status: Migrated
 {% include wiki-migrated.html %}
 
 ## When to use it
-The group mainly uses the Oxford 80 to etch **silicon oxide or aluminum oxide**. Two RIE tools can do this job, Plasmatherm #2 and the Oxford. The Oxford is preferred because its pump reaches a lower process pressure (about 30 mTorr, versus about 40 mTorr on [Plasmatherm #2]({{ '/wiki/plasmatherm-2/' | relative_url }})).
+The group mainly uses the Oxford 80 to etch **silicon oxide or aluminum oxide**. Two RIE tools can do this job: Plasmatherm #2 and the Oxford. The Oxford is preferred because its pump reaches a lower process pressure (about 30 mTorr, versus about 40 mTorr on [Plasmatherm #2]({{ '/wiki/plasmatherm-2/' | relative_url }})).
 
 **Safety:** fluorine-based process gases are hazardous. Newer RIE tools isolate the process chamber behind a load lock. The Oxford 80 has a single chamber, so a large plastic shield takes the place of that protection. A manual is kept beside the tool.
 
@@ -41,4 +41,4 @@ The group mainly uses the Oxford 80 to etch **silicon oxide or aluminum oxide**.
 | Condition (tested by Yuqi) | Result |
 |---|---|
 | 40 mTorr, 20 sccm CHF₃, 1 sccm O₂ | Etches normally, no polymer |
-| 50 mTorr, 20 sccm CHF₃, no O₂ | Etch stops completely; heavy Teflon deposition |
+| 50 mTorr, 20 sccm CHF₃, no O₂ | Etch stops completely; heavy Teflon-like deposition |
