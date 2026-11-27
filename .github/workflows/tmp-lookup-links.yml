@@ -3,7 +3,7 @@ name: Temporary publication link lookup
 on:
   push:
     branches: [claude/project-thread-mpoidj]
-    paths: [".github/scripts/tmp_lookup_links.py", ".github/workflows/tmp-lookup-links.yml"]
+    paths: [".github/scripts/tmp_lookup_links*.py", ".github/workflows/tmp-lookup-links.yml"]
 permissions:
   contents: read
 jobs:
@@ -19,4 +19,4 @@ jobs:
       - name: Look up links
         env:
           OPENALEX_API_KEY: ${{ secrets.OPENALEX_API_KEY }}
-        run: python .github/scripts/tmp_lookup_links.py
+        run: python .github/scripts/tmp_lookup_links2.py
