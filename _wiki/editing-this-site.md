@@ -35,7 +35,7 @@ To add one by hand, copy an existing entry in `_data/publications.yml`, paste it
   title: Title in sentence case
   venue: Journal name
   details: 12(3), 456    # volume(issue), pages or article number
-  doi: 10.xxxx/xxxxx     # or url: https://...
+  doi: 10.xxxx/xxxxx     # or url: https://... (for a patent, its patents.google.com page)
   cover: Cover article, March 2027   # optional
   highlight: true        # optional: show under its research area
 ```

@@ -70,6 +70,5 @@ assets/video/            recruiting film (1080p, compressed to 32 MB) and poster
 
 - [ ] Add photos for people (`assets/people/`, square JPG, at least 400 px).
 - [ ] Fill in alumni current positions (`now:`) in `_data/people.yml`.
-- [ ] Add 2020–2022 publications.
 - [ ] Re-upload the photos and screenshots from the old wiki pages (DSE, FIJI ALD, mask design, RIE) to `assets/wiki/`.
 - [ ] Confirm the FIJI ALD thickness numbers (the old page's numbers disagree with each other).
