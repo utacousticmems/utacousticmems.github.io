@@ -302,6 +302,10 @@ code { font-family: var(--mono); font-size: .85em; background: var(--stone-bg); 
 .fac-grid h3 a { color: var(--charcoal); }
 .fac-grid h3 a:hover { color: var(--orange); }
 .fac-grid p { color: var(--ink-3); font-size: 15px; }
+/* Small icon plus short grey label, like the Google Scholar link (e.g. the video link under the anechoic chamber) */
+.icon-link { display: inline-flex; align-items: center; gap: 8px; font-size: 14px; font-weight: 600; color: var(--ink-3); }
+.icon-link:hover { color: var(--orange); text-decoration: none; }
+.icon-link-svg { width: 18px; height: 18px; flex: none; fill: var(--orange); }
 .contact-box { margin-top: 60px; padding: 48px; border-radius: var(--r-xl); background: var(--night); color: #dfe4e7; text-align: center; }
 .contact-box h2 { color: #fff; }
 .contact-box a { color: #fff; text-decoration: underline; text-underline-offset: 3px; }
