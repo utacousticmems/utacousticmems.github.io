@@ -31,9 +31,8 @@
   image: cover-micronano-2026.jpg
   tag: Cover
 
-- date: 2026-08-01
-  when: "Fall 2026"
-  title: Two talks at the fall 2026 ASA meeting
+- date: 2026-05-11
+  title: Two talks at the ASA meeting in Philadelphia
   text: Automated electrode-layout discovery for piezoelectric microphones (Leskowitz et al.) and the rotational Doppler effect on a MEMS diaphragm (Wang et al.).
   link: /publications/
   tag: Talks
