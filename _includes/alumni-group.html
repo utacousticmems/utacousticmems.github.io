@@ -1,0 +1,19 @@
+{%- comment -%}
+  One group of alumni on the People page (used by people.html).
+  Parameters: title, people (list of alumni from _data/people.yml).
+  Shows each name with where they are now, when known. For REU interns the role is shown too.
+{%- endcomment -%}
+{%- if include.people.size > 0 %}
+  <div class="alumni-group">
+    <h3 class="label-h">{{ include.title }}</h3>
+    <ul class="alumni-list">
+      {%- for a in include.people -%}
+      {%- assign note = a.now | default: "" | strip -%}
+      {%- if a.degree contains "intern" -%}
+        {%- if note != "" -%}{%- assign note = a.degree | append: " · " | append: note -%}{%- else -%}{%- assign note = a.degree -%}{%- endif -%}
+      {%- endif %}
+      <li><span class="alumni-name">{% if a.link %}<a href="{{ a.link }}">{{ a.name }}</a>{% else %}{{ a.name }}{% endif %}</span>{% if note != "" %}<span class="alumni-now">{{ note }}</span>{% endif %}</li>
+      {%- endfor %}
+    </ul>
+  </div>
+{%- endif -%}
