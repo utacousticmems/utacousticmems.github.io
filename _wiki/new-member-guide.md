@@ -10,10 +10,10 @@ updated: Nov 2026
 Your main job in the group is to create things: devices that combine MEMS dies, printed circuit boards and connectors, and the models and measurements that explain them. These are the skills you will use most. You do not need all of them on day one.
 
 ## 1. 3-D CAD
-Get comfortable with SolidWorks, Autodesk Inventor or Alibre. Almost every device needs a fixture, a package or an enclosure.
+Get comfortable with Autodesk Fusion 360. Almost every device needs a fixture, a package or an enclosure.
 
 ## 2. PCB layout
-Learn one tool that does schematic capture and board layout. The group has historically used Eagle, which Autodesk retired in June 2026; KiCad is a free alternative.
+Learn one tool that does schematic capture and board layout. The group has historically used Autodesk Fusion 360, which students can use for free with an Autodesk education license. KiCad is a free, open-source alternative.
 
 ## 3. IC and MEMS fabrication
 Learn the concepts before you get cleanroom access: oxidation, photolithography, etching, doping, deposition, lift-off and HF vapor release. Read the fabrication sections of the group's [recent papers]({{ '/publications/' | relative_url }}) and the process pages in this wiki.
