@@ -35,7 +35,13 @@ Learn lumped-parameter and equivalent-circuit modeling, including the physics of
 
 - J. L. Butler and C. H. Sherman, *Transducers and Arrays for Underwater Sound*, 2nd ed. (Springer)
 
-## 7. Day-to-day tools
+## 7. Microelectronics
+The group designs and builds its own low-noise amplifiers, buffers and transimpedance amplifiers (TIAs) to read out its sensors. Learn the fundamentals: transistor models, single-stage and differential amplifiers, op-amp circuits, frequency response and feedback.
+
+- B. Razavi, *Fundamentals of Microelectronics* (Wiley)
+- A. S. Sedra and K. C. Smith, *Microelectronic Circuits* (Oxford University Press)
+
+## 8. Day-to-day tools
 - **References:** Zotero. UT Libraries has a guide to Zotero storage.
 - **Figures:** save as SVG so they stay editable. Inkscape works well for figures.
 - **Writing:** draft in Word if you like, then format the final version in Overleaf.
