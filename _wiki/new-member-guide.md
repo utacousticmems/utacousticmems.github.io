@@ -41,7 +41,12 @@ The group designs and builds its own low-noise amplifiers, buffers and transimpe
 - B. Razavi, *Fundamentals of Microelectronics* (Wiley)
 - A. S. Sedra and K. C. Smith, *Microelectronic Circuits* (Oxford University Press)
 
-## 8. Day-to-day tools
+## 8. Signals and systems
+Almost every measurement in the lab ends up as sampled data, such as a frequency response or a noise spectrum. Learn impulse responses and transfer functions, Fourier series and transforms, sampling and aliasing, digital filtering, and windowing for FFT-based spectral analysis.
+
+- A. V. Oppenheim, A. S. Willsky and S. H. Nawab, *Signals and Systems*, 2nd ed. (Prentice Hall)
+
+## 9. Day-to-day tools
 - **References:** Zotero. UT Libraries has a guide to Zotero storage.
 - **Figures:** save as SVG so they stay editable. Inkscape works well for figures.
 - **Writing:** draft in Word if you like, then format the final version in Overleaf.
