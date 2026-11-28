@@ -1,0 +1,19 @@
+---
+title: Useful links
+permalink: /links/
+description: "Useful links from the UT Acoustic MEMS Group (Hall Lab): acoustics at UT Austin, the journals we publish in, acoustics and ultrasound tools, and graduate admissions."
+lede: Acoustics at UT, the journals we publish in, and a few tools we use.
+---
+{%- comment -%} The links themselves live in _data/links.yml. This page is linked from the footer only, not from the top menu. {%- endcomment -%}
+<div class="links-grid">
+  {%- for g in site.data.links -%}
+  <section class="link-group">
+    <h2 class="label-h">{{ g.group }}</h2>
+    <ul class="link-list">
+      {%- for l in g.links -%}
+      <li><a href="{{ l.url }}">{{ l.name }}</a>{% if l.note %}<span>{{ l.note }}</span>{% endif %}</li>
+      {%- endfor -%}
+    </ul>
+  </section>
+  {%- endfor -%}
+</div>
